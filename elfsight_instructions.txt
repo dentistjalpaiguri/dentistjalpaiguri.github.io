@@ -1,0 +1,5 @@
+Elfsight Instagram Widget - Steps:
+1. Sign up at https://elfsight.com
+2. Create Instagram Feed widget and connect instagram.com/drsudipsdentalclinic
+3. Copy the provided <script> and paste into index.html and social-hub.html where <div id='elfsight-instagram'></div> is.
+If you paste the script here I will inject it and rebuild the zip for you.

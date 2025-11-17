@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.dentistjalpaiguri.com/sitemap.xml
