@@ -1,0 +1,35 @@
+
+/* WhatsApp mid-right small icon widget */
+#wa-mid-widget {
+  position: fixed;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: url('/assets/images/wa-mid.png') no-repeat center/cover;
+  box-shadow: 0 8px 22px rgba(2,6,23,0.18);
+  z-index: 9999999;
+  cursor: pointer;
+  transition: opacity .28s ease, transform .28s ease, right .28s ease, bottom .28s ease;
+  will-change: transform, right, bottom, opacity;
+  opacity: 1;
+}
+
+/* hidden state */
+#wa-mid-widget.wa-hidden { opacity: 0; transform: translateY(-50%) scale(.9); right: -80px; pointer-events: none; }
+
+/* raised (moved up) to avoid CTAs */
+#wa-mid-widget.wa-raised { bottom: 140px !important; top: auto !important; transform: translateY(0); right: 12px; }
+
+/* smaller on very small devices */
+@media (max-width: 380px){
+  #wa-mid-widget { width:48px; height:48px; right:10px; }
+  #wa-mid-widget.wa-raised { bottom: 120px !important; }
+}
+
+/* desktop: still visible, but optional - keep */
+@media (min-width: 1200px){
+  #wa-mid-widget { display:block; }
+}
