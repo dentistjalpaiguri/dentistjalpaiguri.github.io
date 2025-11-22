@@ -45,23 +45,52 @@ input[type=text],input[type=tel],input[type=date],input[type=time],textarea,sele
     <h1 style="margin-top:0">Book Appointment</h1>
     <p class="small">Fill the form below. We'll contact you to confirm the appointment. You will also be forwarded to WhatsApp to send a quick confirmation message.</p>
 
-    <form id="apptForm" action="https://formsubmit.co/dentistjalpaiguri@gmail.com" method="POST" onsubmit="return handleSubmit(event)">
-      <!-- FormSubmit: avoid spam by adding _captcha -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="thankyou.html">
-      <div class="field"><label for="name">Full Name</label><input id="name" name="name" type="text" required></div>
-      <div class="field"><label for="age">Age</label><input id="age" name="age" type="text"></div>
-      <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" pattern='[0-9+]+' required></div>
-      <div class="field"><label for="address">Address</label><textarea id="address" name="address" rows="2"></textarea></div>
-      <div class="field"><label for="date">Preferred Date</label><input id="date" name="date" type="date" required></div>
-      <div class="field"><label for="time">Preferred Time</label><input id="time" name="time" type="time"></div>
-      <div class="field"><label for="notes">Notes / Concern</label><textarea id="notes" name="notes" rows="3"></textarea></div>
+    <!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 
-      <!-- Tally backup: we will POST to tally via JS if you set TALLY_URL below -->
-      <input type="hidden" id="tally_url" value="">
+<div id="gcal-booking" style="margin:20px 0;"></div>
 
-      <button class="btn" type="submit">Submit Appointment</button>
-    </form>
+<script>
+window.addEventListener('load', function() {
+  calendar.schedulingButton.load({
+    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1EtPoCUdtYeld2aXRTY8StUe3Sdehp2hB8EeOOhG31akjGcWltLMVh_WyzLpsg-QHQOeM0dyjN?gv=true',
+    color: '#039BE5',
+    label: 'Book an Appointment',
+    target: document.getElementById('gcal-booking')
+  });
+});
+</script>
+<!-- Google Calendar Appointment Scheduling end -->
+<!-- Small Confirmation Form -->
+<h3>Confirm Your Booking</h3>
+<p class="small">Fill your name and date/time so WhatsApp message fills automatically.</p>
+<div style="margin:12px 0;">
+  <label>Name</label>
+  <input id="cname" type="text" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+</div>
+<div style="margin:12px 0;">
+  <label>Appointment Date</label>
+  <input id="cdate" type="date" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+</div>
+<div style="margin:12px 0;">
+  <label>Appointment Time</label>
+  <input id="ctime" type="time" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+</div>
+
+<a id="waBtn" class="btn" style="background:#25D366;display:block;text-align:center;margin-top:10px;"
+   href="#" target="_blank">Confirm on WhatsApp</a>
+
+<script>
+document.getElementById('waBtn').addEventListener('click', function(e){
+  var n = encodeURIComponent(document.getElementById('cname').value || '');
+  var d = encodeURIComponent(document.getElementById('cdate').value || '');
+  var t = encodeURIComponent(document.getElementById('ctime').value || '');
+  var msg = "Hello Doctor, I have booked an appointment.%0AName: " + n + "%0ADate: " + d + "%0ATime: " + t;
+  this.href = "https://wa.me/918918935056?text=" + msg;
+});
+</script>
+
 
     <p class="note">By submitting you agree to receive appointment calls or messages from our clinic. For urgent help call <a href="tel:+918918935056">8918935056</a>.</p>
   </div>
