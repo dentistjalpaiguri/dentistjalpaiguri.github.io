@@ -1,177 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="client-nojs">
 <head>
     <meta charset="UTF-8">
+    <title>Dr. Sudip Roy - WikiProfile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Sudip Roy - Dentist in Jalpaiguri | Wiki Profile</title>
-    
-    <meta name="description" content="Dr. Sudip Roy is a Sr. Consultant Dental Surgeon in Jalpaiguri (27+ Yrs Exp). Best for Root Canal, Implants, & Smile Design in North Bengal.">
-    <meta name="keywords" content="Best dentist in Jalpaiguri, Dental clinic near me, Root Canal Treatment Jalpaiguri, Dental Implant Cost, Painless RCT, Zirconia Crown, Dhupguri Dentist, Haldibari Dental Clinic, dam koto root canal, khoroch koto implant">
+    <meta name="description" content="Wiki profile of Dr. Sudip Roy, Sr. Consultant Dental Surgeon in Jalpaiguri.">
     
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "Dr. Sudip Roy - Professional Profile",
+      "name": "Dr. Sudip Roy - WikiProfile",
       "mainEntity": {
         "@type": "Physician",
         "name": "Dr. Sudip Roy",
         "jobTitle": "Sr. Consultant Cosmetic Dental Surgeon",
         "image": "https://dentistjalpaiguri.github.io/profile.png",
-        "telephone": "+91-8918935056",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Pahari Para, Near V-Mart",
-          "addressLocality": "Jalpaiguri",
-          "addressRegion": "West Bengal",
-          "postalCode": "735101",
-          "addressCountry": "IN"
-        },
-        "priceRange": "₹₹",
-        "knowsAbout": ["Dental Implants", "Root Canal Treatment", "Cosmetic Dentistry", "Oral Surgery"]
+        "address": { "@type": "PostalAddress", "addressLocality": "Jalpaiguri", "addressRegion": "West Bengal" },
+        "knowsAbout": ["Dental Implants", "Root Canal", "Cosmetic Dentistry"]
       }
     }
     </script>
 
     <style>
-        /* REAL WIKIPEDIA STYLING */
-        body { font-family: sans-serif; background-color: #ffffff; color: #202122; margin: 0; padding: 0; line-height: 1.6; }
-        .wiki-container { max-width: 960px; margin: 0 auto; padding: 20px; background: white; }
+        /* --- WIKI STYLE CSS --- */
+        body { font-family: sans-serif; background-color: #f6f6f6; color: #202122; margin: 0; padding: 0; }
+        a { text-decoration: none; color: #3366cc; }
+        a:hover { text-decoration: underline; }
+
+        /* HEADER (Safe Design) */
+        .wiki-header { height: 80px; background: #ffffff; border-bottom: 1px solid #a7d7f9; display: flex; align-items: center; padding: 0 20px; position: relative; }
         
-        /* Headings */
-        h1 { font-family: 'Linux Libertine', 'Georgia', serif; font-weight: normal; border-bottom: 1px solid #a2a9b1; margin-bottom: 0.25em; font-size: 1.8rem; }
-        h2 { font-family: 'Linux Libertine', 'Georgia', serif; font-weight: normal; border-bottom: 1px solid #a2a9b1; margin-top: 1em; padding-bottom: 0.25em; font-size: 1.5rem; }
-        h3 { font-weight: bold; font-size: 1.1rem; margin-top: 1em; color: #000; }
+        /* THE SAFE LOGO */
+        .wiki-logo { display: flex; align-items: center; text-decoration: none !important; }
+        .wiki-icon { 
+            width: 45px; height: 45px; background: #333; border-radius: 50%; 
+            color: white; font-family: serif; font-size: 32px; text-align: center; line-height: 45px; margin-right: 10px;
+        }
+        .wiki-text { font-family: 'Hoefler Text', 'Georgia', serif; font-size: 1.6rem; color: #000; }
         
-        /* Infobox (Right Side) */
+        .search-box { margin-left: auto; display: flex; }
+        .search-input { padding: 8px; width: 250px; border: 1px solid #a2a9b1; border-radius: 2px 0 0 2px; }
+        .search-btn { padding: 8px 15px; background: #36c; color: white; border: 1px solid #36c; border-radius: 0 2px 2px 0; font-weight: bold; cursor: pointer; }
+        
+        .user-links { font-size: 0.85em; position: absolute; top: 10px; right: 20px; }
+        .user-links a { margin-left: 10px; color: #0645ad; }
+
+        /* LAYOUT */
+        .container { display: flex; max-width: 1200px; margin: 0 auto; }
+        
+        /* SIDEBAR */
+        .sidebar { width: 176px; padding: 20px 0 20px 20px; font-size: 0.85em; flex-shrink: 0; }
+        .sidebar ul { list-style: none; padding: 0; margin-bottom: 20px; }
+        .sidebar li { margin-bottom: 5px; }
+        .sidebar h3 { font-size: 0.75em; color: #54595d; border-bottom: 1px solid #c8ccd1; margin-bottom: 8px; padding-bottom: 3px; text-transform: uppercase; }
+
+        /* CONTENT */
+        .content { background: #ffffff; border: 1px solid #a7d7f9; border-top: none; padding: 25px; flex-grow: 1; min-height: 800px; }
+        
+        h1 { font-family: 'Linux Libertine', 'Georgia', serif; font-size: 1.8em; border-bottom: 1px solid #a2a9b1; padding-bottom: 5px; margin-top: 0; font-weight: normal; }
+        h2 { font-family: 'Linux Libertine', 'Georgia', serif; font-size: 1.5em; border-bottom: 1px solid #a2a9b1; padding-bottom: 5px; margin-top: 1.5em; font-weight: normal; }
+        .site-sub { font-size: 0.85em; color: #54595d; margin-bottom: 15px; display: block; }
+        
+        /* INFOBOX */
         .infobox {
             float: right; clear: right; width: 300px; margin: 0 0 1em 1em;
             padding: 5px; font-size: 90%; line-height: 1.5em;
-            background: #f8f9fa; border: 1px solid #a2a9b1;
+            background: #f8f9fa; border: 1px solid #a2a9b1; box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
         }
-        .infobox-title { text-align: center; font-size: 125%; font-weight: bold; padding: 5px; background-color: #b0c4de; margin: -5px -5px 10px -5px; }
+        .infobox-title { text-align: center; font-size: 125%; font-weight: bold; padding: 5px; background-color: #b0c4de; }
         .infobox img { width: 100%; border: 1px solid #ccc; margin-bottom: 5px; }
-        .infobox th { text-align: left; padding: 3px; width: 30%; vertical-align: top; font-weight: bold; color: #222; }
-        .infobox td { vertical-align: top; text-align: left; padding: 3px; }
+        .infobox th { text-align: left; padding: 5px; width: 30%; vertical-align: top; font-weight: bold; color: #222; }
         
-        /* Lists & Tables */
-        .treatment-list { column-count: 2; padding-left: 20px; font-size: 0.95em; }
-        .area-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.9em; }
-        .area-table td { border: 1px solid #ddd; padding: 8px; }
-        .area-table th { border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2; text-align: left; }
-        
-        /* Links */
-        a { text-decoration: none; color: #0645ad; }
-        a:hover { text-decoration: underline; }
-        a:visited { color: #0b0080; }
+        /* TOC */
+        .toc { background: #f8f9fa; border: 1px solid #a2a9b1; display: inline-block; padding: 10px 20px; margin-bottom: 20px; }
+        .toc h4 { margin: 0; text-align: center; font-weight: bold; font-size: 95%; }
+        .toc ul { padding-left: 20px; margin-top: 5px; }
+
+        /* PULSING NOTICE */
+        .site-notice {
+            background-color: #f8f9fa; border: 1px solid #a2a9b1; 
+            padding: 10px; margin-bottom: 15px; text-align: center; font-size: 0.9em;
+            animation: pulse-border 2s infinite;
+        }
+        @keyframes pulse-border {
+            0% { border-color: #3366cc; }
+            50% { border-color: #a2a9b1; }
+            100% { border-color: #3366cc; }
+        }
 
         /* Map */
-        .map-container { margin: 20px 0; border: 1px solid #ddd; padding: 5px; background: #eee; text-align: center; }
+        .map-box { border: 1px solid #ccc; padding: 5px; background: #eee; text-align: center; margin-top: 10px; }
 
         /* Mobile */
-        @media (max-width: 700px) {
-            .infobox { float: none; width: 100%; margin: 0 0 20px 0; }
-            .treatment-list { column-count: 1; }
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            .sidebar { display: none; }
+            .infobox { float: none; width: 100%; margin: 20px 0; }
         }
     </style>
 </head>
 <body>
 
-<div class="wiki-container">
-    <table class="infobox">
-        <tr><td colspan="2" class="infobox-title">Dr. Sudip Roy</td></tr>
-        <tr>
-            <td colspan="2" style="text-align:center;">
-                <img src="profile.png" alt="Dr. Sudip Roy Dental Surgeon">
-                <br><i>Sr. Consultant Dental Surgeon</i>
-            </td>
-        </tr>
-        <tr><th>Born</th><td><a href="https://en.wikipedia.org/wiki/Jalpaiguri" target="_blank">Jalpaiguri</a>, <a href="https://en.wikipedia.org/wiki/West_Bengal" target="_blank">West Bengal</a></td></tr>
-        <tr><th>Education</th><td>B.D.S. (<a href="https://en.wikipedia.org/wiki/Patna" target="_blank">Patna</a>)<br>Implantology (<a href="https://en.wikipedia.org/wiki/Jadavpur_University" target="_blank">Jadavpur</a>)</td></tr>
-        <tr><th>Specialties</th><td>Implants, RCT, Smile Design</td></tr>
-        <tr><th>Experience</th><td>27+ Years (Since 1997)</td></tr>
-        <tr><th>Clinic</th><td><b>Dr. S. Roy’s SMILE Dental Clinic</b></td></tr>
-        <tr><th>Location</th><td>Pahari Para, <a href="https://en.wikipedia.org/wiki/Jalpaiguri" target="_blank">Jalpaiguri</a></td></tr>
-        <tr>
-            <td colspan="2" style="text-align:center; padding-top:10px;">
-               <a href="https://dentistjalpaiguri.github.io/appointment.html" style="background:#007bff; color:white; padding:6px 12px; border-radius:4px; text-decoration:none;">📅 Book Appointment</a>
-            </td>
-        </tr>
-    </table>
-    <h1>Dr. Sudip Roy</h1>
-    <hr>
+<div class="wiki-header">
+    <a href="#" class="wiki-logo">
+        <div class="wiki-icon">W</div>
+        <span class="wiki-text">WikiProfile</span>
+    </a>
+    <div class="search-box">
+        <input type="text" class="search-input" placeholder="Search WikiProfile" value="Dr. Sudip Roy">
+        <button class="search-btn">Search</button>
+    </div>
+    <div class="user-links">
+        <a href="#">Create account</a> <a href="#">Log in</a>
+    </div>
+</div>
+
+<div class="container">
     
-    <p><b>Dr. Sudip Roy</b> (B.D.S.) is a leading Indian <a href="https://en.wikipedia.org/wiki/Dentist" target="_blank">Dental Surgeon</a> and Oral Implantologist based in <a href="https://en.wikipedia.org/wiki/Jalpaiguri" target="_blank">Jalpaiguri</a>, West Bengal. With over <b>27 years of clinical experience</b>, he is the founder of <i>Dr. S. Roy’s SMILE Dental Clinic</i>. He is widely recognized for his expertise in <b>Painless Root Canal Treatment (RCT)</b>, <b>Dental Implants</b>, and <b>Digital Smile Designing</b>.</p>
-
-    <h2 id="Expertise">Clinical Expertise & Services</h2>
-    <p>Dr. Roy utilizes modern dental technology to provide comprehensive care. His key areas of specialization include:</p>
-    
-    <h3>1. Advanced Implantology & Prosthetics</h3>
-    <ul class="treatment-list">
-        <li><b>Dental Implants:</b> Single tooth, bridge, and full-mouth rehabilitation (Basal/Conventional).</li>
-        <li><b>All-on-4 / All-on-6:</b> Fixed teeth solutions for edentulous patients.</li>
-        <li><b>Zirconia Crowns:</b> Metal-free, MRI-safe ceramic caps (5-15 year warranty).</li>
-        <li><b>BPS Dentures:</b> Bio-functional Prosthetic System for superior fit.</li>
-    </ul>
-
-    <h3>2. Endodontics (Root Canal) & Conservation</h3>
-    <ul class="treatment-list">
-        <li><b>Painless RCT:</b> Single-sitting root canal treatment using Rotary Endodontics.</li>
-        <li><b>Re-RCT:</b> Correction of failed root canal treatments.</li>
-        <li><b>Laser Dentistry:</b> For gum surgeries and infection control.</li>
-    </ul>
-
-    <h3>3. Cosmetic Dentistry (Smile Makeover)</h3>
-    <ul class="treatment-list">
-        <li><b>Digital Smile Design (DSD):</b> Computer-aided smile planning.</li>
-        <li><b>Veneers & Laminates:</b> For gap closure and tooth reshaping.</li>
-        <li><b>Teeth Whitening:</b> Laser bleaching for instant brightness.</li>
-        <li><b>Dental Jewellery:</b> Cosmetic crystals for tooth sparkle.</li>
-    </ul>
-
-    <h2 id="Locations">Areas Served</h2>
-    <p>Dr. Sudip Roy serves patients from across <a href="https://en.wikipedia.org/wiki/North_Bengal" target="_blank">North Bengal</a> and parts of Bhutan/Bangladesh. Patients frequently visit from:</p>
-    <table class="area-table">
-        <tr>
-            <th>Primary District</th>
-            <td><b><a href="https://en.wikipedia.org/wiki/Jalpaiguri" target="_blank">Jalpaiguri</a></b> (Pahari Para, Kadamtala, Nayabasti, Thana More)</td>
-        </tr>
-        <tr>
-            <th>Nearby Towns</th>
-            <td><a href="https://en.wikipedia.org/wiki/Mainaguri" target="_blank">Mainaguri</a>, <a href="https://en.wikipedia.org/wiki/Dhupguri" target="_blank">Dhupguri</a>, <a href="https://en.wikipedia.org/wiki/Haldibari,_West_Bengal" target="_blank">Haldibari</a>, Falakata, Malbazar</td>
-        </tr>
-        <tr>
-            <th>Extended Region</th>
-            <td><a href="https://en.wikipedia.org/wiki/Siliguri" target="_blank">Siliguri</a>, Cooch Behar, Alipurduar, Islampur</td>
-        </tr>
-    </table>
-
-    <h2 id="FAQ">Patient FAQ</h2>
-    <p><b>Q: What is the cost of Root Canal Treatment in Jalpaiguri?</b><br>
-    A: Dr. Roy offers affordable treatment options. Prices vary based on tooth complexity. Consult the clinic for specific <i>"khoroch/dam"</i> (cost) details.</p>
-
-    <p><b>Q: Is emergency dental care available?</b><br>
-    A: Yes, Dr. S. Roy’s SMILE Dental Clinic handles dental emergencies like severe toothache, broken teeth, and swelling.</p>
-
-    <div class="map-container">
-        <b>📍 Visit Us</b><br>
-        <iframe src="https://www.google.com/maps?q=Dr.+S.+Roy's+SMILE+Dental+Clinic,+Jalpaiguri&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <br>
-        <a href="https://mappls.com/kz5ohi" target="_blank">View on Mappls</a> | <a href="https://www.google.com/maps?q=Dr.+S.+Roy's+SMILE+Dental+Clinic,+Jalpaiguri" target="_blank">View on Google Maps</a>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Main page</a></li>
+            <li><a href="#">Contents</a></li>
+            <li><a href="#">Featured biography</a></li>
+            <li><a href="#">Current events</a></li>
+        </ul>
+        <h3>Tools</h3>
+        <ul>
+            <li><a href="#">What links here</a></li>
+            <li><a href="#">Related changes</a></li>
+            <li><a href="#">Upload file</a></li>
+            <li><a href="#">Special pages</a></li>
+        </ul>
+        <h3>Languages</h3>
+        <ul>
+            <li><a href="#">Bangla</a></li>
+            <li><a href="#">Hindi</a></li>
+            <li><a href="#">English</a></li>
+        </ul>
     </div>
 
-    <h2>External Links</h2>
-    <ul>
-        <li><a href="https://dentistjalpaiguri.github.io">Official Website</a></li>
-        <li><a href="https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist">Practo Profile (Verified)</a></li>
-        <li><a href="https://www.youtube.com/@dentistjalpaiguri">YouTube Channel</a></li>
-        <li><a href="https://www.linkedin.com/in/drsudiproy-best-dentalsurgeon-jalpaiguri">LinkedIn Profile</a></li>
-    </ul>
+    <div class="content">
+        
+        <div class="site-notice">
+            <b>APPOINTMENT ALERT:</b> Dr. Sudip Roy is accepting new patients for Dental Implants & RCT. 
+            <a href="https://dentistjalpaiguri.github.io/appointment.html" style="font-weight:bold; color:#d33;">[Click to Book Now]</a>
+        </div>
 
-    <div style="margin-top: 40px; border-top: 1px solid #ccc; font-size: 0.8em; color: #666;">
-        <p><i>Last updated: 13 December 2025. Content licensed under CC-BY-SA.</i></p>
+        <h1 id="firstHeading">Dr. Sudip Roy</h1>
+        <div class="site-sub">From WikiProfile, the free dental encyclopedia</div>
+        
+        <table class="infobox">
+            <tr><td colspan="2" class="infobox-title">Dr. Sudip Roy</td></tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <img src="profile.png" alt="Dr. Sudip Roy">
+                    <br><i>Sr. Consultant Dental Surgeon</i>
+                </td>
+            </tr>
+            <tr><th>Born</th><td><a href="https://en.wikipedia.org/wiki/Jalpaiguri">Jalpaiguri</a>, <a href="https://en.wikipedia.org/wiki/West_Bengal">West Bengal</a></td></tr>
+            <tr><th>Education</th><td>B.D.S. (<a href="https://en.wikipedia.org/wiki/Patna">Patna</a>)<br>Implantology (<a href="https://en.wikipedia.org/wiki/Jadavpur_University">Jadavpur</a>)</td></tr>
+            <tr><th>Occupation</th><td><a href="https://en.wikipedia.org/wiki/Dentist">Dental Surgeon</a>, Implantologist</td></tr>
+            <tr><th>Years active</th><td>1997–present (27+ Years)</td></tr>
+            <tr><th>Clinic</th><td>
+                <a href="https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9🌐" target="_blank"><b>Dr. S. Roy’s SMILE Dental Clinic</b></a>
+            </td></tr>
+            <tr><th>Location</th><td>Pahari Para, <a href="https://en.wikipedia.org/wiki/Jalpaiguri">Jalpaiguri</a></td></tr>
+            <tr>
+                <td colspan="2" style="text-align:center; background:#f0f0f0;">
+                    <a href="https://dentistjalpaiguri.github.io" style="display:block; padding:5px; font-weight:bold;">🌐 Official Website</a>
+                </td>
+            </tr>
+        </table>
+
+        <p><b>Dr. Sudip Roy</b> (born in <a href="https://en.wikipedia.org/wiki/Jalpaiguri">Jalpaiguri</a>) is an Indian <a href="https://en.wikipedia.org/wiki/Dentistry">dental surgeon</a> and oral implantologist. He is the founder and chief surgeon of <a href="https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9🌐" target="_blank"><b>Dr. S. Roy’s SMILE Dental Clinic</b></a>. With over 27 years of experience, he is noted for his work in <a href="https://cosmeticdentistjalpaiguriclinic.github.io">cosmetic dentistry</a> and dental implants in the North Bengal region.</p>
+
+        <div class="toc">
+            <h4>Contents</h4>
+            <ul>
+                <li><a href="#Early_Life">1 Early Life & Education</a></li>
+                <li><a href="#Career">2 Career</a></li>
+                <li><a href="#Specializations">3 Specializations</a></li>
+                <li><a href="#Location">4 Clinic Location</a></li>
+                <li><a href="#References">5 References</a></li>
+            </ul>
+        </div>
+
+        <h2 id="Early_Life">Early Life and Education</h2>
+        <p>Dr. Roy completed his Bachelor of Dental Surgery (B.D.S.) from the <a href="https://en.wikipedia.org/wiki/Buddha_Institute_of_Dental_Sciences_and_Hospital">Buddha Institute of Dental Sciences & Hospital</a> (B.I.D.S.H.), Patna, in 1997. He later pursued advanced training in <a href="https://dentalclinicjalpaiguri.github.io">Dental Implantology</a> at <a href="https://en.wikipedia.org/wiki/Jadavpur_University">Jadavpur University</a>.</p>
+
+        <h2 id="Career">Career</h2>
+        <p>Dr. Roy began his career at <b>North Bengal Dental College & Hospital</b>. He subsequently served as a Dental Surgeon at the <b>Eastern Railway Divisional Hospital</b>, Malda. Currently, he practices at his private clinic in Jalpaiguri, which serves patients from <a href="https://en.wikipedia.org/wiki/Dhupguri">Dhupguri</a>, <a href="https://en.wikipedia.org/wiki/Mainaguri">Mainaguri</a>, and <a href="https://en.wikipedia.org/wiki/Haldibari,_West_Bengal">Haldibari</a>.</p>
+
+        <h2 id="Specializations">Specializations</h2>
+        <p>His clinical expertise includes:</p>
+        <ul>
+            <li><b><a href="https://dentalclinicjalpaiguri.github.io">Implant Dentistry</a>:</b> Single to full mouth implants and All-on-4 planning.</li>
+            <li><b><a href="https://Smilemakeoverjalpaiguri.github.io">Cosmetic Dentistry</a>:</b> Smile makeovers, veneers, and <a href="https://bestcosmeticdentistjalpaiguri.github.io/">digital smile design</a>.</li>
+            <li><b>Oral Surgery:</b> Painless extractions and gum laser therapy.</li>
+        </ul>
+
+        <h2 id="Location">Clinic Location</h2>
+        <div class="map-box">
+            <b>📍 Pahari Para, Near V-Mart, Jalpaiguri</b><br>
+            <iframe src="https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9🌐" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <br>
+            <small><a href="https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9🌐" target="_blank">[Click to Open in Google Maps]</a></small>
+        </div>
+
+        <h2 id="References">References</h2>
+        <ol style="font-size: 0.9em;">
+            <li><a href="https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist">Practo Profile: Dr. Sudip Roy</a>. Retrieved 2025.</li>
+            <li><a href="https://jsdl.in/DT-99SZ3I1WFPL">JustDial: Smile Dental Clinic Reviews</a>. Retrieved 2025.</li>
+        </ol>
+
+        <div style="border-top: 1px solid #a2a9b1; margin-top: 40px; padding-top: 10px; font-size: 0.8em; color: #54595d;">
+            This page was last edited on 13 December 2025.<br>
+            Content is available under <a href="#">Dr. Roy's Terms of Use</a>.
+        </div>
     </div>
-
 </div>
 
 </body>
