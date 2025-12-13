@@ -2,7 +2,7 @@
 <html lang="en" class="client-nojs">
 <head>
     <meta charset="UTF-8">
-    <title>Dr. Sudip Roy - WikiProfile</title>
+    <title>Dr. Sudip Roy - WikiBio Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Wiki profile of Dr. Sudip Roy, Sr. Consultant Dental Surgeon in Jalpaiguri.">
     
@@ -10,14 +10,22 @@
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "Dr. Sudip Roy - WikiProfile",
+      "name": "Dr. Sudip Roy - WikiBio",
       "mainEntity": {
         "@type": "Physician",
         "name": "Dr. Sudip Roy",
         "jobTitle": "Sr. Consultant Cosmetic Dental Surgeon",
         "image": "https://dentistjalpaiguri.github.io/profile.png",
-        "address": { "@type": "PostalAddress", "addressLocality": "Jalpaiguri", "addressRegion": "West Bengal" },
-        "knowsAbout": ["Dental Implants", "Root Canal", "Cosmetic Dentistry"]
+        "address": { 
+            "@type": "PostalAddress", 
+            "streetAddress": "Pahari Para, Near V-Mart",
+            "addressLocality": "Jalpaiguri", 
+            "addressRegion": "West Bengal",
+            "postalCode": "735101",
+            "addressCountry": "IN"
+        },
+        "knowsAbout": ["Dental Implants", "Root Canal", "Cosmetic Dentistry"],
+        "url": "https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html"
       }
     }
     </script>
@@ -31,13 +39,13 @@
         /* HEADER (Safe Design) */
         .wiki-header { height: 80px; background: #ffffff; border-bottom: 1px solid #a7d7f9; display: flex; align-items: center; padding: 0 20px; position: relative; }
         
-        /* THE SAFE LOGO */
-        .wiki-logo { display: flex; align-items: center; text-decoration: none !important; }
+        /* THE SAFE LOGO (Generic "W" Icon) */
+        .wiki-logo { display: flex; align-items: center; text-decoration: none !important; cursor: pointer; }
         .wiki-icon { 
-            width: 45px; height: 45px; background: #333; border-radius: 50%; 
+            width: 45px; height: 45px; background: #555; border-radius: 4px; 
             color: white; font-family: serif; font-size: 32px; text-align: center; line-height: 45px; margin-right: 10px;
         }
-        .wiki-text { font-family: 'Hoefler Text', 'Georgia', serif; font-size: 1.6rem; color: #000; }
+        .wiki-text { font-family: 'Hoefler Text', 'Georgia', serif; font-size: 1.6rem; color: #000; letter-spacing: 0.5px; }
         
         .search-box { margin-left: auto; display: flex; }
         .search-input { padding: 8px; width: 250px; border: 1px solid #a2a9b1; border-radius: 2px 0 0 2px; }
@@ -77,38 +85,39 @@
         .toc h4 { margin: 0; text-align: center; font-weight: bold; font-size: 95%; }
         .toc ul { padding-left: 20px; margin-top: 5px; }
 
-        /* PULSING NOTICE */
+        /* PULSING NOTICE (Your "Ad") */
         .site-notice {
             background-color: #f8f9fa; border: 1px solid #a2a9b1; 
             padding: 10px; margin-bottom: 15px; text-align: center; font-size: 0.9em;
             animation: pulse-border 2s infinite;
         }
         @keyframes pulse-border {
-            0% { border-color: #3366cc; }
-            50% { border-color: #a2a9b1; }
-            100% { border-color: #3366cc; }
+            0% { border-color: #3366cc; box-shadow: 0 0 5px rgba(51,102,204,0.2); }
+            50% { border-color: #a2a9b1; box-shadow: none; }
+            100% { border-color: #3366cc; box-shadow: 0 0 5px rgba(51,102,204,0.2); }
         }
 
-        /* Map */
+        /* Map Box */
         .map-box { border: 1px solid #ccc; padding: 5px; background: #eee; text-align: center; margin-top: 10px; }
 
-        /* Mobile */
+        /* Mobile Responsive */
         @media (max-width: 768px) {
             .container { flex-direction: column; }
             .sidebar { display: none; }
             .infobox { float: none; width: 100%; margin: 20px 0; }
+            .search-box { display: none; } /* Hide search on small mobile */
         }
     </style>
 </head>
 <body>
 
 <div class="wiki-header">
-    <a href="#" class="wiki-logo">
+    <div class="wiki-logo">
         <div class="wiki-icon">W</div>
-        <span class="wiki-text">WikiProfile</span>
-    </a>
+        <span class="wiki-text">WikiBio</span>
+    </div>
     <div class="search-box">
-        <input type="text" class="search-input" placeholder="Search WikiProfile" value="Dr. Sudip Roy">
+        <input type="text" class="search-input" placeholder="Search WikiBio" value="Dr. Sudip Roy">
         <button class="search-btn">Search</button>
     </div>
     <div class="user-links">
@@ -143,12 +152,14 @@
     <div class="content">
         
         <div class="site-notice">
-            <b>APPOINTMENT ALERT:</b> Dr. Sudip Roy is accepting new patients for Dental Implants & RCT. 
-            <a href="https://dentistjalpaiguri.github.io/appointment.html" style="font-weight:bold; color:#d33;">[Click to Book Now]</a>
+            <b>NOTICE:</b> Dr. Sudip Roy is currently accepting new patients for Dental Implants & RCT. 
+            <a href="https://dentistjalpaiguri.github.io/appointment.html" style="font-weight:bold; color:#d33; text-decoration:none;">
+                [Click Here to Book Appointment]
+            </a>
         </div>
 
         <h1 id="firstHeading">Dr. Sudip Roy</h1>
-        <div class="site-sub">From WikiProfile, the free dental encyclopedia</div>
+        <div class="site-sub">From WikiBio, the free dental encyclopedia</div>
         
         <table class="infobox">
             <tr><td colspan="2" class="infobox-title">Dr. Sudip Roy</td></tr>
@@ -163,7 +174,7 @@
             <tr><th>Occupation</th><td><a href="https://en.wikipedia.org/wiki/Dentist">Dental Surgeon</a>, Implantologist</td></tr>
             <tr><th>Years active</th><td>1997–present (27+ Years)</td></tr>
             <tr><th>Clinic</th><td>
-                <a href="https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9🌐" target="_blank"><b>Dr. S. Roy’s SMILE Dental Clinic</b></a>
+                <a href="https://dentistjalpaiguri.github.io"><b>Dr. S. Roy’s SMILE Dental Clinic</b></a>
             </td></tr>
             <tr><th>Location</th><td>Pahari Para, <a href="https://en.wikipedia.org/wiki/Jalpaiguri">Jalpaiguri</a></td></tr>
             <tr>
@@ -173,7 +184,7 @@
             </tr>
         </table>
 
-        <p><b>Dr. Sudip Roy</b> (born in <a href="https://en.wikipedia.org/wiki/Jalpaiguri">Jalpaiguri</a>) is an Indian <a href="https://en.wikipedia.org/wiki/Dentistry">dental surgeon</a> and oral implantologist. He is the founder and chief surgeon of <a href="https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9🌐" target="_blank"><b>Dr. S. Roy’s SMILE Dental Clinic</b></a>. With over 27 years of experience, he is noted for his work in <a href="https://cosmeticdentistjalpaiguriclinic.github.io">cosmetic dentistry</a> and dental implants in the North Bengal region.</p>
+        <p><b>Dr. Sudip Roy</b> (born in <a href="https://en.wikipedia.org/wiki/Jalpaiguri">Jalpaiguri</a>) is an Indian <a href="https://en.wikipedia.org/wiki/Dentistry">dental surgeon</a> and oral implantologist. He is the founder and chief surgeon of <b>Dr. S. Roy’s SMILE Dental Clinic</b>. With over 27 years of experience, he is noted for his work in <a href="https://cosmeticdentistjalpaiguriclinic.github.io">cosmetic dentistry</a> and dental implants in the North Bengal region.</p>
 
         <div class="toc">
             <h4>Contents</h4>
@@ -203,9 +214,20 @@
         <h2 id="Location">Clinic Location</h2>
         <div class="map-box">
             <b>📍 Pahari Para, Near V-Mart, Jalpaiguri</b><br>
-            <iframe src="https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9🌐" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                loading="lazy" 
+                allowfullscreen 
+                src="https://www.google.com/maps?q=Dr.+S.+Roy's+SMILE+Dental+Clinic,+Jalpaiguri&output=embed">
+            </iframe>
             <br>
-            <small><a href="https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9🌐" target="_blank">[Click to Open in Google Maps]</a></small>
+            <small>
+                <a href="https://www.google.com/maps/search/Dr.+S.+Roy's+SMILE+Dental+Clinic,+Jalpaiguri" target="_blank">
+                    [Click to Open in Google Maps]
+                </a>
+            </small>
         </div>
 
         <h2 id="References">References</h2>
