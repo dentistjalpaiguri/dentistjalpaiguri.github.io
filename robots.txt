@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+
+# Point Google directly to your new sitemap
 Sitemap: https://dentistjalpaiguri.github.io/sitemap.xml
