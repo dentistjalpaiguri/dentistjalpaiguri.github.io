@@ -55,15 +55,38 @@
   }
 }</script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you provide painless dental treatment?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, we use modern anesthesia, rotary endodontics and gentle techniques." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer smile designing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, Digital Smile Design and cosmetic smile makeovers are available." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are dental implants safe?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, implants are medically safe, long-lasting, and performed by trained professionals." }
+    }
+  ]
+}</script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7V58W8VQ6"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-G7V58W8VQ6');</script>
 
 <style>
-/* Layout & Design Restoration */
+/* Layout */
 .header{display:flex;align-items:center;gap:12px;padding:14px 18px;background:#f6fbff}.logo{height:56px}.container{max-width:1100px;margin:0 auto;padding:16px}
 .directions-btn { display: inline-flex; align-items: center; gap: 8px; background: #4285F4; color: #fff !important; padding: 10px 20px; border-radius: 50px; font-weight: 700; text-decoration: none; margin-top: 15px; font-size: 14px; box-shadow: 0 4px 10px rgba(66, 133, 244, 0.3); transition: all 0.2s ease;}
 
-/* TICKER CSS (RESTORED) */
+/* TICKER */
 .ticker-wrap { width: 100%; background-color: #222; color: white; height: 40px; overflow: hidden; display: flex; align-items: center; font-family: sans-serif; font-size: 13px; border-bottom: 2px solid #d32f2f; margin-top: 20px;}
 .ticker-heading { background-color: #d32f2f; color: white; padding: 0 15px; height: 100%; display: flex; align-items: center; font-weight: bold; z-index: 10; box-shadow: 2px 0 5px rgba(0,0,0,0.3); white-space: nowrap; }
 .ticker { display: inline-block; white-space: nowrap; padding-left: 100%; animation: ticker-scroll 30s linear infinite; }
@@ -71,11 +94,11 @@
 .ticker-item a { color: #f0f0f0; text-decoration: none; }
 @keyframes ticker-scroll { 0% { transform: translate3d(0, 0, 0); } 100% { transform: translate3d(-100%, 0, 0); } }
 
-/* GOLDEN MOBILE CTA (RESTORED) */
+/* GOLDEN MOBILE CTA */
 .mobile-cta { position: fixed; bottom: 0; left: 0; width: 100%; background: #d4af37; display: flex; z-index: 10000; box-shadow: 0 -2px 10px rgba(0,0,0,0.2); }
 .mobile-cta a { flex: 1; text-align: center; padding: 12px; color: #000 !important; text-decoration: none; font-weight: 700; font-size: 14px; border-right: 1px solid rgba(0,0,0,0.1); }
 
-/* AI WIDGET (RESTORED) */
+/* AI WIDGET */
 #ai-chat-float { display: none; position: fixed; bottom: 90px; right: 20px; background: linear-gradient(135deg, #2563eb, #4f46e5); border-radius: 50px; padding: 8px 16px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); z-index: 9998; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 @keyframes popIn { from { transform: scale(0.5); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 
@@ -117,11 +140,51 @@
     </div>
   </div>
   <div class="hero-right">
-    <img src="assets/images/dentist-jalpaiguri-smile-6.webp" alt="Dr Sudip Roy Cosmetic Dentist in Jalpaiguri" style="width:100%;border-radius:10px">
+    <img src="assets/images/dentist-jalpaiguri-smile-6.webp" alt="Dr Sudip Roy Cosmetic Dentist" style="width:100%;border-radius:10px">
   </div>
 </section>
 
 <main class="container">
+    <section class="card">
+        <h2 class="section-title">27 Years of Clinical Excellence</h2>
+        <p>Led by <strong>Dr. Sudip Roy</strong>, North Bengal's leading destination for Digital Smile Design.</p>
+    </section>
+
+    <section class="card">
+        <h2 class="section-title">Smile Gallery Comparison</h2>
+        
+        <div id="ba1" class="before-after" style="position:relative; overflow:hidden; border-radius:10px; cursor: ew-resize;">
+            <img src="assets/images/dentist-jalpaiguri-smile-3.webp" alt="Before Smile transformation" style="display:block; width:100%;">
+            <div class="ba-overlay" style="position:absolute; top:0; left:0; width:50%; height:100%; overflow:hidden; border-right:2px solid #fff;">
+                <img src="assets/images/dentist-jalpaiguri-smile-21.webp" alt="After Smile transformation" style="display:block; width:200%; max-width:none;">
+            </div>
+            <div class="ba-handle" style="position:absolute; top:0; left:50%; width:4px; height:100%; background:#fff; cursor:ew-resize; transform:translateX(-50%);"></div>
+        </div>
+    </section>
+
+    <section class="card" id="testimonials">
+        <h2 class="section-title">Patient Testimonials</h2>
+        <div class="testimonial" style="margin-bottom:15px; padding:15px; background:#f9f9f9; border-radius:8px;">
+            “Painless root canal and brilliant smile design — Dr. Roy changed my life.” <br>
+            <cite style="font-weight:bold; color:#0056b3;">— A. Sharma</cite>
+        </div>
+        <div class="testimonial" style="padding:15px; background:#f9f9f9; border-radius:8px;">
+            “Professional, caring and fast. My implants look natural.” <br>
+            <cite style="font-weight:bold; color:#0056b3;">— M. Ghosh</cite>
+        </div>
+    </section>
+
+    <section class="card" style="background:#fff; border-left: 4px solid #FFD700; margin-top:20px;">
+        <h3 style="margin-top:0; font-size:18px;">Serving Patients from Across North Bengal</h3>
+        <p class="small" style="margin-bottom:0; color:#555;">
+            While based in <strong>Pahari Para, Jalpaiguri</strong>, Dr. Sudip Roy is the preferred cosmetic dental surgeon for patients visiting from:
+            <br>
+            <span style="color:#004a99; font-weight:600;">• Dhupguri • Malbazar • Mainaguri • Haldibari • Siliguri</span>
+            <br>
+            We offer priority weekend appointments for out-of-town patients.
+        </p>
+    </section>
+
     <section style="background-color: #f0f8ff; padding: 0 0 50px 0; text-align: center; border-top: 4px solid #004a99; margin: 40px 0;">
         <div class="ticker-wrap">
             <div class="ticker-heading">🔴 LATEST UPDATES:</div>
@@ -129,7 +192,6 @@
                 <div class="ticker-item"><span>📄 Medium:</span> <a href="https://medium.com/@DrSudipRoy" target="_blank">"The Science of the Perfect Smile"</a></div>
                 <div class="ticker-item"><span>📊 SlideShare:</span> <a href="https://www.slideshare.net/slideshow/dr_sudip_roy_dental_protocols_2025-2026-pdf/284706444" target="_blank">2025 Clinical Protocols</a></div>
                 <div class="ticker-item"><span>🎥 YouTube:</span> <a href="https://www.youtube.com/@dentistjalpaiguri" target="_blank">Patient Stories</a></div>
-                <div class="ticker-item"><span>📌 Pinterest:</span> <a href="https://in.pinterest.com/dentistjalpaiguri/" target="_blank">Smile Gallery</a></div>
             </div>
         </div>
         <div style="padding: 40px 20px;">
@@ -140,22 +202,28 @@
         </div>
     </section>
 
+    <section id='faq' class="card">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div style="margin-bottom:10px;"><strong>Do you provide painless dental treatment?</strong><p style="margin:5px 0 15px 0;">Yes, we use modern anesthesia, rotary endodontics and gentle techniques.</p></div>
+        <div style="margin-bottom:10px;"><strong>Do you offer smile designing?</strong><p style="margin:5px 0 15px 0;">Yes, Digital Smile Design and cosmetic smile makeovers are available.</p></div>
+        <div style="margin-bottom:10px;"><strong>Are dental implants safe?</strong><p style="margin:5px 0 15px 0;">Yes, implants are medically safe, long-lasting, and performed by trained professionals.</p></div>
+        <div style="margin-bottom:10px;"><strong>Do you treat children?</strong><p style="margin:5px 0 15px 0;">Yes, we offer complete pediatric dentistry services.</p></div>
+        <div style="margin-bottom:10px;"><strong>How to book an appointment?</strong><p style="margin:5px 0 15px 0;">Call or WhatsApp +91 89189350556 or use the online booking form.</p></div>
+    </section>
+
     <section class="card" id="location">
         <h2 class="section-title">Find the Best Dentist Near You in Jalpaiguri</h2>
+        
         <p class="small">Beside V-Mart, Pahari Para, Jalpaiguri — 735101.</p>
         <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:15px;">
-            <a href="https://www.google.com/maps/dir/?api=1&destination=Dr.+S.+Roy's+SMILE+Dental+Clinic+Jalpaiguri" target="_blank" class="directions-btn">📍 Open Maps</a>
+            <a href="https://www.google.com/maps/search/Dr.+S.+Roy%E2%80%99s+SMILE+Dental+Clinic+Pahari+Para" target="_blank" class="directions-btn">📍 Open Maps</a>
             <a href="directions.html?from=gbp" class="directions-btn hub-btn" style="background:#34a853 !important;">🔍 155+ Location Hub</a>
         </div>
         <div class="map-wrap" style="margin-top:20px; border-radius:12px; overflow:hidden;">
-            <iframe
-              src="https://www.google.com/maps/dir/?api=1&destination=Dr.+S.+Roy's+SMILE+Dental+Clinic+Jalpaiguri9"
-              width="100%"
-              height="400"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe 
+                src="https://maps.google.com/maps?q=Dr.+S.+Roy’s+SMILE+Dental+Clinic+Pahari+Para+Jalpaiguri&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
         </div>
     </section>
 
@@ -171,7 +239,7 @@
     <div style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
         <span style="display:block; margin-bottom:12px; font-weight:bold; text-transform: uppercase;">About Dr. Sudip Roy</span>
         <a href="https://wikialpha.co/wiki/Dr._Sudip_Roy" target="_blank" style="background:#FFD700; color:#000; padding:12px 24px; border-radius:50px; font-weight:800; text-decoration:none; display:inline-block; margin:5px;">📖 WikiAlpha Bio</a>
-        <a href="https://en.everybodywiki.com/Dr._Sudip_Roy" target="_blank" style="background:#fff; color:#333; padding:10px 20px; border-radius:50px; font-weight:600; text-decoration:none; display:inline-block; margin:5px; border: 1px solid #ddd;">EverybodyWiki ➜</a>
+        <a href="https://en.everybodywiki.com/Dr._Sudip_Roy" target="_blank" style="background:#fff; color:#333; padding:10px 20px; border-radius:50px; font-weight:600; text-decoration:none; display:inline-block; margin:5px;">EverybodyWiki ➜</a>
         <br>
         <a href="wiki-dr-sudip-roy.html" style="color: #E0F7FA; text-decoration: none; border-bottom: 2px dotted #E0F7FA; font-weight: 600; display: inline-block; margin-top: 15px;">View Detailed Professional Profile ➜</a>
     </div>
