@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Directions | Dr. S. Roy’s SMILE Dental Clinic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I reach SMILE Dental Clinic from different areas of Jalpaiguri?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SMILE Dental Clinic is beside V-Mart, Pahari Para, Jalpaiguri. Patients regularly come from Ashram Para, Shanti Para Bus Stand, Municipal Market, Haldibari More, Parker More, 73 More, Sebagram, Pandapara, Racecourse Para, Arobindo Nagar, and nearby areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SMILE Dental Clinic near V-Mart Jalpaiguri?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Dr. S. Roy’s SMILE Dental Clinic is located immediately beside V-Mart in Pahari Para, Jalpaiguri."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+body{font-family:sans-serif; background:#f0f2f5; padding:20px}
+.search{width:100%; padding:15px; border-radius:25px; border:2px solid #0056b3}
+.card{background:#fff; padding:15px; margin:10px 0; border-radius:8px}
+.bn{color:#b30000; font-weight:bold}
+</style>
+</head>
+
+<body>
+
+<h1>📍 Jalpaiguri Direction Guide</h1>
+<p>Beside V-Mart, Pahari Para</p>
+
+<input type="text" id="q" class="search" placeholder="Search your area…" onkeyup="filter()">
+
+<div id="list">
+<div class="card" data-name="ashram para">From Ashram Para – 4 min <span class="bn">আশ্রম পাড়া থেকে ৪ মিনিট</span></div>
+<div class="card" data-name="zilla school">From Zilla School – 6 min <span class="bn">জেলা স্কুল থেকে ৬ মিনিট</span></div>
+<div class="card" data-name="haldibari more">From Haldibari More – 7 min</div>
+<div class="card" data-name="municipal market">From Municipal Market – 5 min</div>
+<div class="card" data-name="pandapara">From Pandapara – 6 min</div>
+</div>
+
+<script>
+function filter(){
+let q=document.getElementById("q").value.toLowerCase();
+document.querySelectorAll(".card").forEach(c=>{
+c.style.display=c.dataset.name.includes(q)?"":"none";
+});
+}
+</script>
+
+</body>
+</html>
