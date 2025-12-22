@@ -1,40 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>https://dentistjalpaiguri.github.io/index.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/best-dentist-jalpaiguri.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/online-consultation.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/gallery.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/contact.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/smile-makeover.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/dental-implants.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/root-canal.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/dentist-in-jalpaiguri.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/appointment.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/thankyou.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/before-after.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/social-hub.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/smile-makeover-smile-designing.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/fixed-teeth-solutions.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/cosmetic-dentistry.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/oral-health-conditions.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/pillar-smile-makeover.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/pillar-fixed-teeth.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/index.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/cosmetic-dentistry-overview.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/dental-veneers-guide.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/teeth-gap-treatment.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/crown-work-explained.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/oral-ulcer-treatment.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/smile-design-vs-makeover.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/zirconia-vs-pfm.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/chipped-tooth-repair.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/emergency-tooth-care.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/maintain-smile-tips.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/smile-designing.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/fixed-teeth-solutions.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/cosmetic-dentistry.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/dental-veneers.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/smile-makeover-process.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/painless-root-canal.html</loc><lastmod>2025-11-18</lastmod></url>
-<url><loc>https://dentistjalpaiguri.github.io/blog/emergency-dental-care.html</loc><lastmod>2025-11-18</lastmod></url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/</loc>
+    <lastmod>2025-12-22</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/services.html</loc>
+    <lastmod>2025-12-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/directions.html</loc>
+    <lastmod>2025-12-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url><loc>https://dentistjalpaiguri.github.io/best-dentist-jalpaiguri.html</loc><lastmod>2025-12-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://dentistjalpaiguri.github.io/appointment.html</loc><lastmod>2025-12-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://dentistjalpaiguri.github.io/gallery.html</loc><lastmod>2025-12-22</lastmod><priority>0.7</priority></url>
+
+  <url><loc>https://dentistjalpaiguri.github.io/smile-makeover.html</loc><lastmod>2025-12-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://dentistjalpaiguri.github.io/dental-implants.html</loc><lastmod>2025-12-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://dentistjalpaiguri.github.io/root-canal.html</loc><lastmod>2025-12-22</lastmod><priority>0.8</priority></url>
+  
+  <url><loc>https://dentistjalpaiguri.github.io/blog/</loc><lastmod>2025-12-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dentistjalpaiguri.github.io/blog/smile-design-vs-makeover.html</loc><lastmod>2025-12-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dentistjalpaiguri.github.io/blog/painless-root-canal.html</loc><lastmod>2025-12-22</lastmod><priority>0.6</priority></url>
+
 </urlset>
