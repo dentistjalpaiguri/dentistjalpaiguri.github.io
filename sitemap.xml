@@ -1,33 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://dentistjalpaiguri.github.io/</loc>
-    <lastmod>2025-12-22</lastmod>
+    <lastmod>2025-12-30</lastmod>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://dentistjalpaiguri.github.io/services.html</loc>
-    <lastmod>2025-12-22</lastmod>
+    <loc>https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html</loc>
+    <lastmod>2025-12-30</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/appointment.html</loc>
+    <lastmod>2025-12-30</lastmod>
     <priority>0.9</priority>
   </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/best-dentist-jalpaiguri.html</loc>
+    <lastmod>2025-12-30</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/smile-makeover.html</loc>
+    <lastmod>2025-12-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/dental-implants.html</loc>
+    <lastmod>2025-12-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/root-canal.html</loc>
+    <lastmod>2025-12-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://dentistjalpaiguri.github.io/directions.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.9</priority>
+    <lastmod>2025-12-30</lastmod>
+    <priority>0.8</priority>
   </url>
 
-  <url><loc>https://dentistjalpaiguri.github.io/best-dentist-jalpaiguri.html</loc><lastmod>2025-12-22</lastmod><priority>0.8</priority></url>
-  <url><loc>https://dentistjalpaiguri.github.io/appointment.html</loc><lastmod>2025-12-22</lastmod><priority>0.8</priority></url>
-  <url><loc>https://dentistjalpaiguri.github.io/gallery.html</loc><lastmod>2025-12-22</lastmod><priority>0.7</priority></url>
-
-  <url><loc>https://dentistjalpaiguri.github.io/smile-makeover.html</loc><lastmod>2025-12-22</lastmod><priority>0.8</priority></url>
-  <url><loc>https://dentistjalpaiguri.github.io/dental-implants.html</loc><lastmod>2025-12-22</lastmod><priority>0.8</priority></url>
-  <url><loc>https://dentistjalpaiguri.github.io/root-canal.html</loc><lastmod>2025-12-22</lastmod><priority>0.8</priority></url>
-  
-  <url><loc>https://dentistjalpaiguri.github.io/blog/</loc><lastmod>2025-12-22</lastmod><priority>0.6</priority></url>
-  <url><loc>https://dentistjalpaiguri.github.io/blog/smile-design-vs-makeover.html</loc><lastmod>2025-12-22</lastmod><priority>0.6</priority></url>
-  <url><loc>https://dentistjalpaiguri.github.io/blog/painless-root-canal.html</loc><lastmod>2025-12-22</lastmod><priority>0.6</priority></url>
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/services.html</loc>
+    <lastmod>2025-12-30</lastmod>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
