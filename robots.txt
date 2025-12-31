@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# Point Google directly to your new sitemap
+# Prioritize the Authority Wiki and Sitemap
 Sitemap: https://dentistjalpaiguri.github.io/sitemap.xml
