@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Reserved | Dr. Sudip Roy – SMILE Dental Clinic</title>
+    <title>Booking Confirmed | Dr. Sudip Roy – SMILE Dental Clinic</title>
     
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta http-equiv="refresh" content="45;url=index.html">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMZV1QW9CM"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -12,8 +16,11 @@
       gtag('js', new Date());
       gtag('config', 'G-TMZV1QW9CM');
       
-      // Tracking this view as a Lead Conversion
-      gtag('event', 'conversion', {'send_to': 'G-TMZV1QW9CM'});
+      // GA4 BEST PRACTICE: Custom Lead Event
+      gtag('event', 'appointment_reserved', {
+        'event_category': 'lead',
+        'event_label': 'appointment_confirmation_page'
+      });
     </script>
 
     <style>
@@ -25,9 +32,11 @@
         h1 { margin: 0; font-size: 28px; }
         p { line-height: 1.6; color: #555; }
         .badge { width: 120px; margin: 20px 0; border-radius: 10px; }
-        .btn-home { display: inline-block; background: var(--gold); color: black; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+        .btn-home { display: inline-block; background: var(--gold); color: black; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 20px; transition: 0.2s; }
+        .btn-home:hover { transform: scale(1.05); }
         .location-box { background: #f0f4f8; padding: 20px; border-radius: 12px; margin: 25px 0; text-align: left; border-left: 5px solid var(--blue); }
         .maps-link { color: var(--blue); font-weight: bold; text-decoration: none; display: inline-block; margin-top: 10px; border-bottom: 2px solid var(--blue); }
+        .wa-clinic { display: inline-block; margin-top: 15px; color: #25D366; font-weight: 600; text-decoration: none; font-size: 15px; }
     </style>
 </head>
 <body>
@@ -39,20 +48,28 @@
 
 <div class="container">
     <div class="icon-check">✔</div>
-    <img src="verified-dentist-dr-sudip-roy-wbdc-1960.png" alt="Verified Dentist" class="badge">
     
-    <p>Thank you for choosing *Dr. Sudip Roy*, Senior Consultant Oral & Cosmetic Surgeon. Your appointment slot has been reserved. Our clinic team will contact you shortly to confirm clinical details.</p>
+    <img src="verified-dentist-dr-sudip-roy-wbdc-1960.jpg" 
+         alt="Verified Dentist Dr Sudip Roy SMILE Dental Clinic Jalpaiguri" 
+         class="badge">
+    
+    <p>Thank you for choosing <strong>Dr. Sudip Roy</strong>, Senior Consultant Oral & Cosmetic Surgeon. Your appointment slot has been reserved. Our team will contact you shortly if further details are needed.</p>
     
     <div class="location-box">
         <strong>📍 How to reach us:</strong><br>
         <strong>Dr. S. Roy’s SMILE Dental Clinic</strong><br>
         Pahari Para, Beside V-Mart, Jalpaiguri.<br>
-        <a href="https://maps.google.com" target="_blank" class="maps-link">Open in Google Maps ➜</a>
+        
+        <a href="https://www.google.com/maps/search/?api=1&query=Dr+S+Roy+Smile+Dental+Clinic+Jalpaiguri" target="_blank" class="maps-link">Open in Google Maps ➜</a>
     </div>
 
-    <p style="font-size: 14px; font-weight: 500;">Need to reschedule? Call us at: <a href="tel:+918918935056" style="color:var(--blue); text-decoration:none;">+91 8918935056</a>.</p>
+    <p style="font-size: 14px; font-weight: 500;">
+        Need to reschedule? Call: <a href="tel:+918918935056" style="color:var(--blue); text-decoration:none;">+91 8918935056</a><br>
+        <a href="https://wa.me/918918935056" class="wa-clinic">💬 WhatsApp Clinic for Instant Help</a>
+    </p>
     
     <a href="index.html" class="btn-home">Back to Homepage</a>
+    <p style="font-size: 11px; color: #aaa; margin-top: 15px;">Automatically redirecting to homepage in 45 seconds.</p>
 </div>
 
 <footer style="color:#aaa; font-size:12px; margin-bottom: 40px;">
