@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Sudip Roy | SMILE Dental Clinic Portal</title>
+    <title>Dr. Sudip Roy | Clinical Portal & Location Hub</title>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMZV1QW9CM"></script>
     <script>
@@ -13,123 +13,101 @@
       gtag('config', 'G-TMZV1QW9CM');
     </script>
 
-    <meta name="description" content="Official portal for Dr. S. Roy’s SMILE Dental Clinic. Verified Dentist with 27+ years of clinical excellence in Jalpaiguri.">
-    <meta property="og:title" content="Dr. S. Roy’s SMILE Dental Clinic Portal">
-    <meta property="og:description" content="Book appointments, read weekly dental tips, and chat with our AI assistant.">
-    <meta property="og:image" content="https://dentistjalpaiguri.github.io/verified-dentist-dr-sudip-roy-wbdc-1960.jpg">
-    <meta property="og:type" content="website">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Physician",
-      "name": "Dr. Sudip Roy",
-      "medicalSpecialty": "Cosmetic Dentistry",
-      "identifier": "WBDC Reg No. 1960",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pahari Para, Near V-Mart",
-        "addressLocality": "Jalpaiguri",
-        "addressCountry": "IN"
-      }
-    }
-    </script>
-
     <style>
-        :root { --gold: #D4AF37; --black: #0a0a0a; --white: #FFFFFF; --gray: #1a1a1a; }
-        body { background: var(--black); color: var(--white); font-family: 'Segoe UI', system-ui, sans-serif; display: flex; justify-content: center; padding: 20px; min-height: 100vh; margin: 0; }
-        .container { width: 100%; max-width: 450px; text-align: center; }
+        :root { --gold: #D4AF37; --black: #080808; --white: #FFFFFF; --dark-card: #141414; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background: var(--black); color: var(--white); display: flex; justify-content: center; padding: 15px; min-height: 100vh; }
+        .container { width: 100%; max-width: 480px; text-align: center; }
         
-        .toggle-btn { background: var(--gold); color: var(--black); border: none; padding: 8px 18px; border-radius: 20px; font-weight: bold; cursor: pointer; margin-bottom: 25px; font-size: 13px; }
-        
-        header img { width: 120px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2); }
-        header h1 { font-size: 26px; color: var(--gold); margin: 0; }
-        header p { font-size: 14px; color: #bbb; line-height: 1.5; margin-top: 5px; }
+        /* Navigation & Header */
+        .toggle-btn { background: var(--gold); color: var(--black); border: none; padding: 10px 20px; border-radius: 50px; font-weight: bold; cursor: pointer; margin-bottom: 25px; font-size: 14px; }
+        header img { width: 110px; border-radius: 15px; margin-bottom: 15px; border: 2px solid var(--gold); }
+        header h1 { font-size: 28px; color: var(--gold); margin: 0; }
+        header p { font-size: 15px; color: #aaa; margin-top: 5px; line-height: 1.4; }
 
-        .btn { display: block; background: var(--gold); color: var(--black); text-decoration: none; padding: 18px; margin: 12px 0; border-radius: 15px; font-weight: bold; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        .btn:active { transform: scale(0.97); }
-        .btn-sec { background: var(--gray); color: var(--white); border: 1px solid #333; }
+        /* Action Buttons */
+        .btn { display: block; background: var(--gold); color: var(--black); text-decoration: none; padding: 18px; margin: 12px 0; border-radius: 15px; font-weight: 800; transition: transform 0.2s; }
+        .btn-sec { background: var(--dark-card); color: var(--white); border: 1px solid #333; }
 
-        .tips-box { background: var(--gray); padding: 20px; border-radius: 15px; text-align: left; margin-top: 30px; border-left: 4px solid var(--gold); }
-        
-        .social-icons { display: flex; justify-content: center; gap: 20px; margin-top: 35px; }
-        .social-icons a img { width: 30px; filter: invert(1) brightness(0.7); transition: 0.3s; }
-        .social-icons a img:hover { filter: none; transform: translateY(-3px); }
+        /* LOCATION HUB STYLES */
+        .location-hub { background: #fffdf5; color: #111; padding: 25px; border-radius: 20px; text-align: left; margin: 35px 0; border: 2px solid var(--gold); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1); }
+        .hub-title { color: #042c54; font-size: 20px; display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
+        .address-text { font-size: 14.5px; line-height: 1.6; margin-bottom: 20px; }
+        .dir-card { background: #fff; padding: 15px; border-radius: 12px; margin-bottom: 12px; border-left: 5px solid #042c54; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .dir-card.bn-side { border-left-color: var(--gold); }
+        .maps-btn { display: inline-block; width: 100%; background: #042c54; color: #fff; text-decoration: none; padding: 15px; border-radius: 10px; text-align: center; font-weight: bold; margin-top: 10px; }
 
         .bn { display: none; }
-        footer { margin-top: 50px; font-size: 11px; color: #555; line-height: 1.6; }
+        footer { margin-top: 50px; font-size: 11px; color: #555; padding-bottom: 30px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <button class="toggle-btn" id="langBtn" onclick="toggleLanguage()">Switch to বাংলা</button>
+        <button class="toggle-btn" id="langBtn" onclick="toggleLang()">Switch to বাংলা</button>
 
         <header>
             <img src="verified-dentist-dr-sudip-roy-wbdc-1960.jpg" alt="Verified Dentist Dr Sudip Roy Jalpaiguri">
             <h1 class="en">Dr. Sudip Roy</h1>
             <h1 class="bn">ডা. সুদীপ রায়</h1>
             <p class="en">Sr. Consultant Oral & Cosmetic Surgeon<br>27+ Years of Trusted Expertise</p>
-            <p class="bn">সিনিয়র কনসালটেন্ট ওরাল ও কসমেটিক সার্জন<br>২৭ বছরের নির্ভরযোগ্য অভিজ্ঞতা</p>
+            <p class="bn">সিনিয়র কনসালটেন্ট ওরাল ও কসমেটিক সার্জন<br>২৭ বছরেরও বেশি নির্ভরযোগ্য অভিজ্ঞতা</p>
         </header>
 
         <div style="margin: 25px 0;">
-            <a href="appointment.html" class="btn" onclick="gtag('event', 'click', {'event_category': 'Portal', 'event_label': 'Book Appointment'});">
-                <span class="en">📅 Book Appointment Online</span>
-                <span class="bn">📅 অনলাইনে অ্যাপয়েন্টমেন্ট নিন</span>
-            </a>
-            
-            <a href="https://wa.me/918918935056" class="btn btn-sec" onclick="gtag('event', 'click', {'event_category': 'Portal', 'event_label': 'WhatsApp Hub'});">
-                <span class="en">💬 Ask a Quick Question</span>
-                <span class="bn">💬 সরাসরি হোয়াটসঅ্যাপ করুন</span>
-            </a>
-
-            <a href="wiki-dr-sudip-roy.html" class="btn btn-sec">
-                <span class="en">📜 View Professional Bio</span>
-                <span class="bn">📜 প্রফেশনাল প্রোফাইল দেখুন</span>
-            </a>
-
-            <a href="https://cosmeticdentistjalpaiguriclinic.github.io" class="btn btn-sec" style="border-color: var(--gold);">
-                <span class="en">🤖 Chat with AI Assistant</span>
-                <span class="bn">🤖 এআই অ্যাসিস্ট্যান্টের সাথে কথা বলুন</span>
-            </a>
+            <a href="appointment.html" class="btn">📅 Online Appointment</a>
+            <a href="https://wa.me/918918935056" class="btn btn-sec">💬 WhatsApp Guidance</a>
         </div>
 
-        <section class="tips-box">
-            <h3 style="color: var(--gold); margin: 0 0 10px 0;">🦷 Weekly Dental Tip</h3>
-            <p class="en">Did you know? Bleeding gums are an early sign of gum disease. Brush gently in circular motions twice daily.</p>
-            <p class="bn">আপনি কি জানেন? মাড়ি থেকে রক্ত পড়া গাম ডিজিজের লক্ষণ। প্রতিদিন দুবার বৃত্তাকার গতিতে ব্রাশ করুন।</p>
+        <section class="location-hub">
+            <div class="hub-title">📍 <span class="en">Location Hub</span><span class="bn">লোকেশন হাব</span></div>
+            
+            <div class="address-text">
+                <strong>Dr. S. Roy’s SMILE Dental Clinic</strong><br>
+                Pahari Para, Jalpaiguri (Near V-Mart)<br>
+                <span style="font-size: 13px; color: #666;">Opposite Angira Apartment & Net Plaza</span>
+            </div>
+
+            <div class="dir-card">
+                <strong style="color: #042c54;">English Directions:</strong><br>
+                The clinic is immediately beside V-Mart. From V-Mart, take the adjacent lane and proceed to the 4th building on the right.
+            </div>
+
+            <div class="dir-card bn-side">
+                <strong style="color: #D4AF37;">বাংলা নির্দেশনা:</strong><br>
+                V-Mart-এর পাশের গলি দিয়ে ঢুকে ডান দিকে ৪ নম্বর বিল্ডিং। Angira Apartment ও Net Plaza-র বিপরীতে।
+            </div>
+
+            <a href="https://maps.google.com/?cid=2957733387796880131&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="maps-btn">
+                🗺️ <span class="en">Open in Google Maps</span><span class="bn">গুগল ম্যাপে দেখুন</span>
+            </a>
         </section>
 
-        <div class="social-icons">
-            <a href="https://www.facebook.com/bestdentalclinic.Jalpaiguridentalclinic.smile" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
-            <a href="https://www.youtube.com/@dentistjalpaiguri" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
-            <a href="https://www.instagram.com/drsudipsdentalclinic" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="https://www.facebook.com/bestdentalclinic.Jalpaiguridentalclinic.smile" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="30" style="filter:invert(1);"></a>
+            <a href="https://www.youtube.com/@dentistjalpaiguri" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="30" style="filter:invert(1);"></a>
         </div>
 
         <footer>
-            <p>© 2026 Dr. S. Roy’s SMILE Dental Clinic<br>
-            Pahari Para, Near V-Mart, Jalpaiguri<br>
-            WBDC Reg. No. 1960</p>
+            <p>© 2026 Dr. S. Roy’s SMILE Dental Clinic | WBDC Reg. No. 1960</p>
         </footer>
     </div>
 
     <script>
-        let isEnglish = true;
-        function toggleLanguage() {
-            const enNodes = document.querySelectorAll('.en');
-            const bnNodes = document.querySelectorAll('.bn');
+        let isEn = true;
+        function toggleLang() {
+            const en = document.querySelectorAll('.en');
+            const bn = document.querySelectorAll('.bn');
             const btn = document.getElementById('langBtn');
-            
-            if(isEnglish) {
-                enNodes.forEach(n => n.style.display = 'none');
-                bnNodes.forEach(n => n.style.display = 'block');
+            if(isEn) {
+                en.forEach(n => n.style.display = 'none');
+                bn.forEach(n => n.style.display = 'block');
                 btn.innerText = 'Switch to English';
             } else {
-                enNodes.forEach(n => n.style.display = 'block');
-                bnNodes.forEach(n => n.style.display = 'none');
+                en.forEach(n => n.style.display = 'block');
+                bn.forEach(n => n.style.display = 'none');
                 btn.innerText = 'Switch to বাংলা';
             }
-            isEnglish = !isEnglish;
+            isEn = !isEn;
         }
     </script>
 </body>
