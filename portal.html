@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Sudip Roy | Clinical Portal & Location Hub</title>
     
+    <meta name="robots" content="noindex, follow">
+    <meta property="og:url" content="https://dentistjalpaiguri.github.io/portal.html">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMZV1QW9CM"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -19,56 +22,35 @@
     <meta property="og:image" content="https://dentistjalpaiguri.github.io/verified-dentist-dr-sudip-roy-wbdc-1960.jpg">
     <meta property="og:type" content="website">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Physician",
-      "name": "Dr. Sudip Roy",
-      "medicalSpecialty": "Cosmetic Dentistry",
-      "identifier": "WBDC Reg No. 1960",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pahari Para, Near V-Mart",
-        "addressLocality": "Jalpaiguri",
-        "addressCountry": "IN"
-      }
-    }
-    </script>
-
     <style>
         :root { --gold: #D4AF37; --black: #080808; --white: #FFFFFF; --dark-card: #141414; --clinic-blue: #042c54; }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
         body { background: var(--black); color: var(--white); display: flex; justify-content: center; padding: 15px; min-height: 100vh; }
         .container { width: 100%; max-width: 480px; text-align: center; }
-        
-        /* Language Toggle */
         .toggle-btn { background: var(--gold); color: var(--black); border: none; padding: 10px 20px; border-radius: 50px; font-weight: bold; cursor: pointer; margin-bottom: 25px; font-size: 14px; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); }
-
-        /* Header */
         header img { width: 110px; border-radius: 15px; margin-bottom: 15px; border: 2px solid var(--gold); }
         header h1 { font-size: 28px; color: var(--gold); margin: 0; letter-spacing: 0.5px; }
         header p { font-size: 15px; color: #aaa; margin-top: 5px; line-height: 1.4; }
-
+        
         /* Links Stack */
-        .btn { display: block; background: var(--gold); color: var(--black); text-decoration: none; padding: 18px; margin: 12px 0; border-radius: 15px; font-weight: 800; transition: transform 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+        .btn { display: block; background: var(--gold); color: var(--black); text-decoration: none; padding: 18px; margin: 12px 0; border-radius: 15px; font-weight: 800; transition: transform 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.5); text-align: center; border: none; width: 100%; cursor: pointer; font-size: 16px; }
         .btn:active { transform: scale(0.97); }
         .btn-sec { background: var(--dark-card); color: var(--white); border: 1px solid #333; }
 
-        /* Weekly Tip */
+        /* Weekly Tip Section */
         .tips-box { background: var(--dark-card); padding: 20px; border-radius: 15px; text-align: left; margin-top: 30px; border-left: 4px solid var(--gold); }
+        .read-more-link { color: var(--gold); font-weight: 600; text-decoration: none; display: inline-block; margin-top: 10px; border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
 
-        /* --- INTEGRATED LOCATION HUB STYLES --- */
+        /* Location Hub Section */
         .location-hub { background: #fdfaf0; border: 1px solid var(--gold); border-radius: 12px; padding: 20px; text-align: left; margin: 30px 0; color: #333; }
         .hub-title { color: var(--clinic-blue); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; font-size: 1.2rem; }
         .dir-card { background: #fff; padding: 12px; border-radius: 8px; border-left: 4px solid #25D366; margin-bottom: 15px; }
         .dir-card.bn-side { border-left-color: var(--clinic-blue); margin-bottom: 0; }
         .maps-btn { display: inline-block; width: 100%; background: var(--clinic-blue); color: #fff; text-decoration: none; padding: 15px; border-radius: 10px; text-align: center; font-weight: bold; margin-top: 15px; }
-
-        /* Social Icons */
+        
         .socials { display: flex; justify-content: center; gap: 22px; margin-top: 35px; }
         .socials a img { width: 32px; filter: invert(1); transition: 0.3s; opacity: 0.7; }
         .socials a img:hover { filter: none; opacity: 1; transform: translateY(-3px); }
-
         .bn { display: none; }
         footer { margin-top: 50px; font-size: 11px; color: #555; padding-bottom: 30px; }
     </style>
@@ -86,22 +68,19 @@
         </header>
 
         <div style="margin: 25px 0;">
-            <a href="appointment.html" class="btn">
+            <a href="appointment.html" class="btn" onclick="gtag('event', 'portal_click', {'item': 'appointment'});">
                 <span class="en">📅 Book Appointment Online</span>
                 <span class="bn">📅 অনলাইনে অ্যাপয়েন্টমেন্ট নিন</span>
             </a>
-            
-            <a href="https://wa.me/918918935056" class="btn btn-sec">
+            <a href="https://wa.me/918918935056" target="_blank" rel="noopener" class="btn btn-sec" onclick="gtag('event', 'portal_click', {'item': 'whatsapp'});">
                 <span class="en">💬 WhatsApp for Dental Guidance</span>
                 <span class="bn">💬 হোয়াটসঅ্যাপে পরামর্শ নিন</span>
             </a>
-
-            <a href="wiki-dr-sudip-roy.html" class="btn btn-sec">
+            <a href="wiki-dr-sudip-roy.html" class="btn btn-sec" onclick="gtag('event', 'portal_click', {'item': 'professional_bio'});">
                 <span class="en">📜 View Professional Bio</span>
                 <span class="bn">📜 প্রফেশনাল প্রোফাইল দেখুন</span>
             </a>
-
-            <a href="https://cosmeticdentistjalpaiguriclinic.github.io" class="btn btn-sec" style="border-color: #25D366;">
+            <a href="https://cosmeticdentistjalpaiguriclinic.github.io" target="_blank" rel="noopener" class="btn btn-sec" style="border-color: #25D366;" onclick="gtag('event', 'portal_click', {'item': 'ai_assistant'});">
                 <span class="en">🤖 AI Dental Assistant (24/7)</span>
                 <span class="bn">🤖 এআই অ্যাসিস্ট্যান্ট (২৪/৭)</span>
             </a>
@@ -109,43 +88,43 @@
 
         <section class="tips-box">
             <h3 style="color: var(--gold); margin: 0 0 8px 0;">🦷 Weekly Dental Tip</h3>
-            <p class="en">Bleeding gums are an early sign of gum disease. Brush twice daily in gentle circular motions.</p>
-            <p class="bn">মাড়ি থেকে রক্ত পড়া গাম ডিজিজের লক্ষণ। প্রতিদিন দুবার হালকাভাবে বৃত্তাকার গতিতে ব্রাশ করুন।</p>
+            <p class="en">
+                Bleeding gums are an early sign of gum disease. Brush twice daily in gentle circular motions.
+                <br>
+                <a href="dental-tips.html" class="read-more-link" onclick="gtag('event','portal_click',{'item':'dental_tips_hub'});">
+                    👉 Read more dental & oral health tips
+                </a>
+            </p>
+            <p class="bn">
+                মাড়ি থেকে রক্ত পড়া গাম ডিজিজের লক্ষণ। প্রতিদিন দুবার আলতো বৃত্তাকার গতিতে ব্রাশ করুন।
+                <br>
+                <a href="dental-tips.html" class="read-more-link" onclick="gtag('event','portal_click',{'item':'dental_tips_hub'});">
+                    👉 আরও দাঁতের যত্নের টিপস পড়ুন
+                </a>
+            </p>
         </section>
 
         <div class="location-hub">
             <h3 class="hub-title">📍 <span class="en">Location & Directions</span><span class="bn">লোকেশন ও দিকনির্দেশনা</span></h3>
-            
             <p style="font-size: 15px; margin-bottom: 12px;">
                 <strong>Dr. S. Roy’s SMILE Dental Clinic</strong><br>
                 Pahari Para, Jalpaiguri (Near V-Mart; Opposite Angira Apartment & Net Plaza)
             </p>
-
             <div class="dir-card en">
-                <p style="font-size: 14px; margin: 0;">
-                    <strong>English:</strong> The clinic is located immediately beside V-Mart. From V-Mart, take the adjacent lane and proceed to the 4th building on the right.
-                </p>
+                <p style="font-size: 14px; margin: 0;"><strong>English:</strong> Beside V-Mart. Take the lane adjacent to V-Mart and proceed to the 4th building on the right.</p>
             </div>
-
             <div class="dir-card bn-side bn">
-                <p style="font-size: 14px; margin: 0;">
-                    <strong>বাংলা:</strong> ক্লিনিকটি জলপাইগুড়ির পাহাড়ি পাড়ায় অবস্থিত, V-Mart-এর ঠিক পাশে এবং Angira Apartment ও Net Plaza-র ঠিক বিপরীতে। V-Mart-এর পাশের গলি দিয়ে ঢুকে ডান দিকে ৪ নম্বর বিল্ডিং।
-                </p>
+                <p style="font-size: 14px; margin: 0;"><strong>বাংলা:</strong> V-Mart-এর পাশের গলি দিয়ে ঢুকে ডান দিকে ৪ নম্বর বিল্ডিং। (Angira Apartment-এর বিপরীতে)।</p>
             </div>
-
-            <a href="https://maps.google.com/?cid=2957733387796880131&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="maps-btn">
+            <a href="https://maps.google.com/?cid=2957733387796880131&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" rel="noopener" class="maps-btn" onclick="gtag('event', 'portal_click', {'item': 'maps_navigation'});">
                 🗺️ <span class="en">Open Direct Map Profile</span><span class="bn">গুগল ম্যাপে দেখুন</span>
             </a>
-            
-            <p style="font-size: 13px; color: #666; margin-top: 15px; text-align: center;">
-                📞 <strong>Appointments:</strong> <a href="tel:+918918935056" style="color: var(--clinic-blue); text-decoration: none; font-weight: bold;">+91 8918935056</a>
-            </p>
         </div>
 
         <div class="socials">
-            <a href="https://www.facebook.com/bestdentalclinic.Jalpaiguridentalclinic.smile" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
-            <a href="https://www.youtube.com/@dentistjalpaiguri" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
-            <a href="https://www.instagram.com/drsudipsdentalclinic" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/bestdentalclinic.Jalpaiguridentalclinic.smile" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+            <a href="https://www.youtube.com/@dentistjalpaiguri" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/drsudipsdentalclinic" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
         </div>
 
         <footer>
@@ -170,7 +149,6 @@
                 btn.innerText = 'Switch to বাংলা';
             }
             isEn = !isEn;
-            // Track Language Switch in GA4
             gtag('event', 'language_switch', { 'language': isEn ? 'en' : 'bn' });
         }
     </script>
