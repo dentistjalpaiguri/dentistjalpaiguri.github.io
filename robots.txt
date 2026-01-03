@@ -1,5 +1,13 @@
+# Robots.txt for Dr. S. Roy’s SMILE Dental Clinic
 User-agent: *
 Allow: /
 
-# Prioritize the Authority Wiki and Sitemap
+# Specific AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+# Sitemap Location
 Sitemap: https://dentistjalpaiguri.github.io/sitemap.xml
