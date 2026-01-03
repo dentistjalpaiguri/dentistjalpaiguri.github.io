@@ -2,185 +2,117 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-
-<title>Dental Blog | Dr. S. Roy’s SMILE Dental Clinic, Jalpaiguri</title>
-<meta name="description" content="Dental blog by Dr. Sudip Roy – expert articles on smile designing, cosmetic dentistry, implants, painless treatments and oral care in Jalpaiguri." />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dental Blog | Dr. S. Roy’s SMILE Dental Clinic, Jalpaiguri</title>
+<meta name="description" content="Dental blog by Dr. Sudip Roy – expert articles on smile designing, implants, and painless treatments in English & Bangla." />
 
 <link rel="canonical" href="https://dentistjalpaiguri.github.io/blog/">
 
-<!-- CLINIC SCHEMA -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": ["Dentist","MedicalBusiness","LocalBusiness"],
- "name": "Dr. S. Roy’s SMILE Dental Clinic",
- "image": "https://dentistjalpaiguri.github.io/assets/images/clinic-front.jpg",
- "telephone": "+918918935056",
- "address": {
-   "@type": "PostalAddress",
-   "addressLocality": "Jalpaiguri",
-   "addressRegion": "West Bengal",
-   "addressCountry": "IN"
- },
- "medicalSpecialty": [
-   "Cosmetic Dentistry",
-   "Smile Design",
-   "Implant Dentistry"
- ],
- "founder": {
-   "@type": "Person",
-   "name": "Dr. Sudip Roy"
- }
-}
-</script>
-
-<!-- BREADCRUMB -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "BreadcrumbList",
- "itemListElement": [
-   {
-     "@type": "ListItem",
-     "position": 1,
-     "name": "Home",
-     "item": "https://dentistjalpaiguri.github.io/"
+ "@graph": [
+  {
+   "@type": ["Dentist","MedicalBusiness","LocalBusiness"],
+   "name": "Dr. S. Roy’s SMILE Dental Clinic",
+   "image": "https://dentistjalpaiguri.github.io/assets/images/clinic-front.jpg",
+   "telephone": "+918918935056",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Pahari Para, Beside V-Mart",
+    "addressLocality": "Jalpaiguri",
+    "addressRegion": "West Bengal",
+    "postalCode": "735101",
+    "addressCountry": "IN"
    },
-   {
-     "@type": "ListItem",
-     "position": 2,
-     "name": "Blog",
-     "item": "https://dentistjalpaiguri.github.io/blog/"
+   "founder": {
+    "@type": "Person",
+    "name": "Dr. Sudip Roy",
+    "jobTitle": "Senior Consultant Cosmetic Dental Surgeon"
    }
+  }
  ]
 }
 </script>
-
-<!-- FAQ SCHEMA -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-   {
-     "@type": "Question",
-     "name": "Do you provide painless dental treatment?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, we use modern anesthesia, rotary endodontics and gentle techniques."
-     }
-   },
-   {
-     "@type": "Question",
-     "name": "Do you offer smile designing?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, Digital Smile Design and cosmetic smile makeovers are available."
-     }
-   },
-   {
-     "@type": "Question",
-     "name": "Are dental implants safe?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, dental implants are medically safe, long-lasting, and performed by trained professionals."
-     }
-   },
-   {
-     "@type": "Question",
-     "name": "Do you treat children?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, we provide complete pediatric dental care."
-     }
-   },
-   {
-     "@type": "Question",
-     "name": "How can I book an appointment?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "You can call or WhatsApp +91 89189350556 or book online through our website."
-     }
-   }
- ]
-}
-</script>
-
-<link rel="stylesheet" href="/assets/css/wa-widget.css">
 
 <style>
-body{font-family:system-ui,Arial;line-height:1.6;margin:0;color:#222}
-header,footer{background:#f7f7f7;padding:14px 20px}
-header{display:flex;justify-content:space-between;align-items:center}
-a{text-decoration:none;color:#0a5;font-weight:600}
-.book-btn{background:#0a5;color:#fff;padding:8px 14px;border-radius:6px}
-main{max-width:900px;margin:auto;padding:20px}
-ul{padding-left:20px}
-li{margin-bottom:8px}
+ :root { --gold: #d4af37; --blue: #0056b3; --light-bg: #f6fbff; }
+ body{font-family:'Segoe UI', Roboto, sans-serif; line-height:1.6; margin:0; color:#333; overflow-x: hidden;}
+ header, footer{background: var(--light-bg); padding:18px 20px; border-bottom: 2px solid var(--gold);}
+ header{display:flex; justify-content:space-between; align-items:center; flex-wrap: wrap; gap: 10px;}
+ a{text-decoration:none; color: var(--blue); font-weight:600;}
+ .book-btn{background: var(--blue); color:#fff !important; padding:10px 18px; border-radius:8px; transition: 0.3s;}
+ .book-btn:hover{opacity: 0.9; transform: translateY(-2px);}
+ main{max-width:900px; margin:auto; padding:30px 20px;}
+ .blog-list{list-style: none; padding: 0;}
+ .blog-item{padding: 15px; border-bottom: 1px solid #eee; display: flex; flex-direction: column; gap: 5px;}
+ .blog-item a{font-size: 1.1rem;}
+ .lang-tag{font-size: 0.75rem; background: #eee; padding: 2px 8px; border-radius: 4px; color: #666; margin-left: 10px;}
+ .quick-answer { background: #eef6ff; padding: 20px; border-radius: 8px; border: 1px solid #d1e3f8; margin: 25px 0; }
+ #waFloat { position: fixed; right: 20px; bottom: 80px; z-index: 9999; background: #25d366; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
 </style>
 </head>
 
 <body>
 
 <header>
-  <a href="/">← Home</a>
-  <strong>Dr. S. Roy’s SMILE Dental Clinic</strong>
-  <a class="book-btn" href="/book-appointment.html">Book Appointment</a>
+ <a href="../index.html">← Back to Home</a>
+ <strong>Dr. S. Roy’s SMILE Dental Clinic</strong>
+ <a class="book-btn" href="../appointment.html">Book Appointment</a>
 </header>
 
 <main>
 
-<h1>Dental Blog</h1>
-<p>Expert dental articles, patient education guides, and treatment explanations by <strong>Dr. Sudip Roy</strong>, Jalpaiguri.</p>
+ <h1>Dental Blog / ডেন্টাল ব্লগ</h1>
+ <p>Expert dental articles and treatment guides by <strong>Dr. Sudip Roy</strong> (28+ Yrs Experience) in English and Bangla.</p>
 
-<ul>
-<li><a href="smile-designing.html">Smile Designing: The Complete Guide</a></li>
-<li><a href="fixed-teeth-solutions.html">Fixed Teeth Solutions: Crowns, Bridges & Implants</a></li>
-<li><a href="cosmetic-dentistry.html">Cosmetic Dentistry: Treatments & Benefits</a></li>
-<li><a href="oral-ulcer-treatment.html">Oral Ulcers: Causes, Treatment & Prevention</a></li>
-<li><a href="crown-work-explained.html">Crown Work Explained: Types, Procedure & Cost</a></li>
-<li><a href="dental-veneers.html">Dental Veneers: Types, Procedure & Care</a></li>
-<li><a href="teeth-gap-treatment.html">Teeth Gap Treatment: Options & Costs</a></li>
-<li><a href="teeth-gaps-without-braces.html">Can Teeth Gaps Be Closed Without Braces?</a></li>
-<li><a href="smile-makeover-process.html">Smile Makeover: Step-by-Step Process</a></li>
-<li><a href="painless-root-canal.html">Painless Root Canal: What to Expect</a></li>
-<li><a href="emergency-dental-care.html">Emergency Dental Care in Jalpaiguri</a></li>
-<li><a href="chipped-tooth-repair.html">Chipped Tooth Repair: Options and Recovery</a></li>
-<li><a href="maintain-smile-tips.html">Maintaining Your Smile After Treatment</a></li>
-<li><a href="smile-design-vs-makeover.html">Smile Designing vs Smile Makeover</a></li>
-<li><a href="zirconia-vs-pfm.html">Zirconia vs PFM Crowns</a></li>
-</ul>
+ <div class="quick-answer">
+  <strong>Short Answer:</strong> Stay updated with the latest in Digital Smile Design, Painless RCT, and Implants in Jalpaiguri. All articles are verified by Senior Consultant Dr. Sudip Roy[cite: 2, 3].
+ </div>
 
-<section id="faq">
-<h2>Frequently Asked Questions</h2>
+ <ul class="blog-list">
+  <li class="blog-item">
+   <a href="teeth-gaps-without-braces.html">Can Teeth Gaps Be Closed Without Braces? <span class="lang-tag">EN/BN</span></a>
+   <small>ব্রেস ছাড়াই দাঁতের ফাঁক বন্ধ করার আধুনিক উপায়[cite: 6].</small>
+  </li>
+  <li class="blog-item">
+   <a href="painless-root-canal.html">Painless Root Canal: What to Expect <span class="lang-tag">EN/BN</span></a>
+   <small>ব্যথামুক্ত রুট ক্যানেল ট্রিটমেন্টের বিস্তারিত তথ্য[cite: 7].</small>
+  </li>
+  <li class="blog-item">
+   <a href="smile-designing.html">Smile Designing: The Complete Guide</a>
+   <small>স্মাইল ডিজাইনিং এর মাধ্যমে আপনার হাসি সুন্দর করুন[cite: 8].</small>
+  </li>
+  <li class="blog-item"><a href="fixed-teeth-solutions.html">Fixed Teeth Solutions: Crowns, Bridges & Implants</a></li>
+  <li class="blog-item"><a href="cosmetic-dentistry.html">Cosmetic Dentistry: Treatments & Benefits</a></li>
+  <li class="blog-item"><a href="oral-ulcer-treatment.html">Oral Ulcers: Causes, Treatment & Prevention</a></li>
+  <li class="blog-item"><a href="dental-veneers.html">Dental Veneers: Types, Procedure & Care</a></li>
+  <li class="blog-item"><a href="teeth-gap-treatment.html">Teeth Gap Treatment: Options & Costs</a></li>
+  <li class="blog-item"><a href="emergency-dental-care.html">Emergency Dental Care in Jalpaiguri</a></li>
+  <li class="blog-item"><a href="zirconia-vs-pfm.html">Zirconia vs PFM Crowns</a></li>
+ </ul>
 
-<h3>Do you provide painless dental treatment?</h3>
-<p>Yes, we use advanced anesthesia and gentle techniques.</p>
-
-<h3>Do you offer smile designing?</h3>
-<p>Yes, Digital Smile Design and cosmetic smile makeovers are available.</p>
-
-<h3>Are dental implants safe?</h3>
-<p>Yes, implants are safe and long-lasting when placed by trained professionals.</p>
-
-<h3>Do you treat children?</h3>
-<p>Yes, complete pediatric dental care is available.</p>
-
-<h3>How can I book an appointment?</h3>
-<p>Call or WhatsApp +91 89189350556 or book online.</p>
-</section>
+ <section id="faq" style="margin-top: 50px; border-top: 2px solid #eee; padding-top: 30px;">
+  <h2>Frequently Asked Questions</h2>
+  <h3>Do you provide painless dental treatment?</h3>
+  <p>Yes, we use advanced anesthesia and rotary endodontics[cite: 7].</p>
+  <h3>How can I book an appointment?</h3>
+  <p>You can call +91 8918935056 or book online through our appointment page[cite: 4].</p>
+ </section>
 
 </main>
 
+<a href="https://wa.me/918918935056" id="waFloat" target="_blank" aria-label="WhatsApp">
+ <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.634 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
 <footer style="text-align:center">
-© 2026 Dr. S. Roy’s SMILE Dental Clinic, Jalpaiguri |
-<a href="/">Home</a> |
-<a href="/contact.html">Contact</a> |
-<a href="/book-appointment.html">Book Appointment</a>
+ <p>© 2026 Dr. S. Roy’s SMILE Dental Clinic • Jalpaiguri [cite: 3, 4]</p>
+ <a href="../index.html">Home</a> | 
+ <a href="../appointment.html">Book Appointment</a> | 
+ <a href="https://wikialpha.co/wiki/Dr._Sudip_Roy">Wiki Bio</a> [cite: 6]
 </footer>
 
 <script src="/assets/js/wa-widget.js" defer></script>
-
 </body>
 </html>
