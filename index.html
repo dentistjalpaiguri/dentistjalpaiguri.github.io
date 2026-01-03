@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <title>Best Dentist in Jalpaiguri | Dr. S. Roy | 28+ Yrs Clinical Excellence</title>
-    <meta name="description" content="Dr. S. Roy – 28+ years experienced Senior Consultant in Jalpaiguri. Specializing in Digital Smile Design, Implants, & Painless RCT. Located beside V-Mart." />
+    <meta name="description" content="Dr. S. Roy – 28+ years experienced Senior Consultant in Jalpaiguri. Specializing in Digital Smile Design, Implants, & Painless RCT. Beside V-Mart, Pahari Para." />
     <link rel="canonical" href="https://dentistjalpaiguri.github.io/" />
 
     <meta name="geo.region" content="IN-WB">
@@ -14,54 +14,59 @@
     <meta name="geo.position" content="26.5235;88.7196">
     <meta name="ICBM" content="26.5235, 88.7196">
 
-    <link rel="preload" href="assets/images/dentist-jalpaiguri-smile-6.webp" as="image">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/wa-widget.css">
 
     <style>
-        :root { --gold: #d4af37; --blue: #0056b3; --bg: #f6fbff; }
-        body { margin: 0; font-family: sans-serif; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
+        :root { --gold: #d4af37; --blue: #0056b3; --bg: #f8fbff; }
+        body { margin: 0; font-family: sans-serif; overflow-x: hidden; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 12px; }
 
-        /* 🛠️ MOBILE HEADER FIX (Prevents covering maximum area) */
-        .header { background: var(--bg); border-bottom: 2px solid var(--gold); padding: 8px 0; position: sticky; top: 0; z-index: 1000; }
-        .header-brand { display: flex; align-items: center; gap: 10px; }
-        .logo { height: 40px; } /* Smallest logo for mobile visibility */
-        .brand-text strong { display: block; font-size: 0.95rem; color: #111; line-height: 1.1; }
-        .brand-text .small { font-size: 0.75rem; color: #555; }
+        /* 🛠️ HEADER COMPACTION (Clickable Phone) */
+        .header { background: #fff; border-bottom: 2px solid var(--gold); padding: 5px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .header-content { display: flex; flex-direction: column; align-items: center; }
+        .header-brand { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+        .logo { height: 38px; }
+        .brand-text strong { font-size: 0.95rem; color: #111; }
+        .header-phone { text-decoration: none; color: var(--blue); font-weight: bold; font-size: 0.85rem; }
 
-        /* 📱 NAVIGATION FIX: SINGLE LINE HORIZONTAL SCROLL */
-        .nav-wrap { border-top: 1px solid #e0e0e0; margin-top: 8px; padding: 8px 0 2px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-        .nav { display: flex; gap: 15px; white-space: nowrap; }
-        .nav a { text-decoration: none; color: #333; font-weight: 600; font-size: 12px; text-transform: uppercase; padding-bottom: 5px; }
+        /* 📱 NAVIGATION: 2 ROWS FIX */
+        .nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; padding: 5px 0; border-top: 1px solid #f0f0f0; width: 100%; }
+        .nav a { text-decoration: none; color: #333; font-weight: 700; font-size: 11px; text-transform: uppercase; white-space: nowrap; padding: 2px 4px; }
 
-        /* HERO SECTION OPTIMIZATION */
-        .hero { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 20px 0; }
-        .hero-left { flex: 1; min-width: 300px; }
-        .hero-right { flex: 1; min-width: 300px; text-align: center; }
-        .h1 { font-size: 1.6rem; line-height: 1.2; margin-bottom: 10px; color: #111; }
-        .lead { font-size: 1rem; color: #444; margin-bottom: 10px; font-weight: 500; }
+        /* 🎯 REDUCING MARKED HERO AREA */
+        .hero { padding: 15px 0; text-align: center; }
+        .h1 { font-size: 1.4rem !important; line-height: 1.2; margin: 0 0 8px 0; color: #111; font-weight: 800; }
+        .lead { font-size: 0.9rem; color: #444; margin-bottom: 10px; font-weight: 600; }
+        
+        .qa-box { background:#f0f7ff; padding:10px; border-radius:8px; border:1px solid #cce3ff; margin-bottom:12px; font-size: 12px; line-height: 1.3; }
+        .qa-box strong { color: var(--blue); }
 
-        /* QUICK ANSWER BOX (SHRUNK FOR MOBILE) */
-        .qa-box { background:#f0f7ff; padding:12px; border-radius:8px; border:1px solid #cce3ff; margin-bottom:15px; font-size: 12px; }
-        .qa-box h2 { font-size: 0.9rem; margin: 0 0 5px 0; color: var(--blue); }
+        .cta-row { display: flex; gap: 8px; justify-content: center; margin-bottom: 15px; }
+        .cta-btn { padding: 10px 15px; border-radius: 6px; font-weight: bold; font-size: 13px; text-decoration: none; flex: 1; max-width: 150px; }
+        .btn-blue { background: var(--blue); color: #fff; }
+        .btn-ghost { border: 1px solid var(--blue); color: var(--blue); }
 
-        /* PROFILE IMAGE FIX */
-        .profile-img { width: 100%; max-width: 280px; border-radius: 15px; box-shadow: 10px 10px 0px var(--gold); }
+        /* 📸 PROFILE IMAGE VISIBILITY */
+        .profile-img { width: 100%; max-width: 260px; border-radius: 12px; box-shadow: 8px 8px 0px var(--gold); margin: 0 auto; display: block; }
 
-        /* TABLET/DESKTOP RESTORATION */
+        /* ⚓ FLOATING PILL FOOTER (SAVES SCREEN SPACE) */
+        .mobile-cta-wrap { position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 400px; z-index: 9999; }
+        .mobile-cta { background: #222; border: 1px solid var(--gold); display: flex; border-radius: 50px; overflow: hidden; height: 48px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .mobile-cta a { flex: 1; text-align: center; line-height: 48px; color: #fff; text-decoration: none; font-weight: bold; font-size: 12px; display: flex; align-items: center; justify-content: center; gap: 5px; }
+        .mobile-cta a:not(:last-child) { border-right: 1px solid #444; }
+        .mobile-cta a span { color: var(--gold); }
+
         @media (min-width: 768px) {
-            .logo { height: 60px; }
-            .brand-text strong { font-size: 1.25rem; }
-            .h1 { font-size: 2.8rem; }
-            .nav-wrap { overflow: visible; border: none; margin-top: 0; padding: 0; }
-            .nav a { font-size: 13px; }
-            .header-brand { flex: 1; }
-            .header-content { display: flex; align-items: center; justify-content: space-between; }
+            .header-content { flex-direction: row; justify-content: space-between; }
+            .nav { border: none; width: auto; gap: 15px; padding: 0; }
+            .h1 { font-size: 2.8rem !important; text-align: left; }
+            .hero { text-align: left; display: flex; align-items: center; padding: 40px 0; }
+            .hero-left, .hero-right { flex: 1; }
+            .mobile-cta-wrap { bottom: 0; width: 100%; border-radius: 0; max-width: none; left: 0; transform: none; }
+            .mobile-cta { border-radius: 0; height: 60px; background: var(--gold); }
+            .mobile-cta a { color: #000; font-size: 14px; }
         }
-
-        .mobile-cta { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--gold); display: flex; z-index: 10000; height: 55px; }
-        .mobile-cta a { flex: 1; text-align: center; line-height: 55px; color: #000; text-decoration: none; font-weight: bold; font-size: 14px; border-right: 1px solid rgba(0,0,0,0.1); }
     </style>
 </head>
 
@@ -70,41 +75,38 @@
 <header class="header">
   <div class="container header-content">
     <div class="header-brand">
-      <img src="assets/images/logo.png" alt="Dr. S. Roy Logo" class="logo">
+      <img src="assets/images/logo.png" alt="SMILE Clinic Logo" class="logo">
       <div class="brand-text">
-          <strong>Dr. S. Roy’s <span style="color:var(--gold)">SMILE</span> Clinic</strong>
-          <div class="small">Beside V-Mart, Jalpaiguri • 📞 8918935056</div>
+          <strong>Dr. S. Roy’s SMILE Clinic</strong>
+          <div class="small">Jalpaiguri • 📞 <a href="tel:+918918935056" class="header-phone">+91 8918935056</a></div>
       </div>
     </div>
-    <div class="nav-wrap">
-        <nav class="nav">
-          <a href="/">Home</a>
-          <a href="best-dentist-jalpaiguri.html">About</a>
-          <a href="smile-makeover.html">Smile</a>
-          <a href="dental-implants.html">Implants</a>
-          <a href="root-canal.html">RCT</a>
-          <a href="blog/index.html">Blog</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="appointment.html">Contact</a>
-        </nav>
-    </div>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="best-dentist-jalpaiguri.html">About</a>
+      <a href="smile-makeover.html">Smile</a>
+      <a href="dental-implants.html">Implants</a>
+      <a href="root-canal.html">Root Canal</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="appointment.html">Contact</a>
+    </nav>
   </div>
 </header>
 
 <main class="container">
     <section class="hero">
       <div class="hero-left">
-        <h1 class="h1">Premium Smile Makeovers & Cosmetic Dentistry in Jalpaiguri</h1>
-        <p class="lead">Senior Consultant Surgeon • 28+ Years Clinical Excellence.</p>
+        <h1 class="h1">Premium Smile Makeovers & Cosmetic Dentistry</h1>
+        <p class="lead">Senior Consultant Surgeon • 28+ Years Excellence.</p>
         
         <div class="qa-box">
-            <h2>Dentist Near Me in Jalpaiguri</h2>
-            <strong>Quick Answer:</strong> Dr. S. Roy’s clinic in Pahari Para, beside V-Mart, is reachable within minutes.
+            <strong>Quick Answer:</strong> Dr. S. Roy’s clinic beside V-Mart is reachable within minutes.
         </div>
 
-        <div style="display:flex; gap:10px;">
-          <a href="tel:+918918935056" style="background:var(--blue); color:#fff; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold; font-size: 13px;">Call Clinic</a>
-          <a href="appointment.html" style="background:transparent; color:var(--blue); border:2px solid var(--blue); padding:8px 18px; border-radius:8px; text-decoration:none; font-weight:bold; font-size: 13px;">Book Online</a>
+        <div class="cta-row">
+          <a href="tel:+918918935056" class="cta-btn btn-blue">Call Clinic</a>
+          <a href="appointment.html" class="cta-btn btn-btn btn-ghost">Book Online</a>
         </div>
       </div>
       
@@ -112,34 +114,16 @@
         <img src="assets/images/dentist-jalpaiguri-smile-6.webp" alt="Dr Sudip Roy" class="profile-img">
       </div>
     </section>
-
-    <section class="card" style="margin-top:20px; background:#fff; padding:15px; border-radius:12px; border-left:5px solid var(--gold); box-shadow:0 4px 10px rgba(0,0,0,0.05);">
-        <h3 style="color:var(--blue); font-size: 1.1rem; margin:0 0 10px 0;">Smile transformations – Before & After</h3>
-        <div id="ba-slider" style="position:relative; height:220px; border-radius:8px; overflow:hidden; cursor:ew-resize;">
-            <div style="width:100%; height:100%;"><img src="assets/images/dentist-jalpaiguri-smile-3.webp" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div id="ba-overlay" style="position:absolute; top:0; left:0; width:50%; height:100%; overflow:hidden; border-right:3px solid #fff;">
-                <img src="assets/images/dentist-jalpaiguri-smile-21.webp" style="width:1100px; height:220px; object-fit:cover;">
-            </div>
-        </div>
-    </section>
 </main>
 
-<div class="mobile-cta">
-    <a href="tel:+918918935056">📞 Call</a>
-    <a href="https://wa.me/918918935056">💬 WhatsApp</a>
-    <a href="appointment.html">🗓 Book Now</a>
+<div class="mobile-cta-wrap">
+    <div class="mobile-cta">
+        <a href="tel:+918918935056"><span>📞</span> Call</a>
+        <a href="https://wa.me/918918935056"><span>💬</span> WhatsApp</a>
+        <a href="appointment.html"><span>🗓️</span> Book Now</a>
+    </div>
 </div>
 
-<script>
-    const container = document.getElementById('ba-slider');
-    const overlay = document.getElementById('ba-overlay');
-    const updateSlider = (clientX) => {
-        const rect = container.getBoundingClientRect();
-        const percent = Math.min(Math.max(((clientX - rect.left) / rect.width) * 100, 0), 100);
-        overlay.style.width = percent + '%';
-    }
-    container.addEventListener('mousemove', (e) => updateSlider(e.clientX));
-    container.addEventListener('touchmove', (e) => updateSlider(e.touches[0].clientX));
-</script>
+<script src="assets/js/wa-widget.js" defer></script>
 </body>
 </html>
