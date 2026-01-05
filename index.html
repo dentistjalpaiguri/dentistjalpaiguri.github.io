@@ -48,7 +48,7 @@
             "addressCountry": "IN"
           },
           "geo": { "@type": "GeoCoordinates", "latitude": "26.5235", "longitude": "88.7196" },
-          "medicalSpecialty": ["Cosmetic Dentistry", "Dental Implants", "Endodontics"],
+          "hasMap": "https://maps.app.goo.gl/y9vhnzPw96gFfp6N6",
           "founder": {
             "@type": "Person",
             "name": "Dr. Sudip Roy",
@@ -65,7 +65,6 @@
         body { font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; line-height: 1.6; overflow-x: hidden; background: #fff; color: #333; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
-        /* 🛠 HEADER & FULL MENU FIX */
         .header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: #f6fbff; border-bottom: 2px solid var(--gold); }
         .logo { height: 56px; }
         .brand-text strong { display: block; font-size: 1.25rem; color: #111; }
@@ -82,7 +81,6 @@
             .brand { flex-direction: column; gap: 5px; }
         }
 
-        /* 🔴 TICKER */
         .ticker-wrap { width: 100%; background: #222; color: #fff; height: 35px; overflow: hidden; display: flex; align-items: center; border-bottom: 2px solid #d32f2f; }
         .ticker-heading { background: #d32f2f; padding: 0 12px; height: 100%; display: flex; align-items: center; font-weight: bold; font-size: 11px; z-index: 10; }
         .ticker { display: inline-block; white-space: nowrap; animation: ticker-scroll 30s linear infinite; line-height: 35px; }
@@ -90,7 +88,6 @@
         .ticker-item { display: inline-block; padding: 0 25px; font-size: 12px; }
         .ticker-item a { color: #f0f0f0; text-decoration: none; font-weight: 500; }
 
-        /* HERO & TRANSFORMER */
         .hero { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; padding: 40px 0; }
         .quick-answer { background: #eef6ff; padding: 18px; border-radius: 8px; border: 1px solid #d1e3f8; margin-bottom: 12px; font-size: 0.95rem; }
         .cta-row { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
@@ -103,7 +100,6 @@
         .ba-overlay img, .ba-underlay img { width: 100%; height: 400px; object-fit: cover; display: block; pointer-events: none; }
         @media (max-width: 600px) { .ba-container, .ba-overlay img, .ba-underlay img { height: 250px; } }
 
-        /* FLOATING AI & MOBILE CTA */
         #waFloat { position: fixed; right: 25px; bottom: 160px; z-index: 9999; transition: 0.3s; }
         .wa-icon { width: 60px; height: 60px; background-color: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
         #ai-chat-float { display: none; position: fixed; bottom: 90px; right: 20px; background: linear-gradient(135deg, #2563eb, #4f46e5); border-radius: 50px; padding: 12px 20px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); z-index: 9998; text-decoration: none; color: #fff; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; text-align: center; }
@@ -139,7 +135,7 @@
     <div class="ticker-heading">🔴 LATEST:</div>
     <div class="ticker">
         <div class="ticker-item"><a href="dentist-near-me-jalpaiguri.html">📍 Dentist Near Me: Serving Mainaguri, Dhupguri & Malbazar</a></div>
-        <div class="ticker-item"><a href="https://www.slideshare.net/slideshow/dr_sudip_roy_dental_protocols_2025-2026-pdf/284706444" target="_blank">📊 2026 Clinical Protocols</a></div>
+        <div class="ticker-item"><a href="directions.html">🗺️ Directions Hub: Get Live Routes to our Clinic</a></div>
         <div class="ticker-item"><a href="https://www.youtube.com/@dentistjalpaiguri" target="_blank">🎥 New Patient Success Stories on YouTube</a></div>
         <div class="ticker-item"><a href="wiki-dr-sudip-roy.html">📖 Expert Profile: Dr. Sudip Roy's 28-Year Legacy</a></div>
     </div>
@@ -150,11 +146,9 @@
       <div style="flex:1; min-width:300px;">
         <h1 style="font-size:2.5rem; color:#111; line-height:1.2; margin:0;">Premium Smile Makeovers in Jalpaiguri</h1>
         <p style="font-size:1.1rem; color:#555; margin:10px 0;">Senior Consultant Cosmetic Dental Surgeon • 28+ Years Excellence.</p>
-        
         <div class="quick-answer">
-            <strong>Expert Summary:</strong> Dr. S. Roy’s SMILE Dental Clinic is the leading choice for <strong>Digital Smile Design and Dental Implants</strong> in Jalpaiguri. Located beside V-Mart (Pahari Para), we provide painless treatments in 72 hours to 15 days using 100% MRI-safe materials.
+            <strong>Expert Summary:</strong> Dr. S. Roy’s SMILE Dental Clinic is the leading choice for <strong>Digital Smile Design and Dental Implants</strong> in Jalpaiguri. Located beside V-Mart (Pahari Para), we provide painless treatments using 100% MRI-safe materials.
         </div>
-
         <div class="cta-row">
             <a class="cta" href="tel:+918918935056">Call Clinic Now</a>
             <a class="cta ghost" href="appointment.html">Book Appointment</a>
@@ -195,10 +189,10 @@
         <h2 style="color:var(--blue);">Find Our Clinic in Jalpaiguri</h2>
         <p>Beside V-Mart, Pahari Para, Jalpaiguri, West Bengal — 735101.</p>
         <div style="margin:20px 0; display:flex; gap:10px; justify-content:center; flex-wrap: wrap;">
-            <a href="https://www.google.com/maps/search/?api=1&query=Dr+Sudip+Roy+SMILE+Dental+Clinic+Jalpaiguri" target="_blank" class="cta" style="background:#4285F4; padding:12px 24px; font-size:14px;">📍 Open Maps</a>
-            <a href="dentist-near-me-jalpaiguri.html" class="cta" style="background:#34a853; padding:12px 24px; font-size:14px;">🔍 Directions Hub</a>
+            <a href="https://maps.app.goo.gl/y9vhnzPw96gFfp6N6" target="_blank" class="cta" style="background:#4285F4; padding:12px 24px; font-size:14px;">📍 Open Maps</a>
+            <a href="directions.html" class="cta" style="background:#34a853; padding:12px 24px; font-size:14px;">🔍 Directions Hub</a>
         </div>
-        <iframe src="https://maps.google.com/maps?q=Dr+Sudip+Roy+SMILE+Dental+Clinic+Jalpaiguri&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14264.444265471413!2d88.7217728!3d26.5236779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4416d0d01e07d%3A0x290bfa986f321b03!2sDr.S.%20Roy's%20SMILE%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 </main>
 
@@ -214,9 +208,7 @@
 </footer>
 
 <a href="https://wa.me/918918935056" id="waFloat" target="_blank" aria-label="WhatsApp Chat">
-    <div class="wa-icon">
-        <svg width="35" height="35" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.634 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </div>
+    <div class="wa-icon"><svg width="35" height="35" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.634 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
 </a>
 
 <a href="https://dentist-jalpaiguri-ai-chatbot.onrender.com/" id="ai-chat-float" target="_blank">
@@ -231,7 +223,6 @@
 </div>
 
 <script>
-    /* Slider Logic */
     const container = document.getElementById('ba-slider');
     const overlay = document.getElementById('ba-overlay');
     const updateSlider = (clientX) => {
@@ -241,8 +232,6 @@
     }
     container.addEventListener('mousemove', (e) => updateSlider(e.clientX));
     container.addEventListener('touchmove', (e) => updateSlider(e.touches[0].clientX));
-
-    /* AI Delay (8 Seconds) */
     setTimeout(() => { document.getElementById('ai-chat-float').style.display = 'block'; }, 8000);
 </script>
 </body>
