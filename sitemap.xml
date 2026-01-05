@@ -1,43 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://dentistjalpaiguri.github.io/</loc>
-    <lastmod>2026-01-03</lastmod>
     <priority>1.00</priority>
   </url>
+
   <url>
-    <loc>https://dentistjalpaiguri.github.io/best-dentist-jalpaiguri.html</loc>
-    <lastmod>2026-01-03</lastmod>
-    <priority>0.80</priority>
+    <loc>https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html</loc>
+    <priority>0.90</priority>
   </url>
+
   <url>
     <loc>https://dentistjalpaiguri.github.io/smile-makeover.html</loc>
-    <lastmod>2026-01-03</lastmod>
     <priority>0.90</priority>
   </url>
+
   <url>
-    <loc>https://dentistjalpaiguri.github.io/dental-implants.html</loc>
-    <lastmod>2026-01-03</lastmod>
-    <priority>0.90</priority>
+    <loc>https://dentistjalpaiguri.github.io/dentist-near-me-jalpaiguri.html</loc>
+    <priority>0.85</priority>
   </url>
-  <url>
-    <loc>https://dentistjalpaiguri.github.io/root-canal.html</loc>
-    <lastmod>2026-01-03</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://dentistjalpaiguri.github.io/blog/index.html</loc>
-    <lastmod>2026-01-03</lastmod>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://dentistjalpaiguri.github.io/gallery.html</loc>
-    <lastmod>2026-01-03</lastmod>
-    <priority>0.70</priority>
-  </url>
+
   <url>
     <loc>https://dentistjalpaiguri.github.io/appointment.html</loc>
-    <lastmod>2026-01-03</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/dental-implants.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/directions.html</loc>
     <priority>0.80</priority>
   </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/root-canal.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/best-dentist-jalpaiguri.html</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/gallery.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/</loc>
+    <priority>0.60</priority>
+  </url>
+
 </urlset>
