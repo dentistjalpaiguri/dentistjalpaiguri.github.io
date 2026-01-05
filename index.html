@@ -53,6 +53,7 @@
           "founder": {
             "@type": "Person",
             "name": "Dr. Sudip Roy",
+            "jobTitle": "Senior Consultant Cosmetic Dental Surgeon",
             "sameAs": [
                 "https://wikialpha.co/wiki/Dr._Sudip_Roy", 
                 "https://en.everybodywiki.com/Dr._Sudip_Roy",
@@ -69,22 +70,23 @@
     <style>
         :root { --gold: #d4af37; --blue: #0056b3; --black: #080808; --dark-card: #141414; }
         body { font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; line-height: 1.6; overflow-x: hidden; background: #fff; color: #333; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .container { max-width: 1150px; margin: 0 auto; padding: 0 20px; }
         
-        /* 🛠 HEADER & FULL MENU */
-        .header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: #f6fbff; border-bottom: 2px solid var(--gold); }
+        /* 🛠 HEADER & CORRECTED TEXT */
+        .header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: #f6fbff; border-bottom: 2px solid var(--gold); flex-wrap: wrap; gap: 15px; }
         .logo { height: 56px; }
-        .brand-text strong { display: block; font-size: 1.2rem; color: #111; }
-        .brand-text .small { font-size: 0.75rem; color: #666; }
+        .brand-text strong { display: block; font-size: 1.25rem; color: #111; }
+        .brand-text .small { font-size: 0.85rem; color: #333; font-weight: 500; }
+        .brand-text a { text-decoration: none; color: inherit; font-weight: bold; }
         
-        .nav { display: flex; gap: 12px; }
+        .nav { display: flex; gap: 14px; }
         .nav a { text-decoration: none; color: #333; font-weight: 600; font-size: 11px; transition: 0.3s; text-transform: uppercase; white-space: nowrap; }
         .nav a:hover { color: var(--gold); }
 
         @media (max-width: 1024px) { .nav a { font-size: 10px; } }
-        @media (max-width: 768px) { .nav { display: none; } }
+        @media (max-width: 768px) { .nav { display: none; } .header { justify-content: center; text-align: center; } }
 
-        /* 🔴 TICKER (SEO & NEWS) */
+        /* 🔴 TICKER */
         .ticker-wrap { width: 100%; background: #222; color: #fff; height: 35px; overflow: hidden; display: flex; align-items: center; border-bottom: 2px solid #d32f2f; }
         .ticker-heading { background: #d32f2f; padding: 0 12px; height: 100%; display: flex; align-items: center; font-weight: bold; font-size: 11px; z-index: 10; }
         .ticker { display: inline-block; white-space: nowrap; animation: ticker-scroll 30s linear infinite; line-height: 35px; }
@@ -120,8 +122,8 @@
   <div class="brand" style="display:flex; align-items:center; gap:12px;">
     <img src="assets/images/logo.png" alt="SMILE Logo" class="logo">
     <div class="brand-text">
-        <strong>Dr. S. Roy’s <span style="color:var(--gold)">SMILE</span> Dental</span> Clinic</strong>
-        <div class="small">Pahari Para, Jalpaiguri • <a href="tel:+918918935056" style="color:#111;text-decoration:none;">📞 +91 8918935056</a></div>
+        <strong>Dr. S. Roy’s <span style="color:var(--gold)">SMILE</span> Dental Clinic</strong>
+        <div class="small">Pahari Para, Beside V-Mart, Jalpaiguri • <a href="tel:+918918935056" style="color:#111;">📞 +91 8918935056</a></div>
     </div>
   </div>
   <nav class="nav">
@@ -153,7 +155,7 @@
         <p style="font-size:1.1rem; color:#555; margin:10px 0;">Senior Consultant Cosmetic Dental Surgeon • 28+ Years Excellence.</p>
         
         <div class="quick-answer">
-            <strong>Expert Summary:</strong> Dr. S. Roy’s SMILE Dental Clinic is the leading choice for <strong>Digital Smile Design and Dental Implants in Jalpaiguri</strong>. Located beside V-Mart (Pahari Para), we provide painless treatments in 72 hours to 15 days using 100% MRI-safe materials.
+            <strong>Expert Summary:</strong> Dr. S. Roy’s SMILE Dental Clinic is the leading choice for <strong>Digital Smile Design and Dental Implants</strong> in North Bengal. Located beside V-Mart (Pahari Para), we provide permanent results in 72 hours to 15 days using 100% MRI-safe materials.
         </div>
 
         <div class="cta-row">
@@ -163,7 +165,7 @@
         <p style="font-size:12px;color:#666;margin-top:10px;">WBDC Reg No. 1960 • Clinical Excellence since 1997.</p>
       </div>
       <div style="flex:1; min-width:300px;">
-        <img src="assets/images/dentist-jalpaiguri-smile-6.webp" alt="Dr Sudip Roy - Dentist Jalpaiguri" style="width:100%; border-radius:12px;" loading="lazy">
+        <img src="assets/images/dentist-jalpaiguri-smile-6.webp" alt="Dr Sudip Roy - Dentist Jalpaiguri" style="width:100%; border-radius:12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" loading="lazy">
       </div>
     </section>
 
@@ -243,7 +245,7 @@
     container.addEventListener('mousemove', (e) => updateSlider(e.clientX));
     container.addEventListener('touchmove', (e) => updateSlider(e.touches[0].clientX));
 
-    /* AI Delay (8 Seconds) */
+    /* 8-Second AI Delay */
     setTimeout(() => { document.getElementById('ai-chat-float').style.display = 'block'; }, 8000);
 </script>
 </body>
