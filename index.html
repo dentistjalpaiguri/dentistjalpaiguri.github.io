@@ -49,7 +49,6 @@
             "addressCountry": "IN"
           },
           "geo": { "@type": "GeoCoordinates", "latitude": "26.5235", "longitude": "88.7196" },
-          "hasMap": "https://www.google.com/maps/search/?api=1&query=Dr+Sudip+Roy+SMILE+Dental+Clinic+Jalpaiguri",
           "medicalSpecialty": ["Cosmetic Dentistry", "Dental Implants", "Endodontics"],
           "founder": {
             "@type": "Person",
@@ -71,20 +70,21 @@
     <style>
         :root { --gold: #d4af37; --blue: #0056b3; --black: #080808; --dark-card: #141414; }
         body { font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; line-height: 1.6; overflow-x: hidden; background: #fff; color: #333; }
-        .container { max-width: 1150px; margin: 0 auto; padding: 0 20px; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         
-        /* 🛠 HEADER & FULL NAV */
-        .header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: #f6fbff; border-bottom: 2px solid var(--gold); flex-wrap: wrap; gap: 10px; }
+        /* 🛠 HEADER & FULL MENU RESTORED */
+        .header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: #f6fbff; border-bottom: 2px solid var(--gold); }
         .logo { height: 56px; }
         .brand-text strong { display: block; font-size: 1.2rem; color: #111; }
         .brand-text .small { font-size: 0.75rem; color: #666; }
+        .brand-text a { text-decoration: none; color: inherit; font-weight: bold; }
         
         .nav { display: flex; gap: 12px; }
         .nav a { text-decoration: none; color: #333; font-weight: 600; font-size: 11px; transition: 0.3s; text-transform: uppercase; white-space: nowrap; }
         .nav a:hover { color: var(--gold); }
 
-        @media (max-width: 1024px) { .nav a { font-size: 10px; gap: 8px; } }
-        @media (max-width: 768px) { .nav { display: none; } .header { justify-content: center; text-align: center; } }
+        @media (max-width: 1024px) { .nav { gap: 8px; } .nav a { font-size: 10px; } }
+        @media (max-width: 768px) { .nav { display: none; } }
 
         /* 🔴 TICKER */
         .ticker-wrap { width: 100%; background: #222; color: #fff; height: 35px; overflow: hidden; display: flex; align-items: center; border-bottom: 2px solid #d32f2f; }
@@ -92,8 +92,9 @@
         .ticker { display: inline-block; white-space: nowrap; animation: ticker-scroll 30s linear infinite; line-height: 35px; }
         @keyframes ticker-scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
         .ticker-item { display: inline-block; padding: 0 25px; font-size: 12px; }
-        .ticker-item a { color: #f0f0f0; text-decoration: none; font-weight: 500; }
+        .ticker-item a { color: #f0f0f0; text-decoration: none; }
 
+        /* HERO & CTA */
         .hero { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; padding: 40px 0; }
         .quick-answer { background: #eef6ff; padding: 18px; border-radius: 8px; border: 1px solid #d1e3f8; margin-bottom: 12px; font-size: 0.95rem; color: #333; line-height: 1.5; }
         .cta-row { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
@@ -106,7 +107,7 @@
         .ba-overlay { position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden; border-right: 4px solid #fff; z-index: 2; }
         .ba-overlay img, .ba-underlay img { width: 100%; height: 400px; object-fit: cover; display: block; pointer-events: none; }
 
-        /* 📱 FLOATS */
+        /* 📱 FLOATING BUTTONS */
         #waFloat { position: fixed; right: 25px; bottom: 160px; z-index: 9999; transition: 0.3s; }
         .wa-icon { width: 60px; height: 60px; background-color: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
         #ai-chat-float { display: none; position: fixed; bottom: 90px; right: 20px; background: linear-gradient(135deg, #2563eb, #4f46e5); border-radius: 50px; padding: 12px 20px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); z-index: 9998; text-decoration: none; color: #fff; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; text-align: center; }
@@ -123,7 +124,7 @@
     <img src="assets/images/logo.png" alt="SMILE Logo" class="logo">
     <div class="brand-text">
         <strong>Dr. S. Roy’s <span style="color:var(--gold)">SMILE</span> Clinic</strong>
-        <div class="small">Pahari Para, Jalpaiguri • <a href="tel:+918918935056" style="color:#111;text-decoration:none;">📞 +91 8918935056</a></div>
+        <div class="small">Beside V-Mart, Jalpaiguri • <a href="tel:+918918935056">📞 +91 8918935056</a></div>
     </div>
   </div>
   <nav class="nav">
@@ -142,8 +143,10 @@
     <div class="ticker-heading">🔴 LATEST:</div>
     <div class="ticker">
         <div class="ticker-item"><a href="dentist-near-me-jalpaiguri.html">📍 Dentist Near Me: Serving Mainaguri, Dhupguri & Malbazar</a></div>
+        <div class="ticker-item"><a href="https://medium.com/@DrSudipRoy" target="_blank">📄 Article: Science of Perfect Smile</a></div>
+        <div class="ticker-item"><a href="https://www.slideshare.net/slideshow/dr_sudip_roy_dental_protocols_2025-2026-pdf/284706444" target="_blank">📊 2026 Clinical Protocols</a></div>
+        <div class="ticker-item"><a href="https://www.youtube.com/@dentistjalpaiguri" target="_blank">🎥 New Success Stories on YouTube</a></div>
         <div class="ticker-item"><a href="wiki-dr-sudip-roy.html">📖 Expert Profile: Dr. Sudip Roy's 28-Year Legacy</a></div>
-        <div class="ticker-item"><a href="https://www.youtube.com/@dentistjalpaiguri" target="_blank">🎥 Watch Now: New Patient Success Stories on YouTube</a></div>
     </div>
 </div>
 
@@ -154,7 +157,7 @@
         <p style="font-size:1.1rem; color:#555; margin:10px 0;">Senior Consultant Cosmetic Dental Surgeon • 28+ Years Excellence.</p>
         
         <div class="quick-answer">
-            <strong>Expert Summary:</strong> Dr. S. Roy’s SMILE Dental Clinic is the leading choice for <strong>Digital Smile Design and Dental Implants in Jalpaiguri</strong>. Located beside V-Mart (Pahari Para), we provide painless treatments in 72 hours to 15 days using 100% MRI-safe materials.
+            <strong>Expert Summary:</strong> Dr. S. Roy’s SMILE Dental Clinic is the leading choice for <strong>Digital Smile Design</strong> in Jalpaiguri. Located beside V-Mart (Pahari Para), we provide painless treatments in 72 hours to 15 days using 100% MRI-safe materials.
         </div>
 
         <div class="cta-row">
@@ -164,7 +167,7 @@
         <p style="font-size:12px;color:#666;margin-top:10px;">WBDC Reg No. 1960 • Clinical Excellence since 1997.</p>
       </div>
       <div style="flex:1; min-width:300px;">
-        <img src="assets/images/dentist-jalpaiguri-smile-6.webp" alt="Dr Sudip Roy - Dentist Jalpaiguri" style="width:100%; border-radius:12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" loading="lazy">
+        <img src="assets/images/dentist-jalpaiguri-smile-6.webp" alt="Dr Sudip Roy - Dentist Jalpaiguri" style="width:100%; border-radius:12px;" loading="lazy">
       </div>
     </section>
 
@@ -209,10 +212,10 @@
         <a href="https://wikialpha.co/wiki/Dr._Sudip_Roy" target="_blank" style="background:var(--gold); color:#000; padding:12px 24px; border-radius:50px; font-weight:800; text-decoration:none; display:inline-block; margin:5px; font-size:14px;">📖 WikiAlpha Bio</a>
         <a href="https://en.everybodywiki.com/Dr._Sudip_Roy" target="_blank" style="background:#fff; color:#333; padding:12px 24px; border-radius:50px; font-weight:600; text-decoration:none; display:inline-block; margin:5px; font-size:14px;">EverybodyWiki</a>
         <br>
-        <a href="wiki-dr-sudip-roy.html" style="color: #E0F7FA; text-decoration: none; border-bottom: 2px dotted #E0F7FA; font-weight: 600; display: inline-block; margin-top: 15px; font-size: 15px;">Official Biography & Profile ➜</a>
+        <a href="wiki-dr-sudip-roy.html" style="color: #E0F7FA; text-decoration: none; border-bottom: 2px dotted #E0F7FA; font-weight: 600; display: inline-block; margin-top: 15px; font-size: 15px;">Detailed Professional Biography ➜</a>
     </div>
     <p>© 2026 Dr. S. Roy’s SMILE Dental Clinic • Jalpaiguri</p>
-    <p style="font-size:11px; color:#777;">Clinical Excellence for 28+ years. WBDC Reg No. 1960. Educational use only.</p>
+    <p style="font-size:11px; color:#777;">Clinical Excellence for 28+ years. WBDC Reg No. 1960.</p>
 </footer>
 
 <a href="https://wa.me/918918935056" id="waFloat" target="_blank" aria-label="WhatsApp Chat">
