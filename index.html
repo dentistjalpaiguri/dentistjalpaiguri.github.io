@@ -39,7 +39,6 @@
           "url": "https://dentistjalpaiguri.github.io/",
           "image": "https://dentistjalpaiguri.github.io/assets/images/clinic-front.jpg",
           "telephone": "+918918935056",
-          "priceRange": "₹₹",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Pahari Para, Beside V-Mart",
@@ -53,13 +52,7 @@
           "founder": {
             "@type": "Person",
             "name": "Dr. Sudip Roy",
-            "jobTitle": "Senior Consultant Cosmetic Dental Surgeon",
-            "sameAs": [
-                "https://wikialpha.co/wiki/Dr._Sudip_Roy", 
-                "https://en.everybodywiki.com/Dr._Sudip_Roy",
-                "https://www.facebook.com/DrSudipRoySmile",
-                "https://www.youtube.com/@dentistjalpaiguri"
-            ]
+            "sameAs": ["https://wikialpha.co/wiki/Dr._Sudip_Roy", "https://en.everybodywiki.com/Dr._Sudip_Roy", "https://www.facebook.com/DrSudipRoySmile", "https://www.youtube.com/@dentistjalpaiguri"]
           },
           "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "210" }
         }
@@ -70,21 +63,25 @@
     <style>
         :root { --gold: #d4af37; --blue: #0056b3; --black: #080808; --dark-card: #141414; }
         body { font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; line-height: 1.6; overflow-x: hidden; background: #fff; color: #333; }
-        .container { max-width: 1150px; margin: 0 auto; padding: 0 20px; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         
-        /* 🛠 HEADER & CORRECTED TEXT */
-        .header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: #f6fbff; border-bottom: 2px solid var(--gold); flex-wrap: wrap; gap: 15px; }
+        /* 🛠 HEADER & BRANDING */
+        .header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: #f6fbff; border-bottom: 2px solid var(--gold); }
         .logo { height: 56px; }
-        .brand-text strong { display: block; font-size: 1.25rem; color: #111; }
-        .brand-text .small { font-size: 0.85rem; color: #333; font-weight: 500; }
-        .brand-text a { text-decoration: none; color: inherit; font-weight: bold; }
+        .brand-text strong { display: block; font-size: 1.2rem; color: #111; }
+        .brand-text .small { font-size: 0.75rem; color: #666; font-weight: 500; }
         
-        .nav { display: flex; gap: 14px; }
+        .nav { display: flex; gap: 15px; }
         .nav a { text-decoration: none; color: #333; font-weight: 600; font-size: 11px; transition: 0.3s; text-transform: uppercase; white-space: nowrap; }
         .nav a:hover { color: var(--gold); }
 
-        @media (max-width: 1024px) { .nav a { font-size: 10px; } }
-        @media (max-width: 768px) { .nav { display: none; } .header { justify-content: center; text-align: center; } }
+        /* 📱 MOBILE NAVIGATION FIX: Hides menu to prevent stacking below name */
+        @media (max-width: 992px) { .nav { gap: 10px; } .nav a { font-size: 10px; } }
+        @media (max-width: 768px) { 
+            .nav { display: none; } 
+            .header { justify-content: center; text-align: center; }
+            .brand { flex-direction: column; }
+        }
 
         /* 🔴 TICKER */
         .ticker-wrap { width: 100%; background: #222; color: #fff; height: 35px; overflow: hidden; display: flex; align-items: center; border-bottom: 2px solid #d32f2f; }
@@ -94,19 +91,20 @@
         .ticker-item { display: inline-block; padding: 0 25px; font-size: 12px; }
         .ticker-item a { color: #f0f0f0; text-decoration: none; font-weight: 500; }
 
+        /* HERO & SLIDER */
         .hero { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; padding: 40px 0; }
-        .quick-answer { background: #eef6ff; padding: 18px; border-radius: 8px; border: 1px solid #d1e3f8; margin-bottom: 12px; font-size: 0.95rem; color: #333; line-height: 1.5; }
+        .quick-answer { background: #eef6ff; padding: 18px; border-radius: 8px; border: 1px solid #d1e3f8; margin-bottom: 12px; font-size: 0.95rem; }
         .cta-row { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
         .cta { display: inline-block; background: var(--blue); color: #fff; padding: 15px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; text-align: center; }
         .cta.ghost { background: transparent; border: 2px solid var(--blue); color: var(--blue); }
 
-        /* 🦷 TRANSFORMER */
         .card { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 25px; border-left: 4px solid var(--gold); }
         .ba-container { position: relative; width: 100%; height: 400px; border-radius: 12px; overflow: hidden; cursor: ew-resize; background: #eee; }
         .ba-overlay { position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden; border-right: 4px solid #fff; z-index: 2; }
         .ba-overlay img, .ba-underlay img { width: 100%; height: 400px; object-fit: cover; display: block; pointer-events: none; }
+        @media (max-width: 600px) { .ba-container, .ba-overlay img, .ba-underlay img { height: 250px; } }
 
-        /* 📱 FLOATS */
+        /* FLOATS & STRIP */
         #waFloat { position: fixed; right: 25px; bottom: 160px; z-index: 9999; transition: 0.3s; }
         .wa-icon { width: 60px; height: 60px; background-color: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
         #ai-chat-float { display: none; position: fixed; bottom: 90px; right: 20px; background: linear-gradient(135deg, #2563eb, #4f46e5); border-radius: 50px; padding: 12px 20px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); z-index: 9998; text-decoration: none; color: #fff; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; text-align: center; }
@@ -123,7 +121,7 @@
     <img src="assets/images/logo.png" alt="SMILE Logo" class="logo">
     <div class="brand-text">
         <strong>Dr. S. Roy’s <span style="color:var(--gold)">SMILE</span> Dental Clinic</strong>
-        <div class="small">Pahari Para, Beside V-Mart, Jalpaiguri • <a href="tel:+918918935056" style="color:#111;">📞 +91 8918935056</a></div>
+        <div class="small">Pahari Para, Beside V-Mart, Jalpaiguri • 📞 +91 8918935056</div>
     </div>
   </div>
   <nav class="nav">
@@ -144,7 +142,7 @@
         <div class="ticker-item"><a href="dentist-near-me-jalpaiguri.html">📍 Dentist Near Me: Serving Mainaguri, Dhupguri & Malbazar</a></div>
         <div class="ticker-item"><a href="https://www.slideshare.net/slideshow/dr_sudip_roy_dental_protocols_2025-2026-pdf/284706444" target="_blank">📊 2026 Clinical Protocols</a></div>
         <div class="ticker-item"><a href="https://www.youtube.com/@dentistjalpaiguri" target="_blank">🎥 New Patient Success Stories on YouTube</a></div>
-        <div class="ticker-item"><a href="wiki-dr-sudip-roy.html">📖 Official Bio: Dr. Sudip Roy's 28-Year Legacy</a></div>
+        <div class="ticker-item"><a href="wiki-dr-sudip-roy.html">📖 Expert Profile: Dr. Sudip Roy's 28-Year Legacy</a></div>
     </div>
 </div>
 
@@ -155,7 +153,7 @@
         <p style="font-size:1.1rem; color:#555; margin:10px 0;">Senior Consultant Cosmetic Dental Surgeon • 28+ Years Excellence.</p>
         
         <div class="quick-answer">
-            <strong>Expert Summary:</strong> Dr. S. Roy’s SMILE Dental Clinic is the leading choice for <strong>Digital Smile Design and Dental Implants</strong> in North Bengal. Located beside V-Mart (Pahari Para), we provide permanent results in 72 hours to 15 days using 100% MRI-safe materials.
+            <strong>Expert Summary:</strong> Dr. S. Roy’s SMILE Dental Clinic is the leading choice for <strong>Digital Smile Design and Dental Implants in Jalpaiguri</strong>. Located beside V-Mart (Pahari Para), we provide painless treatments in 72 hours to 15 days using 100% MRI-safe materials.
         </div>
 
         <div class="cta-row">
@@ -165,7 +163,7 @@
         <p style="font-size:12px;color:#666;margin-top:10px;">WBDC Reg No. 1960 • Clinical Excellence since 1997.</p>
       </div>
       <div style="flex:1; min-width:300px;">
-        <img src="assets/images/dentist-jalpaiguri-smile-6.webp" alt="Dr Sudip Roy - Dentist Jalpaiguri" style="width:100%; border-radius:12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" loading="lazy">
+        <img src="assets/images/dentist-jalpaiguri-smile-6.webp" alt="Dr Sudip Roy - Dentist Jalpaiguri" style="width:100%; border-radius:12px;" loading="lazy">
       </div>
     </section>
 
@@ -245,7 +243,7 @@
     container.addEventListener('mousemove', (e) => updateSlider(e.clientX));
     container.addEventListener('touchmove', (e) => updateSlider(e.touches[0].clientX));
 
-    /* 8-Second AI Delay */
+    /* AI Delay (8 Seconds) */
     setTimeout(() => { document.getElementById('ai-chat-float').style.display = 'block'; }, 8000);
 </script>
 </body>
