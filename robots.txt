@@ -1,8 +1,11 @@
 # Robots.txt for Dr. S. Roy’s SMILE Dental Clinic
-# Optimized for Google Search & Local SEO 2026
+# Optimized for Google Search, AI Crawlers & Local SEO (2026)
 
 User-agent: *
 Allow: /
 
-# Direct link to your new priority hierarchy sitemap
+# Main site sitemap
 Sitemap: https://dentistjalpaiguri.github.io/sitemap.xml
+
+# Blog sitemap (Dental Knowledge Library)
+Sitemap: https://dentistjalpaiguri.github.io/blog-sitemap.xml
