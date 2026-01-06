@@ -1,91 +1,189 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
 <head>
-    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <!-- BASIC -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Dental Knowledge Library | Dr. S. Roy’s SMILE Dental Clinic</title>
-    
-    <style>
-        :root { --gold: #d4af37; --blue: #0056b3; --black: #080808; --light-bg: #f6fbff; }
-        body { font-family: 'Segoe UI', Roboto, 'Hind Siliguri', sans-serif; line-height: 1.6; margin: 0; color: #333; background: #fff; }
-        .container { max-width: 900px; margin: auto; padding: 20px; }
-        
-        .header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: var(--light-bg); border-bottom: 2px solid var(--gold); position: sticky; top: 0; z-index: 1000; }
-        .logo { height: 48px; }
-        .brand-text strong { display: block; font-size: 1.1rem; color: #111; }
-        .brand-text .small { font-size: 0.75rem; color: #666; font-weight: 500; }
-        
-        h1 { color: var(--blue); border-bottom: 3px solid var(--gold); display: inline-block; padding-bottom: 5px; margin-top: 30px; }
-        .blog-list { list-style: none; padding: 0; margin-top: 20px; }
-        .blog-item { padding: 25px 0; border-bottom: 1px solid #eee; transition: 0.2s; }
-        .blog-item:hover { background: #fafafa; }
-        .post-title { font-size: 1.25rem; color: var(--blue); text-decoration: none; font-weight: 700; display: block; }
-        .bn-subtitle { font-family: 'Hind Siliguri', sans-serif; color: #555; font-size: 1.05rem; display: block; margin-top: 4px; }
-        .read-more { font-size: 0.85rem; color: var(--gold); text-decoration: none; font-weight: 800; margin-top: 12px; display: inline-block; text-transform: uppercase; letter-spacing: 0.5px; }
-        .priority-tag { background: #d32f2f; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-bottom: 5px; display: inline-block; }
-        
-        footer { background: #222; color: #fff; padding: 40px 20px; text-align: center; margin-top: 50px; }
-        footer a { color: var(--gold); text-decoration: none; margin: 0 10px; font-weight: 600; }
-    </style>
+    <title>Dental Knowledge Library | Dr. S. Roy’s SMILE Dental Clinic, Jalpaiguri</title>
+    <meta name="description" content="Dental Knowledge Library by Dr. Sudip Roy – trusted dental education on smile designing, teeth gap treatment, painless root canal & cosmetic dentistry in Jalpaiguri.">
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://dentistjalpaiguri.github.io/blog/">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+
+    <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- STYLE -->
+    <style>
+        :root { --gold:#d4af37; --blue:#0056b3; --black:#080808; --light:#f6fbff; }
+        body { font-family:'Segoe UI',Roboto,'Hind Siliguri',sans-serif; margin:0; background:#fff; color:#333; }
+        .container { max-width:900px; margin:auto; padding:20px; }
+        .header { position:sticky; top:0; background:var(--light); border-bottom:2px solid var(--gold); display:flex; justify-content:space-between; align-items:center; padding:14px 18px; z-index:1000; }
+        .logo { height:48px; }
+        .brand-text strong { display:block; font-size:1.1rem; }
+        .brand-text .small { font-size:.75rem; color:#555; }
+        h1 { color:var(--blue); border-bottom:3px solid var(--gold); display:inline-block; padding-bottom:6px; }
+        .blog-list { list-style:none; padding:0; margin-top:25px; }
+        .blog-item { padding:25px 10px; border-bottom:1px solid #eee; }
+        .blog-item:hover { background:#fafafa; }
+        .post-title { font-size:1.25rem; font-weight:700; color:var(--blue); text-decoration:none; display:block; }
+        .bn-subtitle { margin-top:6px; font-size:1.05rem; color:#555; }
+        .read-more { margin-top:12px; display:inline-block; font-size:.85rem; color:var(--gold); font-weight:800; text-decoration:none; letter-spacing:.5px; }
+        .priority-tag { background:#d32f2f; color:#fff; font-size:10px; font-weight:700; padding:2px 8px; border-radius:4px; }
+        footer { background:#222; color:#fff; text-align:center; padding:40px 20px; margin-top:60px; }
+        footer a { color:var(--gold); text-decoration:none; font-weight:600; margin:0 8px; }
+    </style>
+
+    <!-- ===== KNOWLEDGE GRAPH : CLINIC ENTITY ===== -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Dentist",
+      "@id":"https://dentistjalpaiguri.github.io/#dentist",
+      "name":"Dr. S. Roy’s SMILE Dental Clinic",
+      "telephone":"+918918935056",
+      "medicalSpecialty":[
+        "Cosmetic Dentistry",
+        "Smile Designing",
+        "Dental Implants",
+        "Painless Root Canal Treatment"
+      ],
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"Pahari Para",
+        "addressLocality":"Jalpaiguri",
+        "addressRegion":"West Bengal",
+        "addressCountry":"IN"
+      },
+      "founder":{
+        "@type":"Person",
+        "@id":"https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html#person",
+        "name":"Dr. Sudip Roy"
+      }
+    }
+    </script>
+
+    <!-- ===== AUTHOR ENTITY ===== -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Person",
+      "@id":"https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html#person",
+      "name":"Dr. Sudip Roy",
+      "jobTitle":"Senior Consultant Cosmetic & Implant Dental Surgeon",
+      "worksFor":{
+        "@id":"https://dentistjalpaiguri.github.io/#dentist"
+      },
+      "knowsAbout":[
+        "Smile Designing",
+        "Teeth Gap Closure",
+        "Cosmetic Dentistry",
+        "Dental Implants",
+        "Root Canal Treatment"
+      ]
+    }
+    </script>
+
+    <!-- ===== BLOG ENTITY ===== -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Blog",
+      "name":"Dental Knowledge Library",
+      "publisher":{
+        "@id":"https://dentistjalpaiguri.github.io/#dentist"
+      }
+    }
+    </script>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://dentistjalpaiguri.github.io/"},
+        {"@type":"ListItem","position":2,"name":"Dental Knowledge Library","item":"https://dentistjalpaiguri.github.io/blog/"}
+      ]
+    }
+    </script>
+
 </head>
 
 <body>
 
 <header class="header">
-  <div class="brand" style="display:flex; align-items:center; gap:12px;">
-    <img src="../assets/images/logo.png" alt="SMILE Logo" class="logo">
+  <div style="display:flex;gap:12px;align-items:center;">
+    <img src="../assets/images/logo.png" class="logo" alt="Dr. S. Roy’s SMILE Dental Clinic Jalpaiguri Logo">
     <div class="brand-text">
-        <strong>Dr. S. Roy’s <span style="color:var(--gold)">SMILE</span> Clinic</strong>
-        <div class="small">Jalpaiguri • <a href="tel:+918918935056" style="color: inherit; text-decoration: none;">📞 +91 8918935056</a></div>
+      <strong>Dr. S. Roy’s <span style="color:var(--gold)">SMILE</span> Dental Clinic</strong>
+      <div class="small">Jalpaiguri • 📞 <a href="tel:+918918935056" style="color:inherit;text-decoration:none;">+91 8918935056</a></div>
     </div>
   </div>
-  <a href="../appointment.html" style="background: var(--blue); color:#fff; text-decoration:none; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:bold;">BOOK APPOINTMENT</a>
+  <a href="../appointment.html" style="background:var(--blue);color:#fff;padding:8px 14px;border-radius:6px;text-decoration:none;font-size:12px;font-weight:700;">BOOK APPOINTMENT</a>
 </header>
 
 <div class="container">
- <main>
-  <h1>Dental Library / ডেন্টাল লাইব্রেরি</h1>
-  <p>Scientific patient education by <strong>Dr. Sudip Roy</strong>, Senior Consultant Cosmetic Surgeon.</p>
+<main>
 
-  <ul class="blog-list">
-    <li class="blog-item">
-      <span class="priority-tag">NEW / নতুন</span>
-      <a href="../teeth-gaps-after-40.html" class="post-title">The Hidden Cost of Waiting: Why Teeth Gaps Matter After 40</a>
-      <span class="bn-subtitle">৪০ বছর বয়সের পর দাঁতের ফাঁক কেন বিপদজনক হতে পারে? বিস্তারিত জানুন।</span>
-      <a href="../teeth-gaps-after-40.html" class="read-more">Read Full Article / বিস্তারিত পড়ুন →</a>
-    </li>
+<h1>Dental Knowledge Library – Trusted Dental Education in Jalpaiguri / ডেন্টাল লাইব্রেরি</h1>
 
-    <li class="blog-item">
-     <a href="smile-designing.html" class="post-title">Smile Designing: The Complete 2026 Guide</a>
-     <span class="bn-subtitle">স্মাইল ডিজাইনিং: আপনার হাসি সুন্দর করার সম্পূর্ণ গাইড।</span>
-     <a href="smile-designing.html" class="read-more">Read Full Article / বিস্তারিত পড়ুন →</a>
-    </li>
+<p>
+Scientific patient education by <strong>Dr. Sudip Roy</strong>, Senior Consultant Cosmetic & Implant Dental Surgeon with 28+ years of clinical experience.
+</p>
 
-    <li class="blog-item">
-     <a href="teeth-gaps-without-braces.html" class="post-title">Closing Teeth Gaps Without Braces</a>
-     <span class="bn-subtitle">ব্রেস ছাড়াই দাঁতের ফাঁক বন্ধ করার আধুনিক কসমেটিক পদ্ধতি।</span>
-     <a href="teeth-gaps-without-braces.html" class="read-more">Read Full Article / বিস্তারিত পড়ুন →</a>
-    </li>
+<ul class="blog-list">
 
-    <li class="blog-item">
-     <a href="painless-root-canal.html" class="post-title">Painless Root Canal: Myths vs. Reality</a>
-     <span class="bn-subtitle">ব্যথামুক্ত রুট ক্যানেল: আধুনিক চিকিৎসার বিস্তারিত তথ্য।</span>
-     <a href="painless-root-canal.html" class="read-more">Read Full Article / বিস্তারিত পড়ুন →</a>
-    </li>
-  </ul>
- </main>
+<li class="blog-item" data-priority="featured">
+<span class="priority-tag">NEW / নতুন</span>
+<a class="post-title" href="../teeth-gaps-after-40.html">Why Teeth Gaps Matter After 40</a>
+<span class="bn-subtitle">৪০ বছরের পর দাঁতের ফাঁক অবহেলা করলে কী কী সমস্যা হতে পারে?</span>
+<a class="read-more" href="../teeth-gaps-after-40.html">Read Full Article →</a>
+</li>
+
+<li class="blog-item">
+<a class="post-title" href="smile-designing.html">Smile Designing: The Complete 2026 Guide</a>
+<span class="bn-subtitle">স্মাইল ডিজাইনিং: আধুনিক কসমেটিক ডেন্টিস্ট্রির সম্পূর্ণ গাইড</span>
+<a class="read-more" href="smile-designing.html">Read Full Article →</a>
+</li>
+
+<li class="blog-item">
+<a class="post-title" href="teeth-gaps-without-braces.html">Closing Teeth Gaps Without Braces</a>
+<span class="bn-subtitle">ব্রেস ছাড়াই দাঁতের ফাঁক বন্ধ করার আধুনিক পদ্ধতি</span>
+<a class="read-more" href="teeth-gaps-without-braces.html">Read Full Article →</a>
+</li>
+
+<li class="blog-item">
+<a class="post-title" href="painless-root-canal.html">Painless Root Canal: Myths vs Reality</a>
+<span class="bn-subtitle">ব্যথামুক্ত রুট ক্যানেল চিকিৎসা: সত্য ও ভুল ধারণা</span>
+<a class="read-more" href="painless-root-canal.html">Read Full Article →</a>
+</li>
+
+</ul>
+
+<section>
+<h2>Explore Related Dental Topics</h2>
+<ul>
+<li><a href="smile-designing.html">Smile Designing in Jalpaiguri</a></li>
+<li><a href="teeth-gaps-without-braces.html">Teeth Gap Treatment Without Braces</a></li>
+<li><a href="painless-root-canal.html">Painless Root Canal Treatment</a></li>
+</ul>
+</section>
+
+</main>
 </div>
 
 <footer>
- <p><strong>Dr. S. Roy’s SMILE Dental Clinic</strong><br>
- Pahari Para, Jalpaiguri • 📞 +91 8918935056</p>
- <div style="margin-top: 15px;">
-  <a href="../index.html">Home</a> | 
-  <a href="../directions.html">Directions Hub</a> | 
-  <a href="../wiki-dr-sudip-roy.html">Wiki Bio</a>
- </div>
+<p><strong>Dr. S. Roy’s SMILE Dental Clinic</strong><br>
+Pahari Para, Jalpaiguri • 📞 +91 8918935056</p>
+<p>
+<a href="../index.html">Home</a> |
+<a href="../directions.html">Directions</a> |
+<a href="../wiki-dr-sudip-roy.html">Doctor Profile</a>
+</p>
 </footer>
 
 </body>
