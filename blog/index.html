@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>Dental Knowledge Library | Dr. S. Roy’s SMILE Dental Clinic, Jalpaiguri</title>
-<meta name="description" content="Dental Knowledge Library by Dr. Sudip Roy – expert articles on smile designing, cosmetic dentistry, teeth gap treatment, painless root canal & emergency dental care in Jalpaiguri.">
+<meta name="description" content="Official Dental Library by Dr. Sudip Roy. Expert guides on Oral Cancer Screening, Smile Design, and Painless Root Canals for patients in Jalpaiguri & North Bengal.">
 
 <link rel="canonical" href="https://dentistjalpaiguri.github.io/blog/">
 <link rel="icon" type="image/png" href="../assets/images/favicon.png">
@@ -13,48 +13,55 @@
 
 <style>
 :root{--blue:#0056b3;--gold:#d4af37;}
-body{font-family:Segoe UI,Roboto,'Hind Siliguri',sans-serif;margin:0;color:#333;}
+body{font-family:Segoe UI,Roboto,'Hind Siliguri',sans-serif;margin:0;color:#333;line-height:1.6;}
 .container{max-width:900px;margin:auto;padding:20px;}
-header{position:sticky;top:0;background:#f6fbff;border-bottom:2px solid var(--gold);padding:14px 18px;display:flex;justify-content:space-between;align-items:center;}
+header{position:sticky;top:0;background:#f6fbff;border-bottom:2px solid var(--gold);padding:14px 18px;display:flex;justify-content:space-between;align-items:center;z-index:1000;}
 .logo{height:48px;}
-h1{color:var(--blue);border-bottom:3px solid var(--gold);display:inline-block;padding-bottom:6px;}
-h2{color:var(--blue);margin-top:45px;}
+h1{color:var(--blue);border-bottom:3px solid var(--gold);display:inline-block;padding-bottom:6px;font-size:1.8rem;}
+h2{color:var(--blue);margin-top:45px;border-left:4px solid var(--gold);padding-left:12px;background:#f9f9f9;}
 .blog-list{list-style:none;padding:0;}
-.blog-item{padding:18px 10px;border-bottom:1px solid #eee;}
+.blog-item{padding:18px 10px;border-bottom:1px solid #eee;transition:.3s;}
+.blog-item:hover{background:#fcfcfc;}
 .post-title{font-size:1.2rem;font-weight:700;color:var(--blue);text-decoration:none;}
+.post-title:hover{text-decoration:underline;}
 .ai-summary{font-size:.95rem;color:#444;margin-top:6px;line-height:1.5;}
+.featured-section{background:#f0f7ff;border-left:5px solid var(--blue);padding:20px;margin:30px 0;border-radius:0 8px 8px 0;}
+.new-tag{background:#d63031;color:#fff;font-size:10px;padding:2px 6px;border-radius:3px;vertical-align:middle;margin-left:8px;}
+.editorial-hint{font-size:.85rem;color:#777;margin:10px 0 20px 0;}
 footer{background:#222;color:#fff;text-align:center;padding:40px 20px;margin-top:60px;}
 footer a{color:var(--gold);text-decoration:none;font-weight:600;margin:0 8px;}
 </style>
 
-<!-- KNOWLEDGE GRAPH -->
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
  "@type":"Blog",
  "name":"Dental Knowledge Library",
+ "inLanguage":"en-IN",
+ "about":[
+  {"@type":"MedicalCondition","name":"Oral cancer"},
+  {"@type":"MedicalCondition","name":"Oral ulcers"},
+  {"@type":"MedicalProcedure","name":"Oral cancer screening"}
+ ],
+ "mainEntityOfPage":{
+    "@type":"WebPage",
+    "@id":"https://dentistjalpaiguri.github.io/blog/"
+ },
  "publisher":{
-   "@type":"Dentist",
+   "@type":"MedicalOrganization",
    "name":"Dr. S. Roy’s SMILE Dental Clinic",
    "telephone":"+918918935056",
+   "url":"https://dentistjalpaiguri.github.io/",
    "address":{
      "@type":"PostalAddress",
      "addressLocality":"Jalpaiguri",
      "addressRegion":"West Bengal",
      "addressCountry":"IN"
-   }
+   },
+   "sameAs":[
+    "https://www.youtube.com/@dentistjalpaiguri"
+   ]
  }
-}
-</script>
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"BreadcrumbList",
- "itemListElement":[
-  {"@type":"ListItem","position":1,"name":"Home","item":"https://dentistjalpaiguri.github.io/"},
-  {"@type":"ListItem","position":2,"name":"Dental Knowledge Library","item":"https://dentistjalpaiguri.github.io/blog/"}
- ]
 }
 </script>
 
@@ -76,129 +83,37 @@ footer a{color:var(--gold);text-decoration:none;font-weight:600;margin:0 8px;}
 <div class="container">
 <main>
 
-<h1>Dental Knowledge Library – Trusted Dental Education in Jalpaiguri</h1>
-<p>Scientific patient education by <strong>Dr. Sudip Roy</strong>, Senior Consultant Cosmetic & Implant Dental Surgeon (28+ years experience).</p>
+<h1>Dental Knowledge Library – Trusted Education</h1>
+<p>Scientific patient education by <strong>Dr. Sudip Roy</strong>, Sr. Consultant Cosmetic Dental Surgeon & Oral Implantologist (over 27 years excellence).</p>
 
-<!-- COSMETIC DENTISTRY -->
-<h2>Cosmetic Dentistry & Smile Makeover</h2>
+<p class="editorial-hint">
+Updated regularly • Doctor-reviewed • Based on current clinical guidelines</p>
+
+<section class="featured-section">
+    <strong>🔍 Featured Oral Health Alert</strong><br>
+    <a class="post-title" href="oral-ulcer-3-week-rule.html">When a Mouth Ulcer Is Not Just a Mouth Ulcer (The 3-Week Rule)</a>
+    <p class="ai-summary">Doctor-authored oral cancer awareness guide explaining exactly when a mouth sore needs urgent evaluation and the high-risk signs to watch for.</p>
+</section>
+
+<h2>Oral Health & Awareness</h2>
+<ul class="blog-list">
+<li class="blog-item">
+<a class="post-title" href="oral-ulcer-3-week-rule.html">Mouth Ulcers: The 3-Week Rule & Cancer Warning Signs</a><span class="new-tag">NEW</span>
+<p class="ai-summary">Critical guide on identifying persistent ulcers and the importance of early biopsy.</p>
+</li>
+</ul>
+
+
+
+<h2>Cosmetic Dentistry & Alignment</h2>
 <ul class="blog-list">
 <li class="blog-item">
 <a class="post-title" href="smile-designing.html">Smile Designing: The Complete Guide</a>
-<p class="ai-summary">A complete guide to designing a natural, confident smile using modern cosmetic dental techniques.</p>
+<p class="ai-summary">Transform your smile with advanced cosmetic dental techniques in North Bengal.</p>
 </li>
-
-<li class="blog-item">
-<a class="post-title" href="smile-makeover-process.html">Smile Makeover: Step-by-Step Process</a>
-<p class="ai-summary">Explains smile makeover procedures, timelines, costs, and expected results.</p>
-</li>
-
-<li class="blog-item">
-<a class="post-title" href="smile-design-vs-makeover.html">Smile Designing vs Smile Makeover</a>
-<p class="ai-summary">Clear comparison to help patients choose the right cosmetic dental option.</p>
-</li>
-
-<li class="blog-item">
-<a class="post-title" href="cosmetic-dentistry.html">Cosmetic Dentistry: Treatments & Benefits</a>
-<p class="ai-summary">Overview of cosmetic dental treatments that improve smile aesthetics and confidence.</p>
-</li>
-
-<li class="blog-item">
-<a class="post-title" href="cosmetic-dentistry-overview.html">What Cosmetic Dentistry Includes</a>
-<p class="ai-summary">Detailed explanation of cosmetic dental procedures and who they are suitable for.</p>
-</li>
-</ul>
-
-<!-- TEETH GAP -->
-<h2>Teeth Gap & Alignment Treatments</h2>
-<ul class="blog-list">
 <li class="blog-item">
 <a class="post-title" href="../teeth-gaps-after-40.html">Why Teeth Gaps Matter After 40</a>
-<p class="ai-summary">Explains health risks of untreated teeth gaps after middle age.</p>
-</li>
-
-<li class="blog-item">
-<a class="post-title" href="teeth-gap-treatment.html">Teeth Gap Treatment: Options & Costs</a>
-<p class="ai-summary">Breakdown of treatment options, cost range, and suitability.</p>
-</li>
-
-<li class="blog-item">
-<a class="post-title" href="teeth-gaps-without-braces.html">Closing Teeth Gaps Without Braces</a>
-<p class="ai-summary">Modern cosmetic solutions to close teeth gaps without orthodontic braces.</p>
-</li>
-</ul>
-
-<!-- CROWNS -->
-<h2>Crowns, Bridges & Fixed Teeth</h2>
-<ul class="blog-list">
-<li class="blog-item">
-<a class="post-title" href="fixed-teeth-solutions.html">Fixed Teeth Solutions: Crowns, Bridges & Implants</a>
-<p class="ai-summary">Guide to fixed teeth replacement options and long-term benefits.</p>
-</li>
-
-<li class="blog-item">
-<a class="post-title" href="crown-work-explained.html">Crown Work Explained</a>
-<p class="ai-summary">Types of crowns, procedure steps, durability, and pricing explained.</p>
-</li>
-
-<li class="blog-item">
-<a class="post-title" href="zirconia-vs-pfm.html">Zirconia vs PFM Crowns</a>
-<p class="ai-summary">Comparison to help patients choose the best crown material.</p>
-</li>
-</ul>
-
-<!-- VENEERS -->
-<h2>Dental Veneers</h2>
-<ul class="blog-list">
-<li class="blog-item">
-<a class="post-title" href="dental-veneers.html">Dental Veneers: Types & Care</a>
-<p class="ai-summary">Explains veneer types, procedure, benefits, and maintenance.</p>
-</li>
-
-<li class="blog-item">
-<a class="post-title" href="dental-veneers-guide.html">All About Dental Veneers</a>
-<p class="ai-summary">Advanced guide on veneer materials, cases, and longevity.</p>
-</li>
-</ul>
-
-<!-- ROOT CANAL -->
-<h2>Root Canal & Pain-Free Dentistry</h2>
-<ul class="blog-list">
-<li class="blog-item">
-<a class="post-title" href="painless-root-canal.html">Painless Root Canal: What to Expect</a>
-<p class="ai-summary">Addresses fear and explains modern painless root canal treatment.</p>
-</li>
-</ul>
-
-<!-- EMERGENCY -->
-<h2>Emergency & General Dental Care</h2>
-<ul class="blog-list">
-<li class="blog-item">
-<a class="post-title" href="emergency-dental-care.html">Emergency Dental Care in Jalpaiguri</a>
-<p class="ai-summary">When to seek urgent dental treatment and what to do immediately.</p>
-</li>
-
-<li class="blog-item">
-<a class="post-title" href="emergency-tooth-care.html">Emergency Tooth Care</a>
-<p class="ai-summary">First-aid steps for dental pain, injury, or trauma.</p>
-</li>
-
-<li class="blog-item">
-<a class="post-title" href="chipped-tooth-repair.html">Chipped Tooth Repair</a>
-<p class="ai-summary">Treatment options and recovery tips for broken teeth.</p>
-</li>
-
-<li class="blog-item">
-<a class="post-title" href="oral-ulcer-treatment.html">Oral Ulcers: Causes & Treatment</a>
-<p class="ai-summary">Causes, prevention, and treatment of painful mouth ulcers.</p>
-</li>
-</ul>
-
-<!-- MAINTENANCE -->
-<h2>After-Treatment Care</h2>
-<ul class="blog-list">
-<li class="blog-item">
-<a class="post-title" href="maintain-smile-tips.html">Maintaining Your Smile After Treatment</a>
-<p class="ai-summary">Best practices to maintain dental results and oral health.</p>
+<p class="ai-summary">Explaining the long-term dental health risks of untreated gaps in middle age.</p>
 </li>
 </ul>
 
@@ -213,6 +128,8 @@ Pahari Para, Jalpaiguri • 📞 +91 8918935056</p>
 <a href="../directions.html">Directions</a> |
 <a href="../wiki-dr-sudip-roy.html">Doctor Profile</a>
 </p>
+<p style="font-size:.8rem;color:#bbb;margin-top:15px;">
+Doctor-authored educational content. Not a substitute for in-person medical diagnosis.</p>
 </footer>
 
 </body>
