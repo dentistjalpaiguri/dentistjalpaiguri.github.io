@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Dental Knowledge Library | Dr. S. Roy’s SMILE Dental Clinic</title>
+<meta name="description" content="Evidence-based dental education by Dr. Sudip Roy, Senior Consultant Dental Surgeon, Jalpaiguri.">
+
+<link rel="canonical" href="https://dentistjalpaiguri.github.io/blog/">
+<link rel="icon" href="../assets/images/favicon.png">
+
+<style>
+:root{--blue:#0056b3;--gold:#d4af37;}
+body{font-family:Segoe UI,Roboto,sans-serif;margin:0;color:#333}
+.container{max-width:900px;margin:auto;padding:20px}
+header{background:#f6fbff;border-bottom:2px solid var(--gold);padding:14px}
+h1{color:var(--blue)}
+.blog-card{display:flex;gap:20px;border:1px solid #eee;padding:15px;border-radius:8px;margin:20px 0}
+.blog-card img{width:200px;height:130px;object-fit:cover;border-radius:6px}
+.blog-info h3{margin:5px 0}
+.badge{background:var(--gold);font-size:11px;font-weight:bold;padding:3px 7px;border-radius:4px}
+.search{margin:25px 0}
+input{width:100%;padding:12px;font-size:16px}
+@media(max-width:600px){.blog-card{flex-direction:column}.blog-card img{width:100%}}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Dental Knowledge Library</h1>
+<p>By <strong>Dr. Sudip Roy</strong> · Senior Consultant Dental Surgeon</p>
+</header>
+
+<div class="container">
+
+<!-- 🔍 SEARCH -->
+<div class="search">
+<input type="search" placeholder="Search articles…" onkeyup="filterPosts(this.value)">
+</div>
+
+<!-- ⭐ FEATURED ARTICLE -->
+<section>
+<h2>⭐ Featured Article</h2>
+<!-- FEATURED_START -->
+<!-- FEATURED_END -->
+</section>
+
+<!-- 📰 ALL ARTICLES -->
+<section>
+<h2>Latest Articles</h2>
+<!-- BLOG_START -->
+<!-- BLOG_END -->
+</section>
+
+</div>
+
+<script>
+function filterPosts(q){
+q=q.toLowerCase();
+document.querySelectorAll('.blog-card').forEach(c=>{
+c.style.display=c.innerText.toLowerCase().includes(q)?'':'none';
+});
+}
+</script>
+
+</body>
+</html>
