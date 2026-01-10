@@ -1,0 +1,33 @@
+name: Auto Update Blog Index & Sitemap
+
+on:
+  push:
+    paths:
+      - 'blog/*.html'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Run blog auto-updater
+        run: python update_blog.py
+
+      - name: Commit changes if any
+        run: |
+          git config --global user.name "GitHub Bot"
+          git config --global user.email "bot@github.com"
+          git add blog/index.html blog-sitemap.xml
+          git diff --cached --quiet || git commit -m "Auto-update blog index and sitemap"
+          git push
