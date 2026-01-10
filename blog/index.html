@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dental Knowledge Library | Dr. S. Roy’s SMILE Dental Clinic</title>
+    <meta name="description" content="Expert dental guides by Dr. Sudip Roy. Learn about Smile Design, Oral Cancer screening, and Painless Root Canals in Jalpaiguri.">
+    
+    <link rel="canonical" href="https://dentistjalpaiguri.github.io/blog/">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root{--blue:#0056b3;--gold:#d4af37;--bg:#f6fbff;}
+        body{font-family:'Segoe UI',Roboto,'Hind Siliguri',sans-serif;margin:0;color:#333;line-height:1.6;background-color:#fff;}
+        .container{max-width:900px;margin:auto;padding:20px;}
+        
+        /* Header */
+        header{position:sticky;top:0;background:var(--bg);border-bottom:2px solid var(--gold);padding:12px 18px;display:flex;justify-content:space-between;align-items:center;z-index:1000;box-shadow:0 2px 5px rgba(0,0,0,0.05);}
+        .logo-area{display:flex;gap:12px;align-items:center;}
+        .logo{height:45px;}
+        .clinic-name{font-weight:700;line-height:1.2;font-size:0.95rem;}
+        .btn-apt{background:var(--blue);color:#fff;padding:8px 14px;border-radius:6px;text-decoration:none;font-size:12px;font-weight:700;}
+        
+        /* Typography */
+        h1{color:var(--blue);border-bottom:3px solid var(--gold);display:inline-block;padding-bottom:6px;font-size:1.8rem;margin-bottom:10px;}
+        h2{color:var(--blue);margin-top:40px;border-left:4px solid var(--gold);padding-left:12px;background:#f9f9f9;font-size:1.4rem;}
+        
+        /* --- NEW FEATURED CARD STYLE --- */
+        .hero-card {
+            display: flex;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .hero-card:hover { transform: translateY(-2px); }
+        .hero-img { width: 40%; object-fit: cover; min-height: 200px; }
+        .hero-content { padding: 20px; width: 60%; display: flex; flex-direction: column; justify-content: center; }
+        .hero-badge { background: #d63031; color: white; padding: 4px 8px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; display: inline-block; width: fit-content; margin-bottom: 10px; }
+        .hero-title { font-size: 1.3rem; font-weight: 700; color: var(--blue); text-decoration: none; line-height: 1.3; margin-bottom: 8px; display: block; }
+        .hero-title:hover { text-decoration: underline; }
+        .hero-desc { font-size: 0.95rem; color: #555; margin-bottom: 10px; }
+        
+        @media (max-width: 600px) {
+            .hero-card { flex-direction: column; }
+            .hero-img, .hero-content { width: 100%; }
+            .hero-img { height: 180px; }
+            .clinic-name span{display:none;}
+        }
+
+        /* --- LIST STYLES --- */
+        .blog-list{list-style:none;padding:0;}
+        .blog-item{padding:15px 10px;border-bottom:1px solid #eee;transition:.2s;}
+        .blog-item:hover{background:#fcfcfc;}
+        .post-title{font-size:1.15rem;font-weight:700;color:var(--blue);text-decoration:none;}
+        .post-title:hover{text-decoration:underline;}
+        .ai-summary{font-size:.92rem;color:#555;margin-top:5px;line-height:1.4;}
+        .new-tag{background:#d63031;color:#fff;font-size:10px;padding:2px 6px;border-radius:3px;vertical-align:middle;margin-left:8px;font-weight:bold;}
+        
+        /* Footer */
+        footer{background:#222;color:#fff;text-align:center;padding:40px 20px;margin-top:60px;}
+        footer a{color:var(--gold);text-decoration:none;font-weight:600;margin:0 8px;}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="../assets/images/logo.png" class="logo" alt="SMILE Dental Clinic Logo">
+        <div class="clinic-name">
+            Dr. S. Roy’s SMILE Dental Clinic<br>
+            <span style="font-size:.75rem;font-weight:400;color:#555;">Jalpaiguri • 📞 +91 8918935056</span>
+        </div>
+    </div>
+    <a href="../appointment.html" class="btn-apt">BOOK NOW</a>
+</header>
+
+<div class="container">
+    <main role="main">
+        <h1>Dental Knowledge Library</h1>
+        <p>Expert patient education by <strong>Dr. Sudip Roy</strong>, Sr. Consultant Cosmetic Dental Surgeon (27+ Years Experience).</p>
+
+        <h3 style="margin-top: 30px; color: #555; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px;">Latest Insight</h3>
+        
+        <article class="hero-card">
+            <img src="../assets/images/google-ai-dentistry-clinical-trust-1200x630.jpg" alt="Google AI summaries vs clinical dental judgment explained by Dr. Sudip Roy" class="hero-img">
+            <div class="hero-content">
+                <span class="hero-badge">🔥 NEW • MUST READ</span>
+                <a href="google-ai-dentistry-trust.html" class="hero-title">Why Google AI Is Rewriting Dental Health Info — And Why Experience Matters</a>
+                <p class="hero-desc">AI can summarize textbooks, but it can't judge living biology. Dr. Roy explains why clinical experience is safer than an AI diagnosis.</p>
+                <time datetime="2026-01-10" style="font-size:0.8rem;color:#777;">January 10, 2026</time>
+            </div>
+        </article>
+        <section class="featured-section" style="background:#f0f7ff;border-left:5px solid var(--blue);padding:20px;margin:25px 0;border-radius:0 8px 8px 0;">
+            <strong style="color:var(--blue);">🔍 Patient Alert: The 3-Week Rule</strong><br>
+            <a class="post-title" href="oral-ulcer-3-week-rule.html">Mouth Ulcers & Oral Cancer Warning Signs</a>
+            <p class="ai-summary">Learn why any mouth ulcer lasting more than 3 weeks must be examined immediately to rule out serious conditions.</p>
+        </section>
+
+        <h2>Oral Health & Awareness</h2>
+        <ul class="blog-list">
+            <li class="blog-item">
+                <a class="post-title" href="oral-ulcer-3-week-rule.html">Mouth Ulcers: The 3-Week Rule</a>
+                <p class="ai-summary">Critical guide on identifying persistent ulcers and early biopsy importance.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="oral-ulcer-treatment.html">Oral Ulcer Treatment & Management</a>
+                <p class="ai-summary">Effective ways to manage painful mouth sores at home and in the clinic.</p>
+            </li>
+        </ul>
+
+        <h2>Cosmetic Dentistry & Smile Design</h2>
+        <ul class="blog-list">
+            <li class="blog-item">
+                <a class="post-title" href="teeth-gaps-after-40.html">Why Teeth Gaps Matter After 40</a><span class="new-tag">POPULAR</span>
+                <p class="ai-summary">Addressing the structural and health risks of untreated dental gaps in middle age.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="teeth-gaps-without-braces.html">Closing Teeth Gaps Without Braces</a>
+                <p class="ai-summary">How bonding and veneers offer a quick solution for a gap-free smile.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="smile-designing.html">Smile Designing: The Complete Guide</a>
+                <p class="ai-summary">Digital smile planning and advanced cosmetic transformations.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="smile-design-vs-makeover.html">Smile Design vs. Smile Makeover</a>
+                <p class="ai-summary">Difference between aesthetic changes and full mouth reconstruction.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="smile-makeover-process.html">The Smile Makeover Process</a>
+                <p class="ai-summary">A step-by-step guide to achieving your dream smile.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="cosmetic-dentistry-overview.html">Cosmetic Dentistry Overview</a>
+                <p class="ai-summary">The range of aesthetic treatments available to enhance your appearance.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="cosmetic-dentistry.html">Cosmetic Dentistry Services</a>
+                <p class="ai-summary">Detailed Look at our cosmetic solutions in Jalpaiguri.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="dental-veneers-guide.html">Dental Veneers: The Ultimate Guide</a>
+                <p class="ai-summary">Porcelain and composite veneers explained.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="dental-veneers.html">Benefits and Care of Veneers</a>
+                <p class="ai-summary">How to maintain your veneers for long-lasting results.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="teeth-gap-treatment.html">Teeth Gap Treatment Options</a>
+                <p class="ai-summary">From orthodontics to cosmetic bonding—find your best fit.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="chipped-tooth-repair.html">Chipped Tooth Repair Options</a>
+                <p class="ai-summary">How we restore damaged or fractured teeth beautifully.</p>
+            </li>
+        </ul>
+
+        <h2>Fixed Teeth & Restorations</h2>
+        <ul class="blog-list">
+             <li class="blog-item">
+                <a class="post-title" href="implant-truth.html">The Truth About Dental Implants</a>
+                <p class="ai-summary">Debunking myths and understanding why implants are the gold standard for tooth replacement.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="dental-implants.html">Next Gen Dental Implants</a>
+                <p class="ai-summary">Discover why modern implants are the best permanent solution for missing teeth.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="zirconia-vs-pfm.html">Zirconia vs. PFM Crowns</a>
+                <p class="ai-summary">A comparison of strength and aesthetics for your dental crowns.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="fixed-teeth-solutions.html">Fixed Teeth Solutions & Bridges</a>
+                <p class="ai-summary">Permanent, non-removable options for replacing missing teeth.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="crown-work-explained.html">Crown Work: What You Need to Know</a>
+                <p class="ai-summary">Protecting weakened teeth after root canals or decay.</p>
+            </li>
+        </ul>
+
+        <h2>Specialized & Emergency Care</h2>
+        <ul class="blog-list">
+            <li class="blog-item">
+                <a class="post-title" href="toothache-emergency.html">When a Simple Toothache Becomes a Dental Emergency</a>
+                <p class="ai-summary">Dr. Roy explains how to spot dangerous infections, abscesses, and when to seek urgent care.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="painless-root-canal.html">Painless Root Canal Treatment</a>
+                <p class="ai-summary">Experience stress-free root canal therapy with modern technology.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="emergency-dental-care.html">Emergency Dental Care Guide</a>
+                <p class="ai-summary">What to do when you have a dental emergency in Jalpaiguri.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="emergency-tooth-care.html">First Aid for Tooth Injuries</a>
+                <p class="ai-summary">Immediate steps for knocked-out or fractured teeth.</p>
+            </li>
+            <li class="blog-item">
+                <a class="post-title" href="maintain-smile-tips.html">Maintaining Your New Smile</a>
+                <p class="ai-summary">Daily habits to keep your professional dental work perfect.</p>
+            </li>
+        </ul>
+    </main>
+</div>
+
+<footer>
+    <p><strong>Dr. S. Roy’s SMILE Dental Clinic</strong><br>
+    Pahari Para, Near V-Mart, Jalpaiguri, WB</p>
+    <p>
+        <a href="../index.html">Home</a> | 
+        <a href="../wiki-dr-sudip-roy.html">Doctor Bio</a> | 
+        <a href="../directions.html">Location</a>
+    </p>
+</footer>
+
+</body>
+</html>
