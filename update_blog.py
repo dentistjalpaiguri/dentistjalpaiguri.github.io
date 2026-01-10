@@ -1,71 +1,99 @@
-import os,re,datetime
+import os, re
+from datetime import datetime, timedelta
 
-BLOG_DIR="blog"
-INDEX="blog/index.html"
-SITEMAP="blog-sitemap.xml"
+BLOG_DIR = "blog"
+INDEX_FILE = "blog/index.html"
+SITE_URL = "https://dentistjalpaiguri.github.io"
 
-def read(f): return open(f,encoding="utf-8").read()
+FEATURED_START = "<!-- FEATURED_START -->"
+FEATURED_END = "<!-- FEATURED_END -->"
+BLOG_START = "<!-- BLOG_START -->"
+BLOG_END = "<!-- BLOG_END -->"
 
-posts=[]
-for f in os.listdir(BLOG_DIR):
-    if f.endswith(".html") and f!="index.html":
-        c=read(f"{BLOG_DIR}/{f}")
-        title=re.search(r"<title>(.*?)</title>",c,re.I)
-        desc=re.search(r'name="description" content="(.*?)"',c,re.I)
-        img=re.search(r'og:image" content="(.*?)"',c)
-        date=re.search(r'datetime="(.*?)"',c)
-        posts.append({
-            "file":f,
-            "title":title.group(1) if title else f,
-            "desc":desc.group(1) if desc else "",
-            "img":img.group(1) if img else "../assets/images/logo.png",
-            "date":date.group(1) if date else "2025-01-01"
-        })
+TODAY = datetime.utcnow()
 
-posts.sort(key=lambda x:x["date"],reverse=True)
+def read(file):
+    with open(file, "r", encoding="utf-8") as f:
+        return f.read()
 
-cards=""
-for p in posts:
-    cards+=f"""
-<div class="blog-card">
-<img src="{p['img']}">
-<div class="blog-info">
-<span class="badge">ARTICLE</span>
-<h3><a href="{p['file']}">{p['title']}</a></h3>
-<p>{p['desc']}</p>
-<time>{p['date']}</time>
-</div>
-</div>
-"""
+def write(file, data):
+    with open(file, "w", encoding="utf-8") as f:
+        f.write(data)
 
-featured=f"""
-<div class="blog-card">
-<img src="{posts[0]['img']}">
-<div class="blog-info">
-<span class="badge">FEATURED</span>
-<h3><a href="{posts[0]['file']}">{posts[0]['title']}</a></h3>
-<p>{posts[0]['desc']}</p>
-</div>
-</div>
-"""
+def extract(pattern, text, default=""):
+    m = re.search(pattern, text, re.I)
+    return m.group(1).strip() if m else default
 
-html=read(INDEX)
-html=re.sub("<!-- BLOG_START -->.*?<!-- BLOG_END -->",
-f"<!-- BLOG_START -->{cards}<!-- BLOG_END -->",html,flags=re.S)
+def get_post(file):
+    html = read(file)
 
-html=re.sub("<!-- FEATURED_START -->.*?<!-- FEATURED_END -->",
-f"<!-- FEATURED_START -->{featured}<!-- FEATURED_END -->",html,flags=re.S)
+    title = extract(r"<title>(.*?)</title>", html, "Untitled")
+    desc = extract(r'<meta name="description" content="(.*?)"', html, "")
+    date = extract(r'<time datetime="(.*?)">', html, "2025-01-01")
+    image = extract(r'<meta property="og:image" content="(.*?)"', html, "../assets/images/logo.png")
+    keywords = extract(r'<meta name="keywords" content="(.*?)"', html, "General Dentistry")
 
-open(INDEX,"w",encoding="utf-8").write(html)
+    post_date = datetime.strptime(date, "%Y-%m-%d")
+    is_new = (TODAY - post_date).days <= 7
 
-# Sitemap
-urls=""
-for p in posts:
-    urls+=f"""
-<url><loc>https://dentistjalpaiguri.github.io/blog/{p['file']}</loc></url>
-"""
+    # Discover image rule
+    discover_ok = "1200" in image or "1200x" in image
 
-open(SITEMAP,"w").write(f"""<?xml version="1.0"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{urls}
-</urlset>""")
+    return {
+        "file": os.path.basename(file),
+        "title": title,
+        "desc": desc,
+        "date": date,
+        "image": image,
+        "category": keywords.split(",")[0],
+        "new": is_new,
+        "featured": discover_ok
+    }
+
+def card(p):
+    badge = '<span class="badge">NEW</span>' if p["new"] else ""
+    return f"""
+    <article class="blog-card">
+        <img src="{p['image']}" alt="{p['title']}" loading="lazy">
+        <div class="blog-info">
+            {badge}
+            <span class="category">{p['category']}</span>
+            <h3><a href="{p['file']}">{p['title']}</a></h3>
+            <p>{p['desc']}</p>
+            <time datetime="{p['date']}">{p['date']}</time>
+        </div>
+    </article>
+    """
+
+def main():
+    posts = []
+
+    for f in os.listdir(BLOG_DIR):
+        if f.endswith(".html") and f != "index.html":
+            posts.append(get_post(os.path.join(BLOG_DIR, f)))
+
+    posts.sort(key=lambda x: x["date"], reverse=True)
+
+    featured = next((p for p in posts if p["featured"]), posts[0])
+
+    index = read(INDEX_FILE)
+
+    index = re.sub(
+        f"{FEATURED_START}.*?{FEATURED_END}",
+        FEATURED_START + card(featured) + FEATURED_END,
+        index,
+        flags=re.S
+    )
+
+    index = re.sub(
+        f"{BLOG_START}.*?{BLOG_END}",
+        BLOG_START + "".join(card(p) for p in posts) + BLOG_END,
+        index,
+        flags=re.S
+    )
+
+    write(INDEX_FILE, index)
+    print("✅ Blog index auto-updated successfully")
+
+if __name__ == "__main__":
+    main()
