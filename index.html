@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <title>Best Dentist in Jalpaiguri | Dr. S. Roy | 28+ Yrs Clinical Excellence</title>
-    <meta name="description" content="Dr. S. Roy – 28+ years experience. Expert in Non-Invasive Smile Design, Implants & Painless RCT. Beside V-Mart, Pahari Para, Jalpaiguri. No Braces, No Injection." />
+    <meta name="description" content="Dr. S. Roy – 28+ years experience. Expert in Non-Invasive Smile Design, Implants & Painless RCT in Jalpaiguri. Beside V-Mart, Pahari Para. B.D.S. (1997)." />
     <link rel="canonical" href="https://dentistjalpaiguri.github.io/" />
 
     <link rel="preload" as="image" href="assets/images/dentist-jalpaiguri-smile-6.webp" fetchpriority="high">
@@ -33,12 +33,14 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": ["Dentist","Physician","LocalBusiness"],
-          "@id": "https://dentistjalpaiguri.github.io/#dentist",
+          "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
+          "@id": "https://dentistjalpaiguri.github.io/#clinic",
           "name": "Dr. S. Roy’s SMILE Dental Clinic",
           "url": "https://dentistjalpaiguri.github.io/",
+          "logo": "https://dentistjalpaiguri.github.io/assets/images/logo.png",
           "image": "https://dentistjalpaiguri.github.io/assets/images/clinic-front.jpg",
           "telephone": "+918918935056",
+          "priceRange": "$$",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Pahari Para, Beside V-Mart",
@@ -47,14 +49,49 @@
             "addressRegion": "West Bengal",
             "addressCountry": "IN"
           },
-          "geo": { "@type": "GeoCoordinates", "latitude": "26.5235", "longitude": "88.7196" },
-          "hasMap": "https://maps.app.goo.gl/y9vhnzPw96gFfp6N6",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "26.5235",
+            "longitude": "88.7196"
+          },
+          "hasMap": "https://www.google.com/maps?cid=2957733387796880131",
+          "areaServed": [
+            { "@type": "City", "name": "Jalpaiguri" },
+            { "@type": "City", "name": "Mainaguri" },
+            { "@type": "City", "name": "Dhupguri" },
+            { "@type": "City", "name": "Malbazar" }
+          ],
+          "availableService": [
+            { "@type": "MedicalProcedure", "name": "Digital Smile Design" },
+            { "@type": "MedicalProcedure", "name": "Dental Implants" },
+            { "@type": "MedicalProcedure", "name": "Smile Makeover" },
+            { "@type": "MedicalProcedure", "name": "Root Canal Treatment" }
+          ],
           "founder": {
             "@type": "Person",
+            "@id": "https://dentistjalpaiguri.github.io/#doctor",
             "name": "Dr. Sudip Roy",
-            "sameAs": ["https://wikialpha.co/wiki/Dr._Sudip_Roy", "https://en.everybodywiki.com/Dr._Sudip_Roy", "https://www.facebook.com/DrSudipRoySmile", "https://www.youtube.com/@dentistjalpaiguri", "https://cosmeticdentistjalpaiguriclinic.github.io/"]
+            "jobTitle": "Senior Consultant Cosmetic Dental Surgeon",
+            "knowsAbout": ["Digital Smile Design", "Dental Implants", "Painless RCT", "Veneers"],
+            "sameAs": [
+              "https://www.docindia.org/doctors/jalpaiguri/dr-sudip-roy-dentist",
+              "https://www.gomd.in/dr/dr-sudip-roy-dentist",
+              "https://wikialpha.co/wiki/Dr._Sudip_Roy",
+              "https://en.everybodywiki.com/Dr._Sudip_Roy",
+              "https://www.facebook.com/DrSudipRoySmile",
+              "https://www.youtube.com/@dentistjalpaiguri",
+              "https://cosmeticdentistjalpaiguriclinic.github.io/"
+            ]
           },
-          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "210" }
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["#aeo-summary"]
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "210"
+          }
         }
       ]
     }
@@ -64,91 +101,42 @@
         :root { --gold: #d4af37; --blue: #0056b3; --black: #080808; --dark-card: #141414; }
         body { font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; line-height: 1.6; overflow-x: hidden; background: #fff; color: #333; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        
-        /* ✅ HEADER FIX: position: relative added */
-        .header { 
-            display: flex; 
-            align-items: center; 
-            justify-content: space-between; 
-            padding: 14px 18px; 
-            background: #f6fbff; 
-            border-bottom: 2px solid var(--gold); 
-            position: relative; 
-        }
-
+        .header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: #f6fbff; border-bottom: 2px solid var(--gold); position: relative; }
         .logo { height: 56px; }
         .brand-text strong { display: block; font-size: 1.25rem; color: #111; }
         .brand-text .small { font-size: 0.85rem; color: #333; font-weight: 500; }
-        
         .nav { display: flex; gap: 14px; }
         .nav a { text-decoration: none; color: #333; font-weight: 600; font-size: 11px; transition: 0.3s; text-transform: uppercase; white-space: nowrap; }
         .nav a:hover { color: var(--gold); }
-
-        /* HAMBURGER MENU STYLES */
         .menu-toggle { display: none; font-size: 28px; background: none; border: none; cursor: pointer; color: #111; padding: 5px; }
-
-        @media (max-width: 1024px) { .nav { gap: 8px; } .nav a { font-size: 10px; } }
-        
         @media (max-width: 768px) { 
             .header { justify-content: space-between; } 
-            .brand { flex-direction: row; gap: 10px; align-items: center; }
-            .brand-text .small { display: none; } 
-            
+            .brand-text .small { display: none; }
             .menu-toggle { display: block; } 
-
-            .nav { 
-                display: none; 
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: #f6fbff;
-                flex-direction: column;
-                gap: 0;
-                padding: 0;
-                border-bottom: 2px solid #d4af37;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-                z-index: 10000;
-            }
-            
+            .nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: #f6fbff; flex-direction: column; gap: 0; padding: 0; border-bottom: 2px solid #d4af37; box-shadow: 0 10px 20px rgba(0,0,0,0.1); z-index: 10000; }
             .nav.show { display: flex; } 
-            
-            .nav a { 
-                padding: 15px 20px; 
-                font-size: 14px; 
-                border-bottom: 1px solid rgba(0,0,0,0.05); 
-                display: block;
-                width: 100%;
-                box-sizing: border-box;
-            }
+            .nav a { padding: 15px 20px; font-size: 14px; border-bottom: 1px solid rgba(0,0,0,0.05); display: block; width: 100%; box-sizing: border-box; }
         }
-
         .ticker-wrap { width: 100%; background: #222; color: #fff; height: 35px; overflow: hidden; display: flex; align-items: center; border-bottom: 2px solid #d32f2f; }
         .ticker-heading { background: #d32f2f; padding: 0 12px; height: 100%; display: flex; align-items: center; font-weight: bold; font-size: 11px; z-index: 10; }
         .ticker { display: inline-block; white-space: nowrap; animation: ticker-scroll 30s linear infinite; line-height: 35px; }
         @keyframes ticker-scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
         .ticker-item { display: inline-block; padding: 0 25px; font-size: 12px; }
         .ticker-item a { color: #f0f0f0; text-decoration: none; font-weight: 500; }
-
         .hero { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; padding: 40px 0; }
-        .quick-answer { background: #eef6ff; padding: 18px; border-radius: 8px; border: 1px solid #d1e3f8; margin-bottom: 12px; font-size: 0.95rem; }
+        .quick-answer { background: #eef6ff; padding: 18px; border-radius: 8px; border: 1px solid #d1e3f8; margin-bottom: 12px; font-size: 0.95rem; line-height: 1.5; }
         .cta-row { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
         .cta { display: inline-block; background: var(--blue); color: #fff; padding: 15px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; text-align: center; }
         .cta.ghost { background: transparent; border: 2px solid var(--blue); color: var(--blue); }
-
         .card { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 25px; border-left: 4px solid var(--gold); }
         .ba-container { position: relative; width: 100%; height: 400px; border-radius: 12px; overflow: hidden; cursor: ew-resize; background: #eee; }
         .ba-overlay { position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden; border-right: 4px solid #fff; z-index: 2; }
         .ba-overlay img, .ba-underlay img { width: 100%; height: 400px; object-fit: cover; display: block; pointer-events: none; }
-        @media (max-width: 600px) { .ba-container, .ba-overlay img, .ba-underlay img { height: 250px; } }
-
-        #waFloat { position: fixed; right: 25px; bottom: 160px; z-index: 9999; transition: 0.3s; }
+        #waFloat { position: fixed; right: 25px; bottom: 160px; z-index: 9999; }
         .wa-icon { width: 60px; height: 60px; background-color: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
         #ai-chat-float { display: none; position: fixed; bottom: 90px; right: 20px; background: linear-gradient(135deg, #2563eb, #4f46e5); border-radius: 50px; padding: 12px 20px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); z-index: 9998; text-decoration: none; color: #fff; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; text-align: center; }
-        
         .mobile-cta { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; display: flex; z-index: 10000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); border-top: 2px solid var(--gold); }
         .mobile-cta a { flex: 1; text-align: center; padding: 12px 5px; color: #000; text-decoration: none; font-weight: bold; border-right: 1px solid rgba(0,0,0,0.05); font-size: 13px; display: flex; flex-direction: column; justify-content: center; }
-        .mobile-cta a:last-child { border-right: none; }
     </style>
 </head>
 
@@ -156,15 +144,13 @@
 
 <header class="header">
   <div class="brand" style="display:flex; align-items:center; gap:12px;">
-    <img src="assets/images/logo.png" alt="SMILE Logo" class="logo">
+    <img src="assets/images/logo.png" alt="Dr. S. Roy’s SMILE Dental Clinic Logo" class="logo">
     <div class="brand-text">
         <strong>Dr. S. Roy’s <span style="color:var(--gold)">SMILE</span></strong>
         <div class="small">Pahari Para, Beside V-Mart • <a href="tel:+918918935056" style="color: inherit; text-decoration: none;">📞 8918935056</a></div>
     </div>
   </div>
-  
   <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
-
   <nav class="nav">
     <a href="/">Home</a>
     <a href="wiki-dr-sudip-roy.html">About</a>
@@ -182,7 +168,7 @@
     <div class="ticker">
         <div class="ticker-item"><a href="dentist-near-me-jalpaiguri.html">📍 Dentist Near Me: Serving Mainaguri, Dhupguri & Malbazar</a></div>
         <div class="ticker-item"><a href="directions.html">🗺️ Directions Hub: Get Live Routes to our Clinic</a></div>
-        <div class="ticker-item"><a href="https://www.youtube.com/@dentistjalpaiguri" target="_blank">🎥 New Patient Success Stories on YouTube</a></div>
+        <div class="ticker-item"><a href="https://www.docindia.org/doctors/jalpaiguri/dr-sudip-roy-dentist" target="_blank">✅ Doctor Profile: Listed on DocIndia</a></div>
         <div class="ticker-item"><a href="wiki-dr-sudip-roy.html">📖 Expert Profile: Dr. Sudip Roy's 28-Year Legacy</a></div>
     </div>
 </div>
@@ -191,66 +177,59 @@
     <section class="hero">
       <div style="flex:1; min-width:300px;">
         <h1 style="font-size:2.5rem; color:#111; line-height:1.2; margin:0;">Premium Smile Makeovers in Jalpaiguri</h1>
+        
+        <p style="display:none">Dr. Sudip Roy is a senior cosmetic dentist in Jalpaiguri with over 28 years of clinical experience.</p>
+        
         <p style="font-size:1.1rem; color:#555; margin:10px 0;">Senior Consultant Cosmetic Dental Surgeon • 28+ Years Excellence.</p>
-        <div class="quick-answer">
-            <strong>Expert Summary:</strong> Dr. S. Roy’s SMILE Dental Clinic is the leading choice for <strong>Digital Smile Design and Dental Implants</strong> in Jalpaiguri. Located beside V-Mart (Pahari Para), we provide painless treatments using 100% MRI-safe materials.
+        
+        <div class="quick-answer" id="aeo-summary">
+            <strong>Expert Summary:</strong> 
+            Dr. S. Roy’s SMILE Dental Clinic is the premier center for 
+            <strong>Digital Smile Design and Dental Implants in Jalpaiguri</strong>. 
+            Led by <strong>Dr. Sudip Roy</strong> (B.D.S. 1997, 28+ years clinical experience), 
+            the clinic is located in <strong>Pahari Para, beside V-Mart</strong> and 
+            specializes in painless, MRI-safe cosmetic dental procedures and full-mouth rehabilitations.
         </div>
+
         <div class="cta-row">
             <a class="cta" href="tel:+918918935056">Call Clinic Now</a>
-            <a class="cta ghost" href="appointment.html">Book Appointment</a>
+            <a class="cta ghost" href="https://www.gomd.in/dr/dr-sudip-roy-dentist" target="_blank">Book Online (GoMD)</a>
         </div>
         <p style="font-size:12px;color:#666;margin-top:10px;">WBDC Reg No. 1960 • Clinical Excellence since 1997.</p>
       </div>
       <div style="flex:1; min-width:300px;">
-        <img src="assets/images/dentist-jalpaiguri-smile-6.webp" alt="Dr Sudip Roy - Dentist Jalpaiguri" style="width:100%; border-radius:12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" loading="lazy">
+        <img src="assets/images/dentist-jalpaiguri-smile-6.webp" alt="Dr. Sudip Roy at his SMILE Dental Clinic in Pahari Para, Jalpaiguri – expert cosmetic dentist" style="width:100%; border-radius:12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" loading="lazy">
       </div>
     </section>
 
     <section class="card">
         <h2 style="color:var(--blue); font-size: 1.5rem; margin-top: 0;">Smile transformations – Before & After Case</h2>
         <div class="ba-container" id="ba-slider">
-            <div class="ba-underlay"><img src="assets/images/dentist-jalpaiguri-smile-3.webp" alt="Before treatment" loading="lazy"></div>
-            <div class="ba-overlay" id="ba-overlay"><img src="assets/images/dentist-jalpaiguri-smile-21.webp" alt="After smile makeover" loading="lazy"></div>
+            <div class="ba-underlay"><img src="assets/images/dentist-jalpaiguri-smile-3.webp" alt="Teeth before smile makeover treatment by Dr. S. Roy" loading="lazy"></div>
+            <div class="ba-overlay" id="ba-overlay"><img src="assets/images/dentist-jalpaiguri-smile-21.webp" alt="Full mouth smile makeover results in Jalpaiguri by Dr. S. Roy – cosmetic dentistry case" loading="lazy"></div>
         </div>
         <p style="text-align:center; font-size:12px; color:#888; margin-top:15px;">Move mouse or swipe to view transformation results.</p>
-    </section>
-
-    <section id="education" style="background:var(--black); padding:60px 20px; border-radius:15px; margin:40px 0; text-align:center; border-bottom:4px solid var(--gold);">
-        <h2 style="color:var(--gold); font-size:26px;">Patient Education & Guidance</h2>
-        <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:30px;">
-            <a href="dental-tips.html" style="flex:1; min-width:280px; background:var(--dark-card); padding:30px; border-radius:15px; text-decoration:none; border-bottom:3px solid var(--gold);">
-                <div style="font-size:30px;">💡</div>
-                <h3 style="color:var(--gold);">Dental Tips →</h3>
-                <p style="color:#888; font-size:13px;">Trilingual hygiene and care guides.</p>
-            </a>
-            <a href="dental-faqs.html" style="flex:1; min-width:280px; background:var(--dark-card); padding:30px; border-radius:15px; text-decoration:none; border-bottom:3px solid var(--gold);">
-                <div style="font-size:30px;">📖</div>
-                <h3 style="color:var(--gold);">FAQ Library →</h3>
-                <p style="color:#888; font-size:13px;">20+ Clinical answers by Dr. Roy.</p>
-            </a>
-        </div>
     </section>
 
     <section id="location" style="text-align:center; padding:40px 0; background: #f9f9f9; border-radius: 15px;">
         <h2 style="color:var(--blue);">Find Our Clinic in Jalpaiguri</h2>
         <p>Beside V-Mart, Pahari Para, Jalpaiguri, West Bengal — 735101.</p>
         <div style="margin:20px 0; display:flex; gap:10px; justify-content:center; flex-wrap: wrap;">
-            <a href="https://maps.app.goo.gl/y9vhnzPw96gFfp6N6" target="_blank" class="cta" style="background:#4285F4; padding:12px 24px; font-size:14px;">📍 Open Maps</a>
+            <a href="https://www.google.com/maps?cid=2957733387796880131" target="_blank" class="cta" style="background:#4285F4; padding:12px 24px; font-size:14px;">📍 Open Maps</a>
             <a href="directions.html" class="cta" style="background:#34a853; padding:12px 24px; font-size:14px;">🔍 Directions Hub</a>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14264.444265471413!2d88.7217728!3d26.5236779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4416d0d01e07d%3A0x290bfa986f321b03!2sDr.S.%20Roy's%20SMILE%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.8893574109306!2d88.7191978742055!3d26.523682676703068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4416d0d01e07d%3A0x290bfad86ff21b03!2sDr.S.%20Roy's%20SMILE%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1768134201055!5m2!1sen!2sin" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 </main>
 
 <footer style="background:#222; color:#fff; padding:40px 20px; text-align:center; padding-bottom: 120px;">
     <div style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
-        <a href="https://wikialpha.co/wiki/Dr._Sudip_Roy" target="_blank" style="background:var(--gold); color:#000; padding:12px 24px; border-radius:50px; font-weight:800; text-decoration:none; display:inline-block; margin:5px; font-size:14px;">📖 WikiAlpha Bio</a>
-        <a href="https://en.everybodywiki.com/Dr._Sudip_Roy" target="_blank" style="background:#fff; color:#333; padding:12px 24px; border-radius:50px; font-weight:600; text-decoration:none; display:inline-block; margin:5px; font-size:14px;">EverybodyWiki</a>
+        <a href="https://www.docindia.org/doctors/jalpaiguri/dr-sudip-roy-dentist" target="_blank" style="background:var(--gold); color:#000; padding:12px 24px; border-radius:50px; font-weight:800; text-decoration:none; display:inline-block; margin:5px; font-size:14px;">Doctor Profile on DocIndia</a>
+        <a href="https://wikialpha.co/wiki/Dr._Sudip_Roy" target="_blank" style="background:#fff; color:#333; padding:12px 24px; border-radius:50px; font-weight:600; text-decoration:none; display:inline-block; margin:5px; font-size:14px;">WikiAlpha Bio</a>
         <br>
         <a href="wiki-dr-sudip-roy.html" style="color: #E0F7FA; text-decoration: none; border-bottom: 2px dotted #E0F7FA; font-weight: 600; display: inline-block; margin-top: 15px; font-size: 15px;">Official Biography & Profile ➜</a>
     </div>
     <p>© 2026 Dr. S. Roy’s SMILE Dental Clinic • Jalpaiguri</p>
-    <p style="font-size:11px; color:#777;">Clinical Excellence for 28+ years. WBDC Reg No. 1960.</p>
 </footer>
 
 <a href="https://wa.me/918918935056" id="waFloat" target="_blank" aria-label="WhatsApp Chat">
@@ -259,27 +238,24 @@
 
 <a href="https://cosmeticdentistjalpaiguriclinic.github.io/" id="ai-chat-float" target="_blank">
   <span style="font-size: 14px;">💬 Dental AI Assistant</span><br>
-  <span style="font-size: 10px; opacity: 0.8;">Verified Expert Guidance</span>
+  <span style="font-size: 10px; opacity: 0.8;">Expert Dental Guidance</span>
 </a>
 
 <div class="mobile-cta">
     <a href="tel:+918918935056">📞 Call</a>
     <a href="https://wa.me/918918935056">💬 WhatsApp</a>
     <a href="blog/index.html">📰 Blog</a>
-    <a href="appointment.html">🗓 Book</a>
+    <a href="https://www.gomd.in/dr/dr-sudip-roy-dentist">🗓 Book</a>
 </div>
 
 <script>
-    // ✅ JS UPDATE: Handles aria-expanded for AI/Accessibility
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
-    
     toggle.addEventListener('click', () => {
         const isOpen = nav.classList.toggle('show');
         toggle.setAttribute('aria-expanded', isOpen);
     });
 
-    // Before/After Slider Logic
     const container = document.getElementById('ba-slider');
     const overlay = document.getElementById('ba-overlay');
     const updateSlider = (clientX) => {
@@ -290,7 +266,6 @@
     container.addEventListener('mousemove', (e) => updateSlider(e.clientX));
     container.addEventListener('touchmove', (e) => updateSlider(e.touches[0].clientX));
     
-    // AI Chat Float Timer
     setTimeout(() => { document.getElementById('ai-chat-float').style.display = 'block'; }, 8000);
 </script>
 </body>
