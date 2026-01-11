@@ -1,4 +1,14 @@
 # Robots.txt for Dr. S. Roy’s SMILE Dental Clinic
+# Optimized for Google AI Overviews & Local Jalpaiguri SEO (2026)
+
+User-agent: *
+Allow: /
+
+# Point ONLY to the Master Index
+Sitemap: https://dentistjalpaiguri.github.io/sitemap-index.xml
+
+# Dr. Sudip Roy, B.D.S. (1997) - 28+ Years of Clinical Excellence
+# Robots.txt for Dr. S. Roy’s SMILE Dental Clinic
 # Optimized for Google Search, AI Overviews & E-E-A-T (2026)
 
 User-agent: *
