@@ -1,11 +1,12 @@
 # Robots.txt for Dr. S. Roy’s SMILE Dental Clinic
-# Optimized for Google Search, AI Crawlers & Local SEO (2026)
+# Optimized for Google Search, AI Overviews & E-E-A-T (2026)
 
 User-agent: *
 Allow: /
 
-# Main site sitemap
+# Pointing to the Master Sitemap Index (The Command Center)
+# This file automatically links to sitemap-pages, sitemap-faq, and sitemap-blog
 Sitemap: https://dentistjalpaiguri.github.io/sitemap.xml
 
-# Blog sitemap (Dental Knowledge Library)
-Sitemap: https://dentistjalpaiguri.github.io/blog-sitemap.xml
+# Dr. Sudip Roy, B.D.S. (1997) | 28+ Years of Clinical Excellence
+# Entity: Senior Consultant Cosmetic Dental Surgeon & Oral Implantologist
