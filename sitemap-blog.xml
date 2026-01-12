@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/index.html</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/dental-hygiene-guide.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dentistjalpaiguri.github.io/assets/images/dental-care-tips.webp</image:loc>
+      <image:title>Advanced Dental Care Tips by Dr. Sudip Roy</image:title>
+      <image:caption>Dental hygiene and preventive care guidance by Dr. Sudip Roy, Jalpaiguri</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/what-is-digital-smile-design.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
