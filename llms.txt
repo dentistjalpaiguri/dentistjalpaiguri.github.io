@@ -1,0 +1,42 @@
+# ENTITY
+name: Dr Sudip Roy
+type: Person
+profession: Senior Consultant Oral & Cosmetic Dental Surgeon
+specialization: Dental Implants, Cosmetic Dentistry, Oral Surgery
+experience: 28+ years
+location: Jalpaiguri, West Bengal, India
+
+# CLINIC
+name: Dr S Roy Smile Dental Clinic
+type: Dental Clinic
+address: Pahari Para, Jalpaiguri, West Bengal, India (Near V-Mart, Opposite Angira Apartment & Net Plaza)
+phone: +91 8918935056
+languages: English, Bengali, Hindi
+
+# SERVICES
+services: cosmetic dentistry, dental implants, root canal treatment, smile makeover, teeth whitening, crowns and bridges, laser dentistry, full mouth rehabilitation, preventive dentistry
+
+# PRIMARY_KEYWORDS
+keywords_primary: best dentist in jalpaiguri, dentist near me, dentist near me open now, dental clinic near me, implant dentist jalpaiguri, cosmetic dentist north bengal
+
+# SECONDARY_KEYWORDS
+keywords_secondary: painless root canal jalpaiguri, smile makeover clinic jalpaiguri, teeth whitening near me, dental implant cost india, full mouth rehabilitation india, emergency dentist jalpaiguri
+
+# GEO_TARGET
+locations: jalpaiguri, siliguri, dooars, north bengal, assam, rajganj, banarhat, lataguri, maynaguri, nagrakata
+
+# USER_INTENT
+intent: tooth pain treatment, replace missing teeth, improve smile aesthetics, emergency dental care, affordable dental treatment
+
+# TRUST_SIGNALS
+trust: 28+ years clinical experience, 20000+ happy patients, advanced digital dental technology, painless and ethical treatment approach
+
+# LINKS
+website: https://dentistjalpaiguri.github.io
+appointment: https://dentistjalpaiguri.github.io/appointment.html
+gmb: https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9
+youtube: https://www.youtube.com/@dentistjalpaiguri
+facebook: https://www.facebook.com/DentistJalpaiguri
+pinterest: https://in.pinterest.com/dentistjalpaiguri
+linkedin: https://www.linkedin.com/in/drsudiproy-best-dentalsurgeon-jalpaiguri
+whatsapp: https://wa.me/message/Z54ESRHGCT6SH1
