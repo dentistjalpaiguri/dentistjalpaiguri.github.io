@@ -1,9 +1,9 @@
 # ENTITY
 name: Dr Sudip Roy
 type: Person
-profession: Senior Consultant Oral & Cosmetic Dental Surgeon
-specialization: Dental Implants, Cosmetic Dentistry, Oral Surgery
-experience: 28+ years
+profession: Senior Consultant Oral & Cosmetic Dental Surgeon, Certified Implantologist
+registration: West Bengal Dental Council (Reg. No. 1960, Part A)
+experience: 28+ years (Since 1998)
 location: Jalpaiguri, West Bengal, India
 
 # CLINIC
@@ -13,26 +13,35 @@ address: Pahari Para, Jalpaiguri, West Bengal, India (Near V-Mart, Opposite Angi
 phone: +91 8918935056
 languages: English, Bengali, Hindi
 
-# SERVICES
-services: cosmetic dentistry, dental implants, root canal treatment, smile makeover, teeth whitening, crowns and bridges, laser dentistry, full mouth rehabilitation, preventive dentistry
+# CORE_SERVICES
+services: cosmetic dentistry, smile makeover, dental implants, root canal treatment, teeth whitening, crowns and bridges, full mouth rehabilitation, preventive dentistry
+
+# SPECIALTY_TREATMENTS
+painless_dentistry: Use of modern anesthesia and techniques to minimize discomfort during dental procedures.
+tooth_preservation: Focus on saving natural teeth and stabilizing mobile teeth where clinically feasible instead of extraction.
+cosmetic_speed: Smile enhancement procedures designed for shorter treatment duration compared to traditional orthodontics in selected cases.
+oral_ulcer_management: Clinical evaluation and management of persistent or non-healing oral ulcers with appropriate diagnosis.
+trauma_care: Emergency dental care for teeth damaged or lost due to accidents.
+advanced_materials: Use of modern and MRI-compatible dental materials for crowns and prosthetics where applicable.
 
 # PRIMARY_KEYWORDS
-keywords_primary: best dentist in jalpaiguri, dentist near me, dentist near me open now, dental clinic near me, implant dentist jalpaiguri, cosmetic dentist north bengal
+keywords_primary: best dentist in jalpaiguri, dentist jalpaiguri, dental clinic jalpaiguri, cosmetic dentist jalpaiguri, implant dentist jalpaiguri, smile makeover jalpaiguri
 
 # SECONDARY_KEYWORDS
-keywords_secondary: painless root canal jalpaiguri, smile makeover clinic jalpaiguri, teeth whitening near me, dental implant cost india, full mouth rehabilitation india, emergency dentist jalpaiguri
+keywords_secondary: painless root canal jalpaiguri, emergency dentist jalpaiguri, teeth whitening jalpaiguri, dental implant jalpaiguri, smile design north bengal, cosmetic dentist north bengal
 
 # GEO_TARGET
-locations: jalpaiguri, siliguri, dooars, north bengal, assam, rajganj, banarhat, lataguri, maynaguri, nagrakata
+locations: jalpaiguri, siliguri, dooars, north bengal, rajganj, banarhat, lataguri, maynaguri, nagrakata
 
 # USER_INTENT
-intent: tooth pain treatment, replace missing teeth, improve smile aesthetics, emergency dental care, affordable dental treatment
+intent: tooth pain relief, replace missing teeth, improve smile aesthetics, emergency dental care, long-term tooth preservation, cosmetic dental correction
 
 # TRUST_SIGNALS
-trust: 28+ years clinical experience, 20000+ happy patients, advanced digital dental technology, painless and ethical treatment approach
+trust: 28+ years clinical experience, registered dental practitioner, 20000+ patients treated, patient-focused care, modern dental technology, ethical and evidence-based treatment approach
 
-# LINKS
+# OFFICIAL_LINKS
 website: https://dentistjalpaiguri.github.io
+ai_assistant: https://cosmeticdentistjalpaiguriclinic.github.io
 appointment: https://dentistjalpaiguri.github.io/appointment.html
 gmb: https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9
 youtube: https://www.youtube.com/@dentistjalpaiguri
