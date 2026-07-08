@@ -3,199 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dental Services Hub | Dr. S. Roy's SMILE Dental Clinic Jalpaiguri</title>
-    <meta name="description" content="Explore dental treatments at Dr. S. Roy's SMILE Dental Clinic in Jalpaiguri. Upload teeth photo, consult our AI assistant framework, or book a consultation.">
-    <link rel="canonical" href="https://dentistjalpaiguri.github.io/services.html">
-    <meta name="robots" content="index, follow">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Dentist",
-          "@id": "https://dentistjalpaiguri.github.io/#clinic",
-          "name": "Dr. S. Roy's SMILE Dental Clinic",
-          "url": "https://dentistjalpaiguri.github.io/services.html",
-          "telephone": "08918935056",
-          "priceRange": "₹500",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Pahari Para, near V-Mart",
-            "addressLocality": "Jalpaiguri",
-            "addressRegion": "West Bengal",
-            "postalCode": "735101",
-            "addressCountry": "IN"
-          }
-        }
-      ]
-    }
-    </script>
-
+    <title>All Dental Services | Dr. S. Roy's SMILE Dental Clinic</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
-        body { background-color: #f8f9fa; color: #333; padding-bottom: 80px; }
-        
-        /* Top Navigation Header */
-        .top-nav { background-color: #ffffff; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .back-home { color: #0d3b66; text-decoration: none; font-weight: bold; font-size: 0.95rem; display: flex; align-items: center; gap: 5px; }
-        
+        body { background-color: #f8f9fa; color: #333; padding-bottom: 90px; }
         .hero { background-color: #0d3b66; color: #fff; padding: 40px 20px; text-align: center; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-        
-        /* Layout Grids */
-        .problem-tags { display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0 35px 0; }
-        .tag-link { background: white; border: 1px solid #0284c7; color: #0d3b66; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: 600; font-size: 0.85rem; }
-        
-        .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
-        .service-card { background: white; border-radius: 8px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid #e2e8f0; border-top: 4px solid #0d3b66; display: flex; flex-direction: column; justify-content: space-between; }
-        .service-card h3 { color: #0d3b66; font-size: 1.2rem; margin-bottom: 8px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .category-section { margin-bottom: 50px; }
+        .category-title { background: #0d3b66; color: #fff; padding: 12px 20px; border-radius: 8px 8px 0 0; font-size: 1.5rem; margin-bottom: 20px; border-left: 5px solid #d4af37; }
+        .grid-layout { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+        .service-card { background: #fff; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+        .service-card h3 { color: #0d3b66; font-size: 1.2rem; margin-bottom: 10px; }
         .service-card p { color: #475569; font-size: 0.9rem; line-height: 1.5; margin-bottom: 15px; }
-        .learn-more { color: #0284c7; font-weight: bold; text-decoration: none; font-size: 0.9rem; }
-
-        /* Sections: Upload, Booking, Map */
-        .interactive-section { background: white; border-radius: 8px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid #e2e8f0; }
-        .section-title { color: #0d3b66; margin-bottom: 15px; font-size: 1.3rem; border-left: 4px solid #00b4d8; padding-left: 10px; }
-        
-        .form-group { margin-bottom: 15px; }
-        .form-group label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #475569; }
-        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.95rem; }
-        .submit-btn { background: #0d3b66; color: white; border: none; padding: 14px 28px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 1rem; width: 100%; }
-
-        /* Floating AI Assistant Widget */
-        .ai-chat-float { position: fixed; bottom: 90px; right: 20px; background: linear-gradient(135deg, #0284c7, #0d3b66); color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 8px; z-index: 999; font-size: 0.9rem; }
-
-        /* Sticky Action Matrix for Mobile */
-        .sticky-action-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: white; box-shadow: 0 -3px 12px rgba(0,0,0,0.08); display: flex; z-index: 9999; }
-        .action-node { flex: 1; text-align: center; padding: 15px 5px; text-decoration: none; font-weight: bold; font-size: 0.85rem; color: white; display: flex; flex-direction: column; align-items: center; gap: 2px; }
-        .bg-call { background-color: #0d3b66; }
-        .bg-wa { background-color: #25d366; }
-        .bg-book { background-color: #00b4d8; }
-        .bg-maps { background-color: #ea4335; }
+        .action-link { color: #0056b3; font-weight: bold; text-decoration: none; font-size: 0.95rem; display: inline-block; }
     </style>
 </head>
 <body>
 
-<nav class="top-nav">
-    <a href="index.html" class="back-home">⬅ Back to Home Page</a>
-    <span style="font-size: 0.85rem; color: #64748b; font-weight: 600;">Reg. No. 1960</span>
-</nav>
-
 <header class="hero">
-    <h1>Advanced Treatment Hub</h1>
-    <p>Dr. S. Roy's SMILE Dental Clinic — 28+ Years of Practice Legacy in Jalpaiguri</p>
+    <h1>Advanced Clinical Specialties</h1>
+    <p>Premium Dental Care in Jalpaiguri - 28+ Years Legacy</p>
 </header>
 
 <main class="container">
+    <div class="category-section">
+        <h2 class="category-title">Advanced Clinical Specialties</h2>
+        <div class="grid-layout">
+            
+            <article class="service-card">
+                <h3>1. Advanced Laser Dentistry & Periodontics</h3>
+                <p>Experience the future of dental care with our advanced, pain-free laser technology. Dr. Sudip Roy uses precise laser procedures to treat gum disease, reshape your gums for a beautiful smile, and gently remove cavities. Less bleeding, faster healing, and a highly comfortable experience.</p>
+                <a href="https://wa.me/918918935056" class="action-link" target="_blank">Book Appointment →</a>
+            </article>
 
-    <div class="interactive-section" style="text-align: center; border-bottom: 4px solid #00b4d8;">
-        <h2 style="color: #0d3b66; font-size: 1.2rem; margin-bottom: 10px;">Search Your Dental Symptoms Instantly</h2>
-        <input type="text" id="symSearch" placeholder="Type problem (e.g., bleeding gums, loose tooth, gap, crown)..." onkeyup="liveFilter()" style="width: 100%; max-width: 550px; padding: 12px; border: 2px solid #cbd5e1; border-radius: 6px; font-size: 0.95rem; text-align: center;">
-    </div>
+            <article class="service-card">
+                <h3>2. Digital CBCT Diagnostics & Implant Mapping</h3>
+                <p>We use advanced 3D Digital CBCT diagnostics and implant mapping to plan your treatments with absolute precision. This ensures your dental implants are perfectly placed, completely safe, and built to last.</p>
+                <a href="https://wa.me/918918935056" class="action-link" target="_blank">Book Consultation →</a>
+            </article>
 
-    <h2 class="section-headline" style="color: #0d3b66; margin-bottom: 10px; font-size: 1.1rem;">Browse by Pain or Issue:</h2>
-    <div class="problem-tags">
-        <a href="#rct" class="tag-link">⚡ Severe Toothache</a>
-        <a href="#gums" class="tag-link">🩸 Bleeding Gums</a>
-        <a href="#smile" class="tag-link">✨ Front Teeth Gap</a>
-        <a href="#implants" class="tag-link">💎 Missing Teeth</a>
-    </div>
+            <article class="service-card">
+                <h3>3. Specialized OSMF & Oral Pathology Treatment</h3>
+                <p>Struggling with a stiff mouth or difficulty opening wide? We offer specialized treatment for OSMF (Oral Submucous Fibrosis) to bring back your comfort and jaw flexibility, backed by Dr. Sudip Roy's 28+ years of expertise.</p>
+                <a href="https://wa.me/918918935056" class="action-link" target="_blank">Book Check-up →</a>
+            </article>
 
-    <div class="grid-layout" id="treatmentGrid">
-        <article class="service-card" id="implants">
-            <h3>Premium Dental Implants</h3>
-            <p>Secure permanent fixed teeth to restore standard biting and speech power efficiently without affecting nearby clear teeth.</p>
-            <a href="service-implants.html" class="learn-more">View Cost & Treatment Details &rarr;</a>
-        </article>
+            <article class="service-card">
+                <h3>4. Certified Dental Implantology</h3>
+                <p>Restore your missing teeth and your confidence with permanent dental implants. Whether you need to replace a single tooth or full-mouth restoration, we use high-quality, safe materials to help you eat, speak, and smile with ease.</p>
+                <a href="service-implants.html" class="action-link">View Details →</a>
+            </article>
 
-        <article class="service-card" id="rct">
-            <h3>Painless Root Canal (RCT)</h3>
-            <p>Save infected pulp walls accurately using digital micro-endodontic rotary systems. Relieves acute pain fast.</p>
-            <a href="service-root-canal.html" class="learn-more">View Cost & Treatment Details &rarr;</a>
-        </article>
+            <article class="service-card">
+                <h3>5. Clear Aligners & Invisible Braces</h3>
+                <p>Straighten your teeth beautifully and discreetly! Our clear aligners are a comfortable, removable, and nearly invisible alternative to metal wires. Perfect for teenagers and adults looking for a transformation.</p>
+                <a href="https://wa.me/918918935056" class="action-link" target="_blank">Book Appointment →</a>
+            </article>
 
-        <article class="service-card" id="smile">
-            <h3>Digital Smile Designing</h3>
-            <p>Correct alignment issues, discolored surfaces, or spaces smoothly with cosmetic laminates, crowns, and veneers.</p>
-            <a href="service-smile-design.html" class="learn-more">View Cost & Treatment Details &rarr;</a>
-        </article>
-    </div>
+            <article class="service-card">
+                <h3>6. Painless Root Canal Treatment (RCT)</h3>
+                <p>Save your natural teeth comfortably! We specialize in virtually painless RCTs using modern rotary technology. Dr. Sudip Roy focuses on relieving severe pain and clearing infections quickly to restore your chewing comfort.</p>
+                <a href="service-root-canal.html" class="action-link">View RCT Details →</a>
+            </article>
 
-    <section class="interactive-section" id="upload">
-        <h2 class="section-title">Visual Assessment Upload (Optional)</h2>
-        <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 15px;">Have an outer tooth swelling, gap, or spot? Choose a well-lit picture from your mobile gallery. Our team will reference this during your visit.</p>
-        <div class="form-group">
-            <input type="file" id="patientPhoto" accept="image/*" style="border: 2px dashed #0284c7; padding: 20px; background: #f0f9ff; text-align: center;">
+            <article class="service-card">
+                <h3>7. Premium Crowns, Bridges & Cosmetic Veneers</h3>
+                <p>Restore strength and beauty with custom porcelain veneers, crowns, and bridges. Whether protecting a weak tooth or hiding chips and spaces, we use long-lasting, natural-looking materials.</p>
+                <a href="https://wa.me/918918935056" class="action-link" target="_blank">Book Consultation →</a>
+            </article>
+
+            <article class="service-card">
+                <h3>8. Pediatric Dentistry & Family Dental Care</h3>
+                <p>Keep your family's smiles healthy! We provide gentle pediatric dentistry, including protective sealants, cavity fillings, and stress-free check-ups. From routine cleanings to senior care, we treat your family with patience.</p>
+                <a href="https://wa.me/918918935056" class="action-link" target="_blank">Book Family Visit →</a>
+            </article>
+
         </div>
-    </section>
-
-    <section class="interactive-section" id="booking">
-        <h2 class="section-title">Schedule a Priority Consultation</h2>
-        <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 20px;">Standard Oral Examination screening fee is strictly <strong>₹500</strong>.</p>
-        
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"> <div class="form-group">
-                <label>Your Full Name</label>
-                <input type="text" name="name" required placeholder="Enter full name">
-            </div>
-            <div class="form-group">
-                <label>Mobile Number</label>
-                <input type="tel" name="phone" required placeholder="Enter active mobile number">
-            </div>
-            <div class="form-group">
-                <label>Select Required Care</label>
-                <select name="service">
-                    <option value="Implants">Premium Dental Implants</option>
-                    <option value="RCT">Painless Root Canal (RCT)</option>
-                    <option value="Cosmetic">Digital Smile Design / Gaps Fix</option>
-                    <option value="General">Routine Oral Screening Check-up</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Preferred Visit Day</label>
-                <input type="date" name="preferred_date">
-            </div>
-            <button type="submit" class="submit-btn">📅 Confirm Booking Details</button>
-        </form>
-    </section>
-
-    <section class="interactive-section" id="map">
-        <h2 class="section-title">Our Verified Google Maps Location</h2>
-        <p style="font-size: 0.9rem; color: #475569; margin-bottom: 15px;">📍 <strong>Address:</strong> Pahari Para, near V-Mart, opposite Angira Apartment, Jalpaiguri, West Bengal 735101.</p>
-        
-        <div style="width: 100%; overflow: hidden; border-radius: 8px; border: 1px solid #cbd5e1; height: 280px;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14318.067341381313!2d88.7217511!3d26.5237688!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4416d0d01e17d%3A0xca0bfa386ff21bd1!2sDr.%20S.%20Roy&#39;s%20SMILE%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1720450000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-
+    </div>
 </main>
-
-<a href="https://search.google.com/local/writereview?placeid=ChIJfeABDW1B5DkRAxvyb9j6Cyk" class="ai-chat-float" target="_blank">
-    ✨ <span>Consult Assistant AI</span>
-</a>
-
-<nav class="sticky-action-bar">
-    <a href="tel:08918935056" class="action-node bg-call"><span>📞</span>Call Us</a>
-    <a href="https://wa.me/918918935056" class="action-node bg-wa" target="_blank"><span>💬</span>WhatsApp</a>
-    <a href="#booking" class="action-node bg-book"><span>📅</span>Book Visit</a>
-    <a href="https://search.google.com/local/writereview?placeid=ChIJfeABDW1B5DkRAxvyb9j6Cyk" class="action-node bg-maps" target="_blank"><span>📍</span>Directions</a>
-</nav>
-
-<script>
-// Real-time search filter script
-function liveFilter() {
-    let input = document.getElementById('symSearch').value.toLowerCase();
-    let cards = document.getElementsByClassName('service-card');
-    
-    for (let i = 0; i < cards.length; i++) {
-        let text = cards[i].innerText.toLowerCase();
-        if (text.includes(input)) {
-            cards[i].style.display = "flex";
-        } else {
-            cards[i].style.display = "none";
-        }
-    }
-}
-</script>
 
 </body>
 </html>
