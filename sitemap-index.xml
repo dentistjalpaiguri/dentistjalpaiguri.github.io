@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <sitemap>
     <loc>https://dentistjalpaiguri.github.io/sitemap-pages.xml</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-07-09</lastmod>
   </sitemap>
-  
+
   <sitemap>
     <loc>https://dentistjalpaiguri.github.io/sitemap-faq.xml</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-07-09</lastmod>
   </sitemap>
-  
+
   <sitemap>
     <loc>https://dentistjalpaiguri.github.io/sitemap-blog.xml</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-07-09</lastmod>
   </sitemap>
 
   <sitemap>
     <loc>https://dentistjalpaiguri.github.io/sitemap-video.xml</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-07-09</lastmod>
   </sitemap>
+
 </sitemapindex>
