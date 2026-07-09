@@ -3,9 +3,17 @@
 
   <url>
     <loc>https://dentistjalpaiguri.github.io/</loc>
-    <lastmod>2026-01-11</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <priority>1.00</priority>
   </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/services.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
   <url>
     <loc>https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html</loc>
     <lastmod>2026-01-11</lastmod>
@@ -17,6 +25,7 @@
     <lastmod>2026-01-11</lastmod>
     <priority>0.90</priority>
   </url>
+
   <url>
     <loc>https://dentistjalpaiguri.github.io/dental-implants.html</loc>
     <lastmod>2026-01-11</lastmod>
@@ -28,6 +37,7 @@
     <lastmod>2026-01-11</lastmod>
     <priority>0.85</priority>
   </url>
+
   <url>
     <loc>https://dentistjalpaiguri.github.io/directions.html</loc>
     <lastmod>2026-01-11</lastmod>
@@ -39,6 +49,7 @@
     <lastmod>2026-01-11</lastmod>
     <priority>0.80</priority>
   </url>
+
   <url>
     <loc>https://dentistjalpaiguri.github.io/gallery.html</loc>
     <lastmod>2026-01-11</lastmod>
