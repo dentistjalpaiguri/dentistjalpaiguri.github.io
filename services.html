@@ -12,24 +12,33 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "MedicalClinic",
-          "name": "Dr. S. Roy's SMILE Dental Clinic",
-          "url": "https://dentistjalpaiguri.github.io/services.html",
-          "telephone": "+918918935056",
-          "address": { 
-            "@type": "PostalAddress", 
-            "streetAddress": "Pahari Para, near V-Mart, opposite Angira Apartment, Jalpaiguri", 
-            "postalCode": "735101", 
-            "addressCountry": "IN" 
-          },
-          "aggregateRating": { 
-            "@type": "AggregateRating", 
-            "ratingValue": "4.9", 
-            "reviewCount": "210" 
-          }
-        },
-        {
-          "@type": "FAQPage",
+  "@type":"MedicalClinic",
+  ...
+},
+
+{
+  "@type":"Dentist",
+  "@id":"https://dentistjalpaiguri.github.io/#dentist",
+  "name":"Dr. Sudip Roy",
+  "url":"https://dentistjalpaiguri.github.io/services.html",
+  "worksFor":{
+    "@type":"MedicalClinic",
+    "name":"Dr. S. Roy's SMILE Dental Clinic"
+  },
+  "jobTitle":"Senior Consultant Oral & Cosmetic Dental Surgeon",
+  "description":"Senior Consultant Oral & Cosmetic Dental Surgeon and Certified Implantologist with 28+ years of clinical experience providing comprehensive dental care in Jalpaiguri.",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Pahari Para, near V-Mart, opposite Angira Apartment",
+    "addressLocality":"Jalpaiguri",
+    "addressRegion":"West Bengal",
+    "postalCode":"735101",
+    "addressCountry":"IN"
+  }
+},
+
+{
+  "@type":"FAQPage",
           "mainEntity": [
             {
               "@type": "Question",
