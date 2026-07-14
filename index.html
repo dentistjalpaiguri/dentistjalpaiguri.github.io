@@ -38,68 +38,192 @@
     </script>
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
+      "@id": "https://dentistjalpaiguri.github.io/#clinic",
+      "name": "Dr. S. Roy's SMILE Dental Clinic",
+      "alternateName": ["SMILE Dental Clinic Jalpaiguri", "Dr. S. Roy Dental Clinic"],
+      "url": "https://dentistjalpaiguri.github.io/",
+      "logo": "https://dentistjalpaiguri.github.io/assets/images/logo.png",
+      "image": "https://dentistjalpaiguri.github.io/assets/images/clinic-front.jpg",
+      "telephone": "+918918935056",
+      "priceRange": "₹₹",
+      "foundingDate": "1998-08",
+      "medicalSpecialty": [
+        "Dentistry",
+        "Cosmetic Dentistry",
+        "Oral and Maxillofacial Surgery",
+        "Oral Medicine",
+        "Oral Pathology",
+        "Dental Implantology",
+        "Periodontology",
+        "Orthodontics",
+        "Pedodontics"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pahari Para, near V-Mart, opposite Angira Apartment & Net Plaza",
+        "addressLocality": "Jalpaiguri",
+        "addressRegion": "West Bengal",
+        "postalCode": "735101",
+        "addressCountry": "IN"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": "26.5235", "longitude": "88.7196" },
+      "hasMap": "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
+      "openingHours": ["Mo-Sa 10:00-19:00"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+918918935056",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Bengali", "Hindi"]
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Jalpaiguri"},
+        {"@type": "City", "name": "Malbazar"},
+        {"@type": "City", "name": "Dhupguri"},
+        {"@type": "City", "name": "Mainaguri"},
+        {"@type": "City", "name": "Rajganj"},
+        {"@type": "City", "name": "Siliguri"},
+        {"@type": "AdministrativeArea", "name": "North Bengal"},
+        {"@type": "AdministrativeArea", "name": "Dooars"}
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "210",
+        "bestRating": "5"
+      },
+      "review": {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Verified Patient" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "I visited Dr. Sudip Roy at Dr. S. Roy's SMILE Dental Clinic for a smile makeover and dental implants. He is a good dentist with excellent service and very good behavior. The treatment was completely painless and he used advanced digital tools.",
+        "datePublished": "2026-04-12"
+      },
+      "sameAs": [
+        "https://www.facebook.com/DrSudipRoySmile",
+        "https://www.instagram.com/drsudipsdentalclinic",
+        "https://www.youtube.com/@dentistjalpaiguri",
+        "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
+        "https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist",
+        "https://jsdl.in/DT-99SZ3I1WFPL",
+        "https://wikialpha.co/wiki/Dr._Sudip_Roy"
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#aeo-summary"]
+      }
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://dentistjalpaiguri.github.io/#doctor",
+      "name": "Dr. Sudip Roy",
+      "honorificPrefix": "Dr.",
+      "givenName": "Sudip",
+      "familyName": "Roy",
+      "jobTitle": "Senior Consultant Oral & Cosmetic Dental Surgeon",
+      "description": "28+ years experience, 20,000+ patients. Smile correction and OSMF specialist in Jalpaiguri, West Bengal. WB Dental Council Reg. No. 1960 Part A.",
+      "telephone": "+918918935056",
+      "worksFor": {"@id": "https://dentistjalpaiguri.github.io/#clinic"},
+      "url": "https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html",
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "BDS",
+        "educationalLevel": "Bachelor of Dental Surgery",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "West Bengal Dental Council",
+          "identifier": "Registration No. 1960, Part A"
+        }
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/dr-sudip-roy-dental",
+        "https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist",
+        "https://www.facebook.com/DrSudipRoySmile",
+        "https://wikialpha.co/wiki/Dr._Sudip_Roy",
+        "https://en.everybodywiki.com/Dr._Sudip_Roy",
+        "https://www.docindia.org/doctors/jalpaiguri/dr-sudip-roy-dentist"
+      ]
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://dentistjalpaiguri.github.io/",
+      "name": "Best Dentist in Jalpaiguri | Dr. S. Roy | 28+ Yrs Clinical Excellence",
+      "url": "https://dentistjalpaiguri.github.io/",
+      "description": "Dr. S. Roy – 28+ years experience. A top-rated Cosmetic Dentist serving North Bengal, specializing in Digital Smile Design, Implants & Painless RCT in Jalpaiguri. Beside V-Mart, Pahari Para.",
+      "inLanguage": "en-IN",
+      "isPartOf": {"@id": "https://dentistjalpaiguri.github.io/#website"},
+      "about": {"@id": "https://dentistjalpaiguri.github.io/#clinic"},
+      "author": {"@id": "https://dentistjalpaiguri.github.io/#doctor"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dentistjalpaiguri.github.io/"}
+        ]
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#aeo-summary"]
+      }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://dentistjalpaiguri.github.io/#website",
+      "url": "https://dentistjalpaiguri.github.io/",
+      "name": "Dr. S. Roy's SMILE Dental Clinic Jalpaiguri",
+      "inLanguage": ["en-IN", "bn-IN", "hi-IN"],
+      "publisher": {"@id": "https://dentistjalpaiguri.github.io/#clinic"},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://dentistjalpaiguri.github.io/services.html?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
-          "@id": "https://dentistjalpaiguri.github.io/#clinic",
-          "name": "Dr. S. Roy’s SMILE Dental Clinic",
-          "url": "https://dentistjalpaiguri.github.io/",
-          "logo": "https://dentistjalpaiguri.github.io/assets/images/logo.png",
-          "image": "https://dentistjalpaiguri.github.io/assets/images/clinic-front.jpg",
-          "telephone": "+918918935056",
-          "priceRange": "₹₹",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Pahari Para, Beside V-Mart",
-            "addressLocality": "Jalpaiguri",
-            "postalCode": "735101",
-            "addressRegion": "West Bengal",
-            "addressCountry": "IN"
-          },
-          "geo": { "@type": "GeoCoordinates", "latitude": "26.5235", "longitude": "88.7196" },
-          "hasMap": "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
-          "areaServed": [
-            { "@type": "City", "name": "Jalpaiguri" },
-            { "@type": "AdministrativeArea", "name": "North Bengal" },
-            { "@type": "City", "name": "Mainaguri" },
-            { "@type": "City", "name": "Dhupguri" }
-          ],
-          "founder": {
-            "@type": "Person",
-            "@id": "https://dentistjalpaiguri.github.io/#doctor",
-            "name": "Dr. Sudip Roy",
-            "jobTitle": "Senior Consultant Cosmetic Dental Surgeon",
-            "sameAs": [
-              "https://jsdl.in/DT-99SZ3I1WFPL",
-              "https://maps.google.com/maps?cid=2957733387796880131",
-              "https://www.docindia.org/doctors/jalpaiguri/dr-sudip-roy-dentist",
-              "https://wikialpha.co/wiki/Dr._Sudip_Roy",
-              "https://en.everybodywiki.com/Dr._Sudip_Roy",
-              "https://www.facebook.com/DrSudipRoySmile",
-              "https://www.youtube.com/@dentistjalpaiguri"
-            ]
-          },
-          "aggregateRating": { 
-            "@type": "AggregateRating", 
-            "ratingValue": "4.9", 
-            "reviewCount": "210"
-          },
-          "review": {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Verified Patient" },
-            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-            "reviewBody": "I visited Dr. Sudip Roy at Dr. S. Roy’s SMILE Dental Clinic for a smile makeover and dental implants. He is a good dentist with excellent service and very good behavior. The treatment was completely painless and he used advanced digital tools."
-          },
-          "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": ["#aeo-summary"]
+          "@type": "Question",
+          "name": "Who is the best dentist in Jalpaiguri?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. Sudip Roy, Senior Consultant Oral & Cosmetic Dental Surgeon at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri, has 28+ years of clinical experience and has treated 20,000+ patients. He is registered with the West Bengal Dental Council (Reg. No. 1960, Part A) and is a Certified Implantologist."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Dr. S. Roy's SMILE Dental Clinic located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The clinic is at Pahari Para, near V-Mart, opposite Angira Apartment & Net Plaza, Jalpaiguri, West Bengal 735101. Call +91 89189 35056 or WhatsApp for directions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What dental services are offered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. S. Roy's SMILE Dental Clinic offers 75+ treatments including Digital Smile Design, dental implants, painless root canal therapy, laser dentistry, cosmetic dentistry, and OSMF specialist care. See the full list on the Services page."
           }
         }
       ]
     }
-    </script>
+
+  ]
+}
+</script>
+
 
     <style>
         :root { --gold: #d4af37; --blue: #0056b3; --black: #080808; --dark-card: #141414; }
