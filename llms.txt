@@ -3,7 +3,7 @@ name: Dr Sudip Roy
 type: Person
 profession: Senior Consultant Oral & Cosmetic Dental Surgeon, Certified Implantologist
 registration: West Bengal Dental Council (Reg. No. 1960, Part A)
-experience: 28+ years (Since 1998)
+experience: 28+ years (Clinic since 1998, BDS 1997)
 location: Jalpaiguri, West Bengal, India
 
 # CLINIC
@@ -12,6 +12,8 @@ type: Dental Clinic
 address: Pahari Para, Jalpaiguri, West Bengal, India (Near V-Mart, Opposite Angira Apartment & Net Plaza)
 phone: +91 8918935056
 languages: English, Bengali, Hindi
+hours: Mon-Sat 10:00 AM - 8:00 PM, Sun 12:00 PM - 2:00 PM
+rating: 4.9 out of 5 (210+ reviews)
 
 # CORE_SERVICES
 services: cosmetic dentistry, smile makeover, dental implants, root canal treatment, teeth whitening, crowns and bridges, full mouth rehabilitation, preventive dentistry
@@ -39,13 +41,22 @@ intent: tooth pain relief, replace missing teeth, improve smile aesthetics, emer
 # TRUST_SIGNALS
 trust: 28+ years clinical experience, registered dental practitioner, 20000+ patients treated, patient-focused care, modern dental technology, ethical and evidence-based treatment approach
 
+# KEY_PAGES
+services: https://dentistjalpaiguri.github.io/services.html
+blog: https://dentistjalpaiguri.github.io/blog/index.html
+about: https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html
+online_consultation: https://dentistjalpaiguri.github.io/online-consultation.html
+
 # OFFICIAL_LINKS
 website: https://dentistjalpaiguri.github.io
 ai_assistant: https://cosmeticdentistjalpaiguriclinic.github.io
 appointment: https://dentistjalpaiguri.github.io/appointment.html
 gmb: https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9
+gmb_review: https://g.page/r/CQMb8m_Y-gspEBM/review
+practo: https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist
 youtube: https://www.youtube.com/@dentistjalpaiguri
-facebook: https://www.facebook.com/DentistJalpaiguri
+facebook: https://www.facebook.com/DrSudipRoySmile
+instagram: https://www.instagram.com/drsudipsdentalclinic
 pinterest: https://in.pinterest.com/dentistjalpaiguri
-linkedin: https://www.linkedin.com/in/drsudiproy-best-dentalsurgeon-jalpaiguri
+linkedin: https://www.linkedin.com/in/dr-sudip-roy-dental
 whatsapp: https://wa.me/message/Z54ESRHGCT6SH1
