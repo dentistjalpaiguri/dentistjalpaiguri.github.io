@@ -91,7 +91,7 @@
         .mobile-cta a { flex: 1; text-align: center; padding: 15px; color: #000; text-decoration: none; font-weight: bold; border-right: 1px solid rgba(0,0,0,0.1); font-size: 14px; }
         
         /* AI CHAT FLOAT */
-        #ai-chat-float { display: none; position: fixed; bottom: 90px; right: 20px; background: linear-gradient(135deg, #2563eb, #4f46e5); border-radius: 50px; padding: 12px 20px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); z-index: 9998; text-decoration: none; color: #fff; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; text-align: center; line-height: 1.2; }
+        #ai-chat-float { display: block; position: fixed; bottom: 90px; right: 20px; background: linear-gradient(135deg, #2563eb, #4f46e5); border-radius: 50px; padding: 12px 20px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); z-index: 9998; text-decoration: none; color: #fff; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; text-align: center; line-height: 1.2; }
     </style>
 </head>
 
@@ -183,9 +183,9 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="60" alt="WhatsApp">
 </a>
 
-<a href="https://cosmeticdentistjalpaiguriclinic.github.io/" id="ai-chat-float" target="_blank">
-  <span style="font-size: 14px;">💬 Dental AI Assistant</span><br>
-  <span style="font-size: 10px; opacity: 0.8;">Verified Expert Guidance</span>
+<a href="online-consultation.html" id="ai-chat-float">
+  <span style="font-size: 14px;">📹 Online Consultation</span><br>
+  <span style="font-size: 10px; opacity: 0.8;">Book a Video Call with Dr. Roy</span>
 </a>
 
 <div class="mobile-cta">
@@ -195,8 +195,7 @@
 </div>
 
 <script>
-    /* 8-Second AI Delay to appear */
-    setTimeout(() => { document.getElementById('ai-chat-float').style.display = 'block'; }, 8000);
+    
 </script>
 
 </body>
