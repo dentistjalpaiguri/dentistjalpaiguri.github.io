@@ -49,7 +49,7 @@ online_consultation: https://dentistjalpaiguri.github.io/online-consultation.htm
 
 # OFFICIAL_LINKS
 website: https://dentistjalpaiguri.github.io
-ai_assistant: https://cosmeticdentistjalpaiguriclinic.github.io
+online_consultation: https://dentistjalpaiguri.github.io/online-consultation.html
 appointment: https://dentistjalpaiguri.github.io/appointment.html
 gmb: https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9
 gmb_review: https://g.page/r/CQMb8m_Y-gspEBM/review
