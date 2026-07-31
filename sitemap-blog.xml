@@ -1,31 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://dentistjalpaiguri.github.io/blog/index.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://dentistjalpaiguri.github.io/blog/dental-hygiene-guide.html</loc>
-    <lastmod>2026-01-10</lastmod>
+    <loc>https://dentistjalpaiguri.github.io/blog/toothache-emergency.html</loc>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://dentistjalpaiguri.github.io/assets/images/dental-care-tips.webp</image:loc>
-      <image:title>Advanced Dental Care Tips by Dr. Sudip Roy</image:title>
-      <image:caption>Dental hygiene and preventive care guidance by Dr. Sudip Roy, Jalpaiguri</image:caption>
-    </image:image>
+    <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://dentistjalpaiguri.github.io/blog/what-is-digital-smile-design.html</loc>
-    <lastmod>2026-01-05</lastmod>
+    <loc>https://dentistjalpaiguri.github.io/blog/teeth-poison-toxic-ingredients-oral-care.html</loc>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/implant-truth.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/implant-cost-jalpaiguri.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/dental-implants.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/emergency-dentist-jalpaiguri.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/emergency-dental-care.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/emergency-tooth-care.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/oral-ulcer-3-week-rule.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/oral-ulcer-treatment.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/painless-root-canal.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/crown-work-explained.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/maintain-smile-tips.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/zirconia-vs-pfm.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/fixed-teeth-solutions.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/dental-veneers.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/dental-veneers-guide.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/chipped-tooth-repair.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/teeth-gaps-after-40.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/teeth-gaps-without-braces.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/teeth-gap-treatment.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/smile-design-vs-makeover.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/smile-designing.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/smile-makeover-process.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/cosmetic-dentistry.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/cosmetic-dentistry-overview.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+  </url>
+
+  <url>
+    <loc>https://dentistjalpaiguri.github.io/blog/google-ai-dentistry-trust.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
   </url>
 
 </urlset>
