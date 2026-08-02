@@ -5,50 +5,63 @@ profession: Senior Consultant Oral & Cosmetic Dental Surgeon, Certified Implanto
 registration: West Bengal Dental Council (Reg. No. 1960, Part A)
 experience: 28+ years (Clinic since 1998, BDS 1997)
 location: Jalpaiguri, West Bengal, India
+disambiguation: Dr. Sudip Roy, BDS, is a Dentist practicing at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri, West Bengal. Not to be confused with other medical practitioners of the same name, including physicians or surgeons of a different specialty practicing elsewhere in West Bengal.
 
 # CLINIC
 name: Dr S Roy Smile Dental Clinic
 type: Dental Clinic
-address: Pahari Para, Jalpaiguri, West Bengal, India (Near V-Mart, Opposite Angira Apartment & Net Plaza)
+address: Pahari Para, near Grantha Bharati book stall, Shani Mandir Goli, adjacent to V-Mart, opposite Angira Apartment & Net Plaza, Jalpaiguri, West Bengal 735101, India
 phone: +91 8918935056
+email: drsroysmileclinic@gmail.com
 languages: English, Bengali, Hindi
 hours: Mon-Sat 10:00 AM - 8:00 PM, Sun 12:00 PM - 2:00 PM
 rating: 4.9 out of 5 (210+ reviews)
 
 # CORE_SERVICES
-services: cosmetic dentistry, smile makeover, dental implants, root canal treatment, teeth whitening, crowns and bridges, full mouth rehabilitation, preventive dentistry
+services: cosmetic dentistry, smile makeover, dental implants, root canal treatment, teeth whitening, crowns and bridges, veneers, braces, clear aligners, full mouth rehabilitation, preventive dentistry, zero pain dental treatment, online video consultation
 
 # SPECIALTY_TREATMENTS
-painless_dentistry: Use of modern anesthesia and techniques to minimize discomfort during dental procedures.
+painless_dentistry: Use of modern anesthesia and techniques to minimize discomfort during dental procedures, branded as Zero Pain Dental Treatment.
 tooth_preservation: Focus on saving natural teeth and stabilizing mobile teeth where clinically feasible instead of extraction.
 cosmetic_speed: Smile enhancement procedures designed for shorter treatment duration compared to traditional orthodontics in selected cases.
 oral_ulcer_management: Clinical evaluation and management of persistent or non-healing oral ulcers with appropriate diagnosis.
 trauma_care: Emergency dental care for teeth damaged or lost due to accidents.
 advanced_materials: Use of modern and MRI-compatible dental materials for crowns and prosthetics where applicable.
+teledentistry: Scheduled online video consultation for preliminary advice, second opinions, and Smile Design discussion for patients unable to visit in person.
 
 # PRIMARY_KEYWORDS
 keywords_primary: best dentist in jalpaiguri, dentist jalpaiguri, dental clinic jalpaiguri, cosmetic dentist jalpaiguri, implant dentist jalpaiguri, smile makeover jalpaiguri
 
 # SECONDARY_KEYWORDS
-keywords_secondary: painless root canal jalpaiguri, emergency dentist jalpaiguri, teeth whitening jalpaiguri, dental implant jalpaiguri, smile design north bengal, cosmetic dentist north bengal
+keywords_secondary: painless root canal jalpaiguri, emergency dentist jalpaiguri, teeth whitening jalpaiguri, dental implant jalpaiguri, smile design north bengal, cosmetic dentist north bengal, braces vs aligners vs veneers, online dental consultation jalpaiguri
 
 # GEO_TARGET
 locations: jalpaiguri, siliguri, dooars, north bengal, rajganj, banarhat, lataguri, maynaguri, nagrakata
 
 # USER_INTENT
-intent: tooth pain relief, replace missing teeth, improve smile aesthetics, emergency dental care, long-term tooth preservation, cosmetic dental correction
+intent: tooth pain relief, replace missing teeth, improve smile aesthetics, emergency dental care, long-term tooth preservation, cosmetic dental correction, compare orthodontic options, remote dental consultation
 
 # TRUST_SIGNALS
 trust: 28+ years clinical experience, registered dental practitioner, 20000+ patients treated, patient-focused care, modern dental technology, ethical and evidence-based treatment approach
 
 # KEY_PAGES
+home: https://dentistjalpaiguri.github.io/
 services: https://dentistjalpaiguri.github.io/services.html
+pricing: https://dentistjalpaiguri.github.io/dental-treatment-cost.html
+dental_implants: https://dentistjalpaiguri.github.io/dental-implants.html
+root_canal: https://dentistjalpaiguri.github.io/root-canal.html
+smile_makeover: https://dentistjalpaiguri.github.io/smile-makeover.html
+zero_pain_treatment: https://dentistjalpaiguri.github.io/zero-pain-dental-treatment.html
+compare_options: https://dentistjalpaiguri.github.io/braces-vs-aligners-vs-veneers.html
 blog: https://dentistjalpaiguri.github.io/blog/index.html
+official_blog: https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/
 about: https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html
 online_consultation: https://dentistjalpaiguri.github.io/online-consultation.html
+directions: https://dentistjalpaiguri.github.io/directions.html
 
 # OFFICIAL_LINKS
 website: https://dentistjalpaiguri.github.io
+official_blog: https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/
 online_consultation: https://dentistjalpaiguri.github.io/online-consultation.html
 appointment: https://dentistjalpaiguri.github.io/appointment.html
 gmb: https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9
