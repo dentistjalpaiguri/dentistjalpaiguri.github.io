@@ -74,6 +74,73 @@ input{width:100%;padding:12px;border:1px solid #e2e8f0;border-radius:8px;font-si
         🎓 <strong>Clinical Excellence:</strong> 28+ Years of Trusted Expertise
     </div>
 
+    <div style="background:#F0F8F4; border:1px solid #B8DCC8; border-radius:10px; padding:18px; margin:20px 0;">
+      <h3 style="margin-top:0; color:#1B5E3C;">✅ Request an Appointment via WhatsApp (Recommended)</h3>
+      <p style="font-size:13px; color:#444; margin-bottom:15px;">The fastest and most reliable way to book — we'll confirm your exact slot personally over WhatsApp.</p>
+
+      <label for="req-name">Patient Full Name</label>
+      <input id="req-name" type="text" placeholder="e.g. Anirban Banerjee">
+
+      <label for="req-phone">Contact Number</label>
+      <input id="req-phone" type="tel" placeholder="e.g. 98XXXXXXXX">
+
+      <label for="req-date">Preferred Date</label>
+      <input id="req-date" type="date">
+
+      <label for="req-time">Preferred Time</label>
+      <select id="req-time" style="width:100%; padding:10px; margin:6px 0 12px 0; border:1px solid #ccc; border-radius:6px;">
+        <option value="">Select a preferred time</option>
+        <option value="10:00 AM">10:00 AM</option>
+        <option value="10:30 AM">10:30 AM</option>
+        <option value="11:00 AM">11:00 AM</option>
+        <option value="11:30 AM">11:30 AM</option>
+        <option value="12:00 PM">12:00 PM</option>
+        <option value="12:30 PM">12:30 PM</option>
+        <option value="1:00 PM">1:00 PM</option>
+        <option value="1:30 PM">1:30 PM</option>
+        <option value="2:00 PM">2:00 PM</option>
+        <option value="2:30 PM">2:30 PM</option>
+        <option value="3:00 PM">3:00 PM</option>
+        <option value="3:30 PM">3:30 PM</option>
+        <option value="4:00 PM">4:00 PM</option>
+        <option value="4:30 PM">4:30 PM</option>
+        <option value="5:00 PM">5:00 PM</option>
+        <option value="5:30 PM">5:30 PM</option>
+        <option value="6:00 PM">6:00 PM</option>
+        <option value="6:30 PM">6:30 PM</option>
+        <option value="7:00 PM">7:00 PM</option>
+        <option value="7:30 PM">7:30 PM</option>
+      </select>
+
+      <label for="req-reason">Reason for Visit (optional)</label>
+      <input id="req-reason" type="text" list="reason-options" placeholder="Select an option, or type your own reason">
+      <datalist id="reason-options">
+        <option value="Smile Correction">
+        <option value="Gap Teeth Correction">
+        <option value="Zero Pain Treatment">
+        <option value="Without Braces Smile Correction">
+        <option value="Orthodontic Treatment">
+        <option value="Fixed Teeth">
+        <option value="Crown">
+        <option value="Veneers">
+        <option value="Hollywood Smile">
+        <option value="Teeth Whitening">
+        <option value="Dental Implants">
+        <option value="Root Canal Treatment">
+        <option value="Oral Ulcer Treatment">
+        <option value="Toothache / Pain">
+        <option value="Cleaning / Check-up">
+        <option value="General Consultation">
+        <option value="Others (please describe your problem)">
+      </datalist>
+
+      <button class="btn-wa" onclick="sendAppointmentRequest()" style="width:100%; margin-top:8px;">📅 Send Appointment Request via WhatsApp</button>
+      <p style="font-size:12px; color:#1B5E3C; margin-top:10px; text-align:center; line-height:1.5;">✅ After you send your request on WhatsApp, our clinic team will personally confirm your exact appointment slot.</p>
+    </div>
+
+    <hr style="border:0; border-top:1px solid #eee; margin:25px 0;">
+    <p style="font-size:13px; color:#666; text-align:center; margin-bottom:10px;">Or select a slot directly using our calendar below:</p>
+
     <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
     <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
     <div id="gcal-booking" style="margin:20px 0; min-height:80px;"></div>
@@ -114,6 +181,39 @@ input{width:100%;padding:12px;border:1px solid #e2e8f0;border-radius:8px;font-si
 </footer>
 
 <script>
+function sendAppointmentRequest(){
+  var name = document.getElementById('req-name').value.trim();
+  var phone = document.getElementById('req-phone').value.trim();
+  var date = document.getElementById('req-date').value;
+  var time = document.getElementById('req-time').value;
+  var reason = document.getElementById('req-reason').value.trim();
+
+  if(!name){ alert("Please enter the patient name."); return; }
+  if(!phone){ alert("Please enter a contact number."); return; }
+  if(!date){ alert("Please select a preferred date."); return; }
+  if(!time){ alert("Please select a preferred time."); return; }
+
+  // Track Lead Generation in GA4
+  gtag('event', 'generate_lead', {
+    'event_category': 'Appointment',
+    'event_label': 'WhatsApp Direct Request'
+  });
+
+  var dateObj = new Date(date + 'T00:00:00');
+  var formattedDate = dateObj.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  var msg = "Hello Doctor, I would like to request an appointment.%0A";
+  msg += "Name: " + encodeURIComponent(name) + "%0A";
+  msg += "Contact Number: " + encodeURIComponent(phone) + "%0A";
+  msg += "Preferred Date: " + encodeURIComponent(formattedDate) + "%0A";
+  msg += "Preferred Time: " + encodeURIComponent(time);
+  if(reason){
+    msg += "%0AReason for Visit: " + encodeURIComponent(reason);
+  }
+
+  window.open("https://wa.me/918918935056?text=" + msg, "_blank");
+}
+
 function sendWhatsApp(){
   var name = document.getElementById('cname').value.trim();
   if(!name){ alert("Please enter the patient name."); return; }
