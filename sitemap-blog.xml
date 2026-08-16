@@ -49,22 +49,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
-
-  <url>
-    <loc>https://dentistjalpaiguri.github.io/blog/emergency-dental-care.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
-  <url>
-    <loc>https://dentistjalpaiguri.github.io/blog/emergency-tooth-care.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-
-  <url>
+<url>
     <loc>https://dentistjalpaiguri.github.io/blog/oral-ulcer-3-week-rule.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -112,15 +97,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
-
-  <url>
-    <loc>https://dentistjalpaiguri.github.io/blog/dental-veneers.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-
-  <url>
+<url>
     <loc>https://dentistjalpaiguri.github.io/blog/dental-veneers-guide.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -147,43 +124,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
-
-  <url>
-    <loc>https://dentistjalpaiguri.github.io/blog/teeth-gap-treatment.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-
-  <url>
+<url>
     <loc>https://dentistjalpaiguri.github.io/blog/smile-design-vs-makeover.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
-
-  <url>
-    <loc>https://dentistjalpaiguri.github.io/blog/smile-designing.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-
-  <url>
-    <loc>https://dentistjalpaiguri.github.io/blog/smile-makeover-process.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-
-  <url>
-    <loc>https://dentistjalpaiguri.github.io/blog/cosmetic-dentistry.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-
-  <url>
+<url>
     <loc>https://dentistjalpaiguri.github.io/blog/cosmetic-dentistry-overview.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
