@@ -1,8 +1,45 @@
-# Robots.txt for Dr. S. Roy’s SMILE Dental Clinic
-# Optimized for Google Search & Local SEO (2026)
+# Robots.txt for Dr. S. Roy's SMILE Dental Clinic
+# Optimized for Google Search, Local SEO & AI Visibility (2026)
 
+# Standard crawlers
 User-agent: *
 Allow: /
+
+# AI Search Crawlers — Tier 1 (explicitly allowed for AI search visibility)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# AI Search Crawlers — Tier 2
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Blocked — aggressive crawler, no meaningful benefit
+User-agent: Bytespider
+Disallow: /
 
 # Sitemap
 Sitemap: https://dentistjalpaiguri.github.io/sitemap-index.xml

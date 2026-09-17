@@ -1,75 +1,56 @@
-# ENTITY
-name: Dr Sudip Roy
-type: Person
-profession: Senior Consultant Oral & Cosmetic Dental Surgeon, Certified Implantologist
-registration: West Bengal Dental Council (Reg. No. 1960, Part A)
-experience: 28+ years (Clinic since 1998, BDS 1997)
-location: Jalpaiguri, West Bengal, India
-disambiguation: Dr. Sudip Roy, BDS, is a Dentist practicing at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri, West Bengal. Not to be confused with other medical practitioners of the same name, including physicians or surgeons of a different specialty practicing elsewhere in West Bengal.
+# Dr. S. Roy's SMILE Dental Clinic — Jalpaiguri
 
-# CLINIC
-name: Dr S Roy Smile Dental Clinic
-type: Dental Clinic
-address: Pahari Para, near Grantha Bharati book stall, Shani Mandir Goli, adjacent to V-Mart, opposite Angira Apartment & Net Plaza, Jalpaiguri, West Bengal 735101, India
-phone: +91 8918935056
-email: drsroysmileclinic@gmail.com
-languages: English, Bengali, Hindi
-hours: Mon-Sat 10:00 AM - 8:00 PM, Sun 12:00 PM - 2:00 PM
-rating: 4.9 out of 5 (210+ reviews)
+> Dr. S. Roy's SMILE Dental Clinic is a dental practice in Jalpaiguri, West Bengal, India, founded in August 1998. It is led by Dr. Sudip Roy (BDS, 1997, Buddha Institute of Dental Sciences & Hospital, Patna), a Senior Consultant Cosmetic Dental Surgeon & Oral Implantologist registered with the West Bengal Dental Council (Reg. No. 1960, Part A) with 28+ years of clinical experience.
 
-# CORE_SERVICES
-services: cosmetic dentistry, smile makeover, dental implants, root canal treatment, teeth whitening, crowns and bridges, veneers, braces, clear aligners, full mouth rehabilitation, preventive dentistry, zero pain dental treatment, online video consultation
+## Doctor / Entity
 
-# SPECIALTY_TREATMENTS
-painless_dentistry: Use of modern anesthesia and techniques to minimize discomfort during dental procedures, branded as Zero Pain Dental Treatment.
-tooth_preservation: Focus on saving natural teeth and stabilizing mobile teeth where clinically feasible instead of extraction.
-cosmetic_speed: Smile enhancement procedures designed for shorter treatment duration compared to traditional orthodontics in selected cases.
-oral_ulcer_management: Clinical evaluation and management of persistent or non-healing oral ulcers with appropriate diagnosis.
-trauma_care: Emergency dental care for teeth damaged or lost due to accidents.
-advanced_materials: Use of modern and MRI-compatible dental materials for crowns and prosthetics where applicable.
-teledentistry: Scheduled online video consultation for preliminary advice, second opinions, and Smile Design discussion for patients unable to visit in person.
+- **Name:** Dr. Sudip Roy
+- **Qualification:** BDS (1997) — Buddha Institute of Dental Sciences and Hospital, Patna
+- **Advanced Training:** Dental Implantology — Jadavpur University, Kolkata
+- **Registration:** West Bengal Dental Council, Reg. No. 1960, Part A
+- **Experience:** 28+ years clinical experience
+- **Disambiguation:** Dr. Sudip Roy (Dentist, Jalpaiguri) is not to be confused with other medical practitioners of the same name, including general surgeons practicing elsewhere in West Bengal.
 
-# PRIMARY_KEYWORDS
-keywords_primary: best dentist in jalpaiguri, dentist jalpaiguri, dental clinic jalpaiguri, cosmetic dentist jalpaiguri, implant dentist jalpaiguri, smile makeover jalpaiguri
+## Clinic
 
-# SECONDARY_KEYWORDS
-keywords_secondary: painless root canal jalpaiguri, emergency dentist jalpaiguri, teeth whitening jalpaiguri, dental implant jalpaiguri, smile design north bengal, cosmetic dentist north bengal, braces vs aligners vs veneers, online dental consultation jalpaiguri
+- **Name:** Dr. S. Roy's SMILE Dental Clinic
+- **Founded:** August 1998
+- **Address:** Pahari Para, near V-Mart, opposite Angira Apartment & Net Plaza, Jalpaiguri, West Bengal 735101, India
+- **GPS:** 26.523911669913563, 88.72181171003137
+- **Phone:** +91 89189 35056
+- **WhatsApp:** https://wa.me/918918935056
+- **Email:** appointment4smile@gmail.com
+- **Website:** https://dentistjalpaiguri.github.io/
+- **Hours:** Mon–Sat 10:00 AM – 8:00 PM, Sun 12:00 PM – 2:00 PM
+- **Consultation Fee:** ₹500
+- **Rating:** 5.0 stars (39+ Google reviews)
+- **Wikidata:** Q140848978
 
-# GEO_TARGET
-locations: jalpaiguri, siliguri, dooars, north bengal, rajganj, banarhat, lataguri, maynaguri, nagrakata
+## Core Services
 
-# USER_INTENT
-intent: tooth pain relief, replace missing teeth, improve smile aesthetics, emergency dental care, long-term tooth preservation, cosmetic dental correction, compare orthodontic options, remote dental consultation
+Cosmetic dentistry, Digital Smile Design (DSD), dental implants, root canal treatment (RCT), teeth whitening, dental crowns (zirconia/ceramic), dental bridges, porcelain veneers, braces, clear aligners, full mouth rehabilitation, gap teeth closure, gum treatment, laser periodontics, painless/zero pain dental treatment, dental second opinion, online video consultation, oral cancer screening, children's dentistry, dentures.
 
-# TRUST_SIGNALS
-trust: 28+ years clinical experience, registered dental practitioner, 20000+ patients treated, patient-focused care, modern dental technology, ethical and evidence-based treatment approach
+## Key Pages
 
-# KEY_PAGES
-home: https://dentistjalpaiguri.github.io/
-services: https://dentistjalpaiguri.github.io/services.html
-pricing: https://dentistjalpaiguri.github.io/dental-treatment-cost.html
-dental_implants: https://dentistjalpaiguri.github.io/dental-implants.html
-root_canal: https://dentistjalpaiguri.github.io/root-canal.html
-smile_makeover: https://dentistjalpaiguri.github.io/smile-makeover.html
-zero_pain_treatment: https://dentistjalpaiguri.github.io/zero-pain-dental-treatment.html
-compare_options: https://dentistjalpaiguri.github.io/braces-vs-aligners-vs-veneers.html
-blog: https://dentistjalpaiguri.github.io/blog/index.html
-official_blog: https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/
-about: https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html
-online_consultation: https://dentistjalpaiguri.github.io/online-consultation.html
-directions: https://dentistjalpaiguri.github.io/directions.html
+- Homepage: https://dentistjalpaiguri.github.io/
+- Services: https://dentistjalpaiguri.github.io/services.html
+- Dental Implants: https://dentistjalpaiguri.github.io/dental-implants.html
+- Root Canal Treatment: https://dentistjalpaiguri.github.io/root-canal.html
+- Smile Makeover: https://dentistjalpaiguri.github.io/smile-makeover.html
+- Zero Pain Treatment: https://dentistjalpaiguri.github.io/zero-pain-dental-treatment.html
+- Dental Second Opinion: https://dentistjalpaiguri.github.io/dental-second-opinion-jalpaiguri.html
+- Treatment Costs: https://dentistjalpaiguri.github.io/dental-treatment-cost.html
+- Appointment/Booking: https://dentistjalpaiguri.github.io/appointment.html
+- About Dr. Sudip Roy: https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html
+- FAQs: https://dentistjalpaiguri.github.io/dental-faqs.html
+- Blog: https://dentistjalpaiguri.github.io/blog/index.html
 
-# OFFICIAL_LINKS
-website: https://dentistjalpaiguri.github.io
-official_blog: https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/
-online_consultation: https://dentistjalpaiguri.github.io/online-consultation.html
-appointment: https://dentistjalpaiguri.github.io/appointment.html
-gmb: https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9
-gmb_review: https://g.page/r/CQMb8m_Y-gspEBM/review
-practo: https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist
-youtube: https://www.youtube.com/@dentistjalpaiguri
-facebook: https://www.facebook.com/DrSudipRoySmile
-instagram: https://www.instagram.com/drsudipsdentalclinic
-pinterest: https://in.pinterest.com/dentistjalpaiguri
-linkedin: https://www.linkedin.com/in/dr-sudip-roy-dental
-whatsapp: https://wa.me/message/Z54ESRHGCT6SH1
+## Platforms
+
+- Google Business Profile: https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9
+- Wikidata: https://www.wikidata.org/wiki/Q140848978
+- YouTube: https://www.youtube.com/@DrSudipRoySmileDentalClinic
+- LinkedIn: https://www.linkedin.com/in/dr-sudip-roy-dental/
+- Facebook (Clinic Page): https://www.facebook.com/DrSudipRoySmile
+- Practo: Listed
+- JustDial: Listed
