@@ -42,9 +42,11 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-
     {
-      "@type": ["Dentist", "LocalBusiness"],
+      "@type": [
+        "Dentist",
+        "LocalBusiness"
+      ],
       "@id": "https://dentistjalpaiguri.github.io/#clinic",
       "name": "Dr. S. Roy's SMILE Dental Clinic",
       "image": "https://dentistjalpaiguri.github.io/assets/images/clinic-front.jpg",
@@ -61,20 +63,68 @@
         "addressCountry": "IN"
       },
       "geo": {
-  "@type": "GeoCoordinates",
-  "latitude": "26.523911669913563",
-  "longitude": "88.72181171003137"
-},
-      "openingHours": ["Mo-Sa 10:00-20:00", "Su 12:00-14:00"],
-      "areaServed": [
-        "Jalpaiguri", "Kadamtala", "Pandapara", "Ashram Para", "Maynaguri", "Rajganj", "Paharpur",
-        "Mandalghat", "Belacoba", "Berubari", "Kharija Berubari", "Dhupguri", "Domohani", "Haldibari",
-        "Saptibari", "Bhote Patty", "Rajbari Para", "Ukilpara", "Silpasamiti Para", "Mohitnagar",
-        "Patkata Colony", "Raninagar", "Garalbari"
+        "@type": "GeoCoordinates",
+        "latitude": "26.523911669913563",
+        "longitude": "88.72181171003137"
+      },
+      "openingHours": [
+        "Mo-Sa 10:00-20:00",
+        "Su 12:00-14:00"
       ],
-      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "39"}
+      "areaServed": [
+        "Jalpaiguri",
+        "Kadamtala",
+        "Pandapara",
+        "Ashram Para",
+        "Maynaguri",
+        "Rajganj",
+        "Paharpur",
+        "Mandalghat",
+        "Belacoba",
+        "Berubari",
+        "Kharija Berubari",
+        "Dhupguri",
+        "Domohani",
+        "Haldibari",
+        "Saptibari",
+        "Bhote Patty",
+        "Rajbari Para",
+        "Ukilpara",
+        "Silpasamiti Para",
+        "Mohitnagar",
+        "Patkata Colony",
+        "Raninagar",
+        "Garalbari"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "39"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Sunday"
+          ],
+          "opens": "12:00",
+          "closes": "14:00"
+        }
+      ]
     },
-
     {
       "@type": "WebPage",
       "@id": "https://dentistjalpaiguri.github.io/directions.html",
@@ -82,36 +132,110 @@
       "url": "https://dentistjalpaiguri.github.io/directions.html",
       "description": "Live turn-by-turn directions to Dr. S. Roy's SMILE Dental Clinic from 20+ areas around Jalpaiguri.",
       "inLanguage": "en-IN",
-      "about": {"@id": "https://dentistjalpaiguri.github.io/#clinic"},
+      "about": {
+        "@id": "https://dentistjalpaiguri.github.io/#clinic"
+      },
       "speakable": {
         "@type": "SpeakableSpecification",
-        "cssSelector": [".quick-answer"]
+        "cssSelector": [
+          ".quick-answer"
+        ]
       }
     },
-
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dentistjalpaiguri.github.io/"},
-        {"@type": "ListItem", "position": 2, "name": "Directions", "item": "https://dentistjalpaiguri.github.io/directions.html"}
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dentistjalpaiguri.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Directions",
+          "item": "https://dentistjalpaiguri.github.io/directions.html"
+        }
       ]
     },
-
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "How do I reach the clinic from Pandapara?", "acceptedAnswer": {"@type": "Answer", "text": "Route: Kadamtala More to Pahari Para, beside V-Mart."}},
-        {"@type": "Question", "name": "How do I reach the clinic from Ashram Para?", "acceptedAnswer": {"@type": "Answer", "text": "A direct 5-minute toto ride to Pahari Para, beside V-Mart."}},
-        {"@type": "Question", "name": "How do I reach the clinic from Maynaguri?", "acceptedAnswer": {"@type": "Answer", "text": "Cross Teesta Bridge, enter via Kadamtala, then Pahari Para."}},
-        {"@type": "Question", "name": "How do I reach the clinic from Kadamtala?", "acceptedAnswer": {"@type": "Answer", "text": "Kadamtala is just minutes from the clinic, straight to Pahari Para, beside V-Mart."}},
-        {"@type": "Question", "name": "How far is Berubari from the clinic?", "acceptedAnswer": {"@type": "Answer", "text": "Berubari is approximately 13.4 km from Jalpaiguri town via Haldibari Road, about a 28-minute drive to the clinic at Pahari Para."}},
-        {"@type": "Question", "name": "How far is Kharija Berubari from the clinic?", "acceptedAnswer": {"@type": "Answer", "text": "Kharija Berubari, home to Ghughudanga Bazar, is approximately 19.6 km from Jalpaiguri town via Haldibari Road / Mandalghat Road, about a 35-minute drive to the clinic."}},
-        {"@type": "Question", "name": "Does the clinic serve patients from Garalbari or Sovar Hat?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Sovar Hat More, the main market junction of Garalbari village, is approximately 9-10 km from Jalpaiguri town, with live turn-by-turn directions available to the clinic at Pahari Para."}},
-        {"@type": "Question", "name": "Does Dr. S. Roy's SMILE Dental Clinic serve patients from Mohitnagar, Patkata Colony, and Raninagar?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Live turn-by-turn directions are available from Mohitnagar, Patkata Colony, Raninagar and many other nearby areas directly to the clinic at Pahari Para, beside V-Mart."}},
-        {"@type": "Question", "name": "What areas does the clinic serve around Jalpaiguri?", "acceptedAnswer": {"@type": "Answer", "text": "Dr. S. Roy's SMILE Dental Clinic serves patients from Jalpaiguri town and surrounding areas including Kadamtala, Pandapara, Mohitnagar, Patkata Colony, Raninagar, Maynaguri, Dhupguri, Rajganj, Haldibari, Domohani, Berubari, Kharija Berubari, Garalbari and more."}}
+        {
+          "@type": "Question",
+          "name": "How do I reach the clinic from Pandapara?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Route: Kadamtala More to Pahari Para, beside V-Mart."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reach the clinic from Ashram Para?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A direct 5-minute toto ride to Pahari Para, beside V-Mart."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reach the clinic from Maynaguri?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cross Teesta Bridge, enter via Kadamtala, then Pahari Para."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reach the clinic from Kadamtala?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kadamtala is just minutes from the clinic, straight to Pahari Para, beside V-Mart."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far is Berubari from the clinic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Berubari is approximately 13.4 km from Jalpaiguri town via Haldibari Road, about a 28-minute drive to the clinic at Pahari Para."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far is Kharija Berubari from the clinic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kharija Berubari, home to Ghughudanga Bazar, is approximately 19.6 km from Jalpaiguri town via Haldibari Road / Mandalghat Road, about a 35-minute drive to the clinic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the clinic serve patients from Garalbari or Sovar Hat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Sovar Hat More, the main market junction of Garalbari village, is approximately 9-10 km from Jalpaiguri town, with live turn-by-turn directions available to the clinic at Pahari Para."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Dr. S. Roy's SMILE Dental Clinic serve patients from Mohitnagar, Patkata Colony, and Raninagar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Live turn-by-turn directions are available from Mohitnagar, Patkata Colony, Raninagar and many other nearby areas directly to the clinic at Pahari Para, beside V-Mart."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas does the clinic serve around Jalpaiguri?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. S. Roy's SMILE Dental Clinic serves patients from Jalpaiguri town and surrounding areas including Kadamtala, Pandapara, Mohitnagar, Patkata Colony, Raninagar, Maynaguri, Dhupguri, Rajganj, Haldibari, Domohani, Berubari, Kharija Berubari, Garalbari and more."
+          }
+        }
       ]
     }
-
   ]
 }
 </script>

@@ -37,16 +37,23 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-
     {
-      "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
+      "@type": [
+        "Dentist",
+        "MedicalBusiness",
+        "LocalBusiness"
+      ],
       "@id": "https://dentistjalpaiguri.github.io/#clinic",
       "name": "Dr. S. Roy's SMILE Dental Clinic",
       "url": "https://dentistjalpaiguri.github.io/",
       "telephone": "+918918935056",
       "email": "appointment4smile@gmail.com",
       "priceRange": "₹₹",
-      "medicalSpecialty": ["Dentistry", "Cosmetic Dentistry", "Orthodontics"],
+      "medicalSpecialty": [
+        "Dentistry",
+        "Cosmetic Dentistry",
+        "Orthodontics"
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Pahari Para, near Grantha Bharati book stall, Shani Mandir Goli, adjacent to V-Mart, opposite Angira Apartment & Net Plaza",
@@ -55,9 +62,16 @@
         "postalCode": "735101",
         "addressCountry": "IN"
       },
-      "geo": { "@type": "GeoCoordinates", "latitude": "26.523911669913563", "longitude": "88.72181171003137" },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "26.523911669913563",
+        "longitude": "88.72181171003137"
+      },
       "hasMap": "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
-      "openingHours": ["Mo-Sa 10:00-20:00", "Su 12:00-14:00"],
+      "openingHours": [
+        "Mo-Sa 10:00-20:00",
+        "Su 12:00-14:00"
+      ],
       "sameAs": [
         "https://www.facebook.com/DrSudipRoySmile",
         "https://www.instagram.com/drsudipsdentalclinic",
@@ -65,34 +79,63 @@
         "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
         "https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist",
         "https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Sunday"
+          ],
+          "opens": "12:00",
+          "closes": "14:00"
+        }
       ]
     },
-
     {
       "@type": "Person",
       "@id": "https://dentistjalpaiguri.github.io/#doctor",
       "name": "Dr. Sudip Roy",
       "disambiguatingDescription": "Dr. Sudip Roy, BDS — Dentist and Senior Consultant Oral & Cosmetic Dental Surgeon at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri, West Bengal. Not to be confused with other medical practitioners of the same name.",
       "jobTitle": "Senior Consultant Oral & Cosmetic Dental Surgeon",
-      "worksFor": { "@id": "https://dentistjalpaiguri.github.io/#clinic" },
-      "sameAs": ["https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/"]
+      "worksFor": {
+        "@id": "https://dentistjalpaiguri.github.io/#clinic"
+      },
+      "sameAs": [
+        "https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/"
+      ]
     },
-
     {
       "@type": "Article",
       "headline": "Braces vs Clear Aligners vs Veneers: Which Is Right for You?",
       "description": "A clinical comparison of braces, clear aligners, and veneers — cost, treatment time, and best use cases.",
-      "author": { "@id": "https://dentistjalpaiguri.github.io/#doctor" },
+      "author": {
+        "@id": "https://dentistjalpaiguri.github.io/#doctor"
+      },
       "publisher": {
         "@type": "Organization",
         "name": "Dr. S. Roy's SMILE Dental Clinic",
-        "logo": { "@type": "ImageObject", "url": "https://dentistjalpaiguri.github.io/assets/images/logo.png" }
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://dentistjalpaiguri.github.io/assets/images/logo.png"
+        }
       },
       "datePublished": "2026-08-02",
       "dateModified": "2026-08-02",
       "mainEntityOfPage": "https://dentistjalpaiguri.github.io/braces-vs-aligners-vs-veneers.html"
     },
-
     {
       "@type": "FAQPage",
       "mainEntity": [
@@ -130,15 +173,23 @@
         }
       ]
     },
-
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dentistjalpaiguri.github.io/" },
-        { "@type": "ListItem", "position": 2, "name": "Braces vs Aligners vs Veneers", "item": "https://dentistjalpaiguri.github.io/braces-vs-aligners-vs-veneers.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dentistjalpaiguri.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Braces vs Aligners vs Veneers",
+          "item": "https://dentistjalpaiguri.github.io/braces-vs-aligners-vs-veneers.html"
+        }
       ]
     }
-
   ]
 }
 </script>

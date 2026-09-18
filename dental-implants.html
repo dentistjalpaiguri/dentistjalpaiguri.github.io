@@ -32,7 +32,6 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-
     {
       "@type": "Dentist",
       "@id": "https://dentistjalpaiguri.github.io/#clinic",
@@ -49,27 +48,69 @@
         "postalCode": "735101",
         "addressCountry": "IN"
       },
-      "medicalSpecialty": ["Cosmetic Dentistry", "Smile Design", "Implant Dentistry", "Endodontics"],
-      "founder": {"@type": "Person", "name": "Dr. Sudip Roy"},
-      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "39"}
+      "medicalSpecialty": [
+        "Cosmetic Dentistry",
+        "Smile Design",
+        "Implant Dentistry",
+        "Endodontics"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Sudip Roy"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "39"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Sunday"
+          ],
+          "opens": "12:00",
+          "closes": "14:00"
+        }
+      ]
     },
-
     {
       "@type": "MedicalProcedure",
       "name": "Dental Implant Placement",
       "alternateName": "Fixed Teeth Replacement",
       "procedureType": "https://schema.org/SurgicalProcedure",
-      "relevantSpecialty": { "@type": "MedicalSpecialty", "name": "Implant Dentistry" },
+      "relevantSpecialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Implant Dentistry"
+      },
       "description": "A permanent surgical replacement for missing teeth using biocompatible titanium posts that fuse with the jawbone through osseointegration, supporting a fixed crown or bridge.",
       "preparation": "Clinical examination and 3D CBCT scan for digital surgical planning and bone density assessment.",
       "howPerformed": "Titanium post placement under local anesthesia, followed by an osseointegration healing period, then abutment and final crown restoration.",
       "followup": "Regular 6-month checkups and good oral hygiene to maintain long-term implant health.",
-      "provider": {"@type": "Dentist", "name": "Dr. S. Roy's SMILE Dental Clinic"},
-      "performer": {"@type": "Person", "name": "Dr. Sudip Roy"},
+      "provider": {
+        "@type": "Dentist",
+        "name": "Dr. S. Roy's SMILE Dental Clinic"
+      },
+      "performer": {
+        "@type": "Person",
+        "name": "Dr. Sudip Roy"
+      },
       "datePublished": "2026-08-02",
       "dateModified": "2026-08-02"
     },
-
     {
       "@type": "FAQPage",
       "mainEntity": [
@@ -123,15 +164,23 @@
         }
       ]
     },
-
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dentistjalpaiguri.github.io/" },
-        { "@type": "ListItem", "position": 2, "name": "Dental Implants", "item": "https://dentistjalpaiguri.github.io/dental-implants.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dentistjalpaiguri.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dental Implants",
+          "item": "https://dentistjalpaiguri.github.io/dental-implants.html"
+        }
       ]
     }
-
   ]
 }
 </script>

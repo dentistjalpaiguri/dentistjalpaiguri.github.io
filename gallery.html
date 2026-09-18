@@ -22,127 +22,232 @@
 <link rel="stylesheet" href="/assets/css/wa-widget.css">
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
-      "@id": "https://dentistjalpaiguri.github.io/#clinic",
-      "name": "Dr. S. Roy's SMILE Dental Clinic",
-      "telephone": "+918918935056",
-      "email": "appointment4smile@gmail.com",
-      "medicalSpecialty": ["Dentistry", "Cosmetic Dentistry", "Oral Implantology"],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pahari Para, near Grantha Bharati book stall, Shani Mandir Goli, adjacent to V-Mart, opposite Angira Apartment & Net Plaza",
-        "addressLocality": "Jalpaiguri",
-        "addressRegion": "West Bengal",
-        "postalCode": "735101",
-        "addressCountry": "IN"
+[
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "Dentist",
+          "MedicalBusiness",
+          "LocalBusiness"
+        ],
+        "@id": "https://dentistjalpaiguri.github.io/#clinic",
+        "name": "Dr. S. Roy's SMILE Dental Clinic",
+        "telephone": "+918918935056",
+        "email": "appointment4smile@gmail.com",
+        "medicalSpecialty": [
+          "Dentistry",
+          "Cosmetic Dentistry",
+          "Oral Implantology"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pahari Para, near Grantha Bharati book stall, Shani Mandir Goli, adjacent to V-Mart, opposite Angira Apartment & Net Plaza",
+          "addressLocality": "Jalpaiguri",
+          "addressRegion": "West Bengal",
+          "postalCode": "735101",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "26.523911669913563",
+          "longitude": "88.72181171003137"
+        },
+        "openingHours": [
+          "Mo-Sa 10:00-20:00",
+          "Su 12:00-14:00"
+        ],
+        "hasPart": [
+          {
+            "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-implant"
+          },
+          {
+            "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short1"
+          },
+          {
+            "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short2"
+          },
+          {
+            "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short3"
+          }
+        ]
       },
-      "geo": { "@type": "GeoCoordinates", "latitude": "26.523911669913563", "longitude": "88.72181171003137" },
-      "openingHours": ["Mo-Sa 10:00-20:00", "Su 12:00-14:00"],
-      "hasPart": [
-        { "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-implant" },
-        { "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short1" },
-        { "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short2" },
-        { "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short3" }
-      ]
-    },
-    {
-      "@type": "Person",
-      "@id": "https://dentistjalpaiguri.github.io/#doctor",
-      "name": "Dr. Sudip Roy",
-      "jobTitle": "Senior Consultant Cosmetic Dental Surgeon & Implantologist",
-      "disambiguatingDescription": "Dr. Sudip Roy, BDS — Dentist and Senior Consultant Oral & Cosmetic Dental Surgeon at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri, West Bengal. Not to be confused with other medical practitioners of the same name.",
-      "affiliation": { "@id": "https://dentistjalpaiguri.github.io/#clinic" }
-    },
-    {
-      "@type": "VideoObject",
-      "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-implant",
-      "name": "Full Mouth Dental Implant Success",
-      "description": "Real patient transformation using full mouth dental implants at SMILE Dental Clinic, Jalpaiguri.",
-      "uploadDate": "2026-01-11T12:00:00+05:30",
-      "duration": "PT2M30S",
-      "thumbnailUrl": "https://img.youtube.com/vi/GvR4V9Kv4Uk/hqdefault.jpg",
-      "contentUrl": "https://www.youtube.com/watch?v=GvR4V9Kv4Uk",
-      "embedUrl": "https://www.youtube.com/embed/GvR4V9Kv4Uk",
-      "publisher": { "@id": "https://dentistjalpaiguri.github.io/#doctor" }
-    },
-    {
-      "@type": "VideoObject",
-      "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short1",
-      "name": "Transformation Short – KpFUNA42Ef0",
-      "description": "Quick transformation clip by Dr. Sudip Roy, SMILE Dental Clinic, Jalpaiguri.",
-      "uploadDate": "2026-01-11T12:00:00+05:30",
-      "duration": "PT0M30S",
-      "thumbnailUrl": "https://img.youtube.com/vi/KpFUNA42Ef0/hqdefault.jpg",
-      "contentUrl": "https://www.youtube.com/watch?v=KpFUNA42Ef0",
-      "embedUrl": "https://www.youtube.com/embed/KpFUNA42Ef0",
-      "publisher": { "@id": "https://dentistjalpaiguri.github.io/#doctor" }
-    },
-    {
-      "@type": "VideoObject",
-      "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short2",
-      "name": "Dental Short – dANt5sOk5KM",
-      "description": "Short clinical highlight by Dr. Sudip Roy from Jalpaiguri.",
-      "uploadDate": "2026-01-11T12:00:00+05:30",
-      "duration": "PT0M30S",
-      "thumbnailUrl": "https://img.youtube.com/vi/dANt5sOk5KM/hqdefault.jpg",
-      "contentUrl": "https://www.youtube.com/watch?v=dANt5sOk5KM",
-      "embedUrl": "https://www.youtube.com/embed/dANt5sOk5KM",
-      "publisher": { "@id": "https://dentistjalpaiguri.github.io/#doctor" }
-    },
-    {
-      "@type": "VideoObject",
-      "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short3",
-      "name": "Dental Short – DhHk9U3oNvQ",
-      "description": "Quick smile transformation by Dr. Sudip Roy, SMILE Dental Clinic, Jalpaiguri.",
-      "uploadDate": "2026-01-11T12:00:00+05:30",
-      "duration": "PT0M30S",
-      "thumbnailUrl": "https://img.youtube.com/vi/DhHk9U3oNvQ/hqdefault.jpg",
-      "contentUrl": "https://www.youtube.com/watch?v=DhHk9U3oNvQ",
-      "embedUrl": "https://www.youtube.com/embed/DhHk9U3oNvQ",
-      "publisher": { "@id": "https://dentistjalpaiguri.github.io/#doctor" }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How soon can I chew after dental implants?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most patients can resume soft chewing within days of the procedure. However, full chewing function on the implant site is typically restored after the osseointegration period (3-6 months), once the final permanent crown is fixed by Dr. Sudip Roy."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Will my smile makeover look natural?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. By using Digital Smile Design (DSD), Dr. Roy analyzes your facial proportions to ensure that the shape, color, and translucency of your veneers or crowns perfectly match your natural teeth."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are the results shown in the videos permanent?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dental implants are designed to be a lifelong solution. Smile makeovers and veneers are highly durable and can last 10-15+ years with proper clinical maintenance and oral hygiene habits."
-          }
+      {
+        "@type": "Person",
+        "@id": "https://dentistjalpaiguri.github.io/#doctor",
+        "name": "Dr. Sudip Roy",
+        "jobTitle": "Senior Consultant Cosmetic Dental Surgeon & Implantologist",
+        "disambiguatingDescription": "Dr. Sudip Roy, BDS — Dentist and Senior Consultant Oral & Cosmetic Dental Surgeon at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri, West Bengal. Not to be confused with other medical practitioners of the same name.",
+        "affiliation": {
+          "@id": "https://dentistjalpaiguri.github.io/#clinic"
         }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dentistjalpaiguri.github.io/" },
-        { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://dentistjalpaiguri.github.io/gallery.html" }
-      ]
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-implant",
+        "name": "Full Mouth Dental Implant Success",
+        "description": "Real patient transformation using full mouth dental implants at SMILE Dental Clinic, Jalpaiguri.",
+        "uploadDate": "2026-01-11T12:00:00+05:30",
+        "duration": "PT2M30S",
+        "thumbnailUrl": "https://img.youtube.com/vi/GvR4V9Kv4Uk/hqdefault.jpg",
+        "contentUrl": "https://www.youtube.com/watch?v=GvR4V9Kv4Uk",
+        "embedUrl": "https://www.youtube.com/embed/GvR4V9Kv4Uk",
+        "publisher": {
+          "@id": "https://dentistjalpaiguri.github.io/#doctor"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short1",
+        "name": "Transformation Short – KpFUNA42Ef0",
+        "description": "Quick transformation clip by Dr. Sudip Roy, SMILE Dental Clinic, Jalpaiguri.",
+        "uploadDate": "2026-01-11T12:00:00+05:30",
+        "duration": "PT0M30S",
+        "thumbnailUrl": "https://img.youtube.com/vi/KpFUNA42Ef0/hqdefault.jpg",
+        "contentUrl": "https://www.youtube.com/watch?v=KpFUNA42Ef0",
+        "embedUrl": "https://www.youtube.com/embed/KpFUNA42Ef0",
+        "publisher": {
+          "@id": "https://dentistjalpaiguri.github.io/#doctor"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short2",
+        "name": "Dental Short – dANt5sOk5KM",
+        "description": "Short clinical highlight by Dr. Sudip Roy from Jalpaiguri.",
+        "uploadDate": "2026-01-11T12:00:00+05:30",
+        "duration": "PT0M30S",
+        "thumbnailUrl": "https://img.youtube.com/vi/dANt5sOk5KM/hqdefault.jpg",
+        "contentUrl": "https://www.youtube.com/watch?v=dANt5sOk5KM",
+        "embedUrl": "https://www.youtube.com/embed/dANt5sOk5KM",
+        "publisher": {
+          "@id": "https://dentistjalpaiguri.github.io/#doctor"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://dentistjalpaiguri.github.io/gallery.html#video-short3",
+        "name": "Dental Short – DhHk9U3oNvQ",
+        "description": "Quick smile transformation by Dr. Sudip Roy, SMILE Dental Clinic, Jalpaiguri.",
+        "uploadDate": "2026-01-11T12:00:00+05:30",
+        "duration": "PT0M30S",
+        "thumbnailUrl": "https://img.youtube.com/vi/DhHk9U3oNvQ/hqdefault.jpg",
+        "contentUrl": "https://www.youtube.com/watch?v=DhHk9U3oNvQ",
+        "embedUrl": "https://www.youtube.com/embed/DhHk9U3oNvQ",
+        "publisher": {
+          "@id": "https://dentistjalpaiguri.github.io/#doctor"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How soon can I chew after dental implants?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most patients can resume soft chewing within days of the procedure. However, full chewing function on the implant site is typically restored after the osseointegration period (3-6 months), once the final permanent crown is fixed by Dr. Sudip Roy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will my smile makeover look natural?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. By using Digital Smile Design (DSD), Dr. Roy analyzes your facial proportions to ensure that the shape, color, and translucency of your veneers or crowns perfectly match your natural teeth."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the results shown in the videos permanent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dental implants are designed to be a lifelong solution. Smile makeovers and veneers are highly durable and can last 10-15+ years with proper clinical maintenance and oral hygiene habits."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dentistjalpaiguri.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Gallery",
+            "item": "https://dentistjalpaiguri.github.io/gallery.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Crowns, Bridges & Fixed Teeth Before & After | Dr. Sudip Roy, Jalpaiguri",
+    "description": "Real patient before and after results for fixed teeth solutions — crowns, bridges, and full mouth rehabilitation at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri.",
+    "thumbnailUrl": "https://img.youtube.com/vi/GvR4V9Kv4Uk/hqdefault.jpg",
+    "uploadDate": "2026-08-18",
+    "embedUrl": "https://www.youtube.com/embed/GvR4V9Kv4Uk",
+    "url": "https://www.youtube.com/watch?v=GvR4V9Kv4Uk",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dr. S. Roy's SMILE Dental Clinic",
+      "url": "https://dentistjalpaiguri.github.io/"
     }
-  ]
-}
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Patient Results Gallery | Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri",
+    "description": "Patient transformation results at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri. Cosmetic dentistry and smile makeover cases by Dr. Sudip Roy.",
+    "thumbnailUrl": "https://img.youtube.com/vi/KpFUNA42Ef0/hqdefault.jpg",
+    "uploadDate": "2026-07-01",
+    "embedUrl": "https://www.youtube.com/embed/KpFUNA42Ef0",
+    "url": "https://www.youtube.com/watch?v=KpFUNA42Ef0",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dr. S. Roy's SMILE Dental Clinic",
+      "url": "https://dentistjalpaiguri.github.io/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Dental Treatment Results | Dr. Sudip Roy, Jalpaiguri",
+    "description": "Dental treatment results and patient care at Dr. S. Roy's SMILE Dental Clinic, Pahari Para, Jalpaiguri, West Bengal.",
+    "thumbnailUrl": "https://img.youtube.com/vi/dANt5sOk5KM/hqdefault.jpg",
+    "uploadDate": "2026-06-01",
+    "embedUrl": "https://www.youtube.com/embed/dANt5sOk5KM",
+    "url": "https://www.youtube.com/watch?v=dANt5sOk5KM",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dr. S. Roy's SMILE Dental Clinic",
+      "url": "https://dentistjalpaiguri.github.io/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Smile Makeover | Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri",
+    "description": "Smile makeover and cosmetic dentistry results at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri by Dr. Sudip Roy, 28+ years clinical experience.",
+    "thumbnailUrl": "https://img.youtube.com/vi/DhHk9U3oNvQ/hqdefault.jpg",
+    "uploadDate": "2026-05-01",
+    "embedUrl": "https://www.youtube.com/embed/DhHk9U3oNvQ",
+    "url": "https://www.youtube.com/watch?v=DhHk9U3oNvQ",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dr. S. Roy's SMILE Dental Clinic",
+      "url": "https://dentistjalpaiguri.github.io/"
+    }
+  }
+]
 </script>
 
 <style>

@@ -84,32 +84,68 @@
     </script>
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "Dentist",
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "@id": "https://dentistjalpaiguri.github.io/#clinic",
+  "name": "Dr. S. Roy's SMILE Dental Clinic",
+  "url": "https://dentistjalpaiguri.github.io",
+  "telephone": "+918918935056",
+  "email": "appointment4smile@gmail.com",
+  "medicalSpecialty": [
+    "Cosmetic Dentistry",
+    "Smile Design",
+    "Dental Implants"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Pahari Para, near Grantha Bharati book stall, Shani Mandir Goli, adjacent to V-Mart, opposite Angira Apartment & Net Plaza",
+    "addressLocality": "Jalpaiguri",
+    "addressRegion": "West Bengal",
+    "postalCode": "735101",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "26.523911669913563",
+    "longitude": "88.72181171003137"
+  },
+  "openingHours": [
+    "Mo-Sa 10:00-20:00",
+    "Su 12:00-14:00"
+  ],
+  "founder": {
+    "@id": "https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html#dr-sudip-roy"
+  },
+  "openingHoursSpecification": [
     {
-      "@context": "https://schema.org",
-      "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
-      "@id": "https://dentistjalpaiguri.github.io/#clinic",
-      "name": "Dr. S. Roy's SMILE Dental Clinic",
-      "url": "https://dentistjalpaiguri.github.io",
-      "telephone": "+918918935056",
-      "email": "appointment4smile@gmail.com",
-      "medicalSpecialty": [
-        "Cosmetic Dentistry",
-        "Smile Design",
-        "Dental Implants"
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
       ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pahari Para, near Grantha Bharati book stall, Shani Mandir Goli, adjacent to V-Mart, opposite Angira Apartment & Net Plaza",
-        "addressLocality": "Jalpaiguri",
-        "addressRegion": "West Bengal",
-        "postalCode": "735101",
-        "addressCountry": "IN"
-      },
-      "geo": { "@type": "GeoCoordinates", "latitude": "26.523911669913563", "longitude": "88.72181171003137" },
-      "openingHours": ["Mo-Sa 10:00-20:00", "Su 12:00-14:00"],
-      "founder": { "@id": "https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html#dr-sudip-roy" }
+      "opens": "10:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Sunday"
+      ],
+      "opens": "12:00",
+      "closes": "14:00"
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         body { font-family: sans-serif; background-color: #f6f6f6; color: #202122; margin: 0; padding: 0; line-height: 1.6; }

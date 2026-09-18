@@ -40,59 +40,110 @@
     </script>
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": [
+        "Dentist",
+        "MedicalBusiness",
+        "LocalBusiness"
+      ],
+      "@id": "https://dentistjalpaiguri.github.io/#clinic",
+      "name": "Dr. S. Roy's SMILE Dental Clinic",
+      "url": "https://dentistjalpaiguri.github.io/",
+      "image": "https://dentistjalpaiguri.github.io/verified-dentist-dr-sudip-roy-wbdc-1960.png",
+      "telephone": "+918918935056",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pahari Para, near V-Mart, opposite Angira Apartment & Net Plaza",
+        "addressLocality": "Jalpaiguri",
+        "addressRegion": "West Bengal",
+        "postalCode": "735101",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "26.523911669913563",
+        "longitude": "88.72181171003137"
+      },
+      "hasMap": "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
+      "openingHours": [
+        "Mo-Sa 10:00-20:00",
+        "Su 12:00-14:00"
+      ],
+      "medicalSpecialty": [
+        "Dentistry",
+        "Cosmetic Dentistry",
+        "Oral and Maxillofacial Surgery",
+        "Dental Implantology"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/DrSudipRoySmile",
+        "https://www.instagram.com/drsudipsdentalclinic",
+        "https://www.youtube.com/@dentistjalpaiguri",
+        "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
+        "https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist",
+        "https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/"
+      ],
+      "openingHoursSpecification": [
         {
-          "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
-          "@id": "https://dentistjalpaiguri.github.io/#clinic",
-          "name": "Dr. S. Roy's SMILE Dental Clinic",
-          "url": "https://dentistjalpaiguri.github.io/",
-          "image": "https://dentistjalpaiguri.github.io/verified-dentist-dr-sudip-roy-wbdc-1960.png",
-          "telephone": "+918918935056",
-          "priceRange": "₹₹",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Pahari Para, near V-Mart, opposite Angira Apartment & Net Plaza",
-            "addressLocality": "Jalpaiguri",
-            "addressRegion": "West Bengal",
-            "postalCode": "735101",
-            "addressCountry": "IN"
-          },
-          "geo": { "@type": "GeoCoordinates", "latitude": "26.523911669913563", "longitude": "88.72181171003137" },
-          "hasMap": "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
-          "openingHours": ["Mo-Sa 10:00-20:00", "Su 12:00-14:00"],
-          "medicalSpecialty": ["Dentistry", "Cosmetic Dentistry", "Oral and Maxillofacial Surgery", "Dental Implantology"],
-          "sameAs": [
-            "https://www.facebook.com/DrSudipRoySmile",
-            "https://www.instagram.com/drsudipsdentalclinic",
-            "https://www.youtube.com/@dentistjalpaiguri",
-            "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
-            "https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist",
-            "https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/"
-          ]
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "20:00"
         },
         {
-          "@type": "Person",
-          "@id": "https://dentistjalpaiguri.github.io/#doctor",
-          "name": "Dr. Sudip Roy",
-          "disambiguatingDescription": "Dr. Sudip Roy, BDS — Dentist and Senior Consultant Oral & Cosmetic Dental Surgeon at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri, West Bengal. Not to be confused with other medical practitioners of the same name.",
-          "jobTitle": "Senior Consultant Oral & Cosmetic Dental Surgeon",
-          "worksFor": {"@id": "https://dentistjalpaiguri.github.io/#clinic"},
-          "sameAs": ["https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/"]
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://dentistjalpaiguri.github.io/portal.html",
-          "name": "Dr. Sudip Roy | Clinical Portal & Trilingual Hub",
-          "url": "https://dentistjalpaiguri.github.io/portal.html",
-          "inLanguage": ["en-IN", "bn-IN", "hi-IN"],
-          "about": {"@id": "https://dentistjalpaiguri.github.io/#clinic"},
-          "isPartOf": {"@id": "https://dentistjalpaiguri.github.io/#website"}
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Sunday"
+          ],
+          "opens": "12:00",
+          "closes": "14:00"
         }
       ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://dentistjalpaiguri.github.io/#doctor",
+      "name": "Dr. Sudip Roy",
+      "disambiguatingDescription": "Dr. Sudip Roy, BDS — Dentist and Senior Consultant Oral & Cosmetic Dental Surgeon at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri, West Bengal. Not to be confused with other medical practitioners of the same name.",
+      "jobTitle": "Senior Consultant Oral & Cosmetic Dental Surgeon",
+      "worksFor": {
+        "@id": "https://dentistjalpaiguri.github.io/#clinic"
+      },
+      "sameAs": [
+        "https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dentistjalpaiguri.github.io/portal.html",
+      "name": "Dr. Sudip Roy | Clinical Portal & Trilingual Hub",
+      "url": "https://dentistjalpaiguri.github.io/portal.html",
+      "inLanguage": [
+        "en-IN",
+        "bn-IN",
+        "hi-IN"
+      ],
+      "about": {
+        "@id": "https://dentistjalpaiguri.github.io/#clinic"
+      },
+      "isPartOf": {
+        "@id": "https://dentistjalpaiguri.github.io/#website"
+      }
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         :root { --gold: #D4AF37; --black: #080808; --white: #FFFFFF; --dark-card: #141414; --clinic-blue: #042c54; --wa-green: #25D366; }

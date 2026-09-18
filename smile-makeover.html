@@ -32,7 +32,11 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
+      "@type": [
+        "Dentist",
+        "MedicalBusiness",
+        "LocalBusiness"
+      ],
       "@id": "https://dentistjalpaiguri.github.io/#clinic",
       "name": "Dr. S. Roy's SMILE Dental Clinic",
       "url": "https://dentistjalpaiguri.github.io/",
@@ -47,9 +51,16 @@
         "postalCode": "735101",
         "addressCountry": "IN"
       },
-      "geo": { "@type": "GeoCoordinates", "latitude": "26.523911669913563", "longitude": "88.72181171003137" },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "26.523911669913563",
+        "longitude": "88.72181171003137"
+      },
       "hasMap": "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
-      "openingHours": ["Mo-Sa 10:00-20:00", "Su 12:00-14:00"],
+      "openingHours": [
+        "Mo-Sa 10:00-20:00",
+        "Su 12:00-14:00"
+      ],
       "sameAs": [
         "https://www.facebook.com/DrSudipRoySmile",
         "https://www.instagram.com/drsudipsdentalclinic",
@@ -57,6 +68,29 @@
         "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
         "https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist",
         "https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Sunday"
+          ],
+          "opens": "12:00",
+          "closes": "14:00"
+        }
       ]
     },
     {
@@ -65,19 +99,30 @@
       "name": "Dr. Sudip Roy",
       "disambiguatingDescription": "Dr. Sudip Roy, BDS — Dentist and Senior Consultant Oral & Cosmetic Dental Surgeon at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri, West Bengal. Not to be confused with other medical practitioners of the same name.",
       "jobTitle": "Senior Consultant Oral & Cosmetic Dental Surgeon",
-      "worksFor": {"@id": "https://dentistjalpaiguri.github.io/#clinic"},
-      "sameAs": ["https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/"]
+      "worksFor": {
+        "@id": "https://dentistjalpaiguri.github.io/#clinic"
+      },
+      "sameAs": [
+        "https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/"
+      ]
     },
     {
       "@type": "MedicalProcedure",
       "name": "Digital Smile Design (DSD)",
       "procedureType": "Cosmetic",
-      "relevantSpecialty": { "@type": "MedicalSpecialty", "name": "Cosmetic Dentistry" },
+      "relevantSpecialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Cosmetic Dentistry"
+      },
       "description": "A high-tech dental treatment planning tool used to strengthen diagnostic vision and improve predictability in aesthetic smile transformations.",
       "preparation": "Digital Photography and 3D Intraoral Scanning",
       "howPerformed": "Clinical analysis of facial and dental proportions followed by digital simulation and custom veneer or crown placement.",
-      "provider": {"@id": "https://dentistjalpaiguri.github.io/#clinic"},
-      "performer": {"@id": "https://dentistjalpaiguri.github.io/#doctor"}
+      "provider": {
+        "@id": "https://dentistjalpaiguri.github.io/#clinic"
+      },
+      "performer": {
+        "@id": "https://dentistjalpaiguri.github.io/#doctor"
+      }
     },
     {
       "@type": "FAQPage",
@@ -111,8 +156,18 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dentistjalpaiguri.github.io/" },
-        { "@type": "ListItem", "position": 2, "name": "Smile Makeover", "item": "https://dentistjalpaiguri.github.io/smile-makeover.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dentistjalpaiguri.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Smile Makeover",
+          "item": "https://dentistjalpaiguri.github.io/smile-makeover.html"
+        }
       ]
     }
   ]

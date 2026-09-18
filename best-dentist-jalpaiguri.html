@@ -25,14 +25,23 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
+      "@type": [
+        "Dentist",
+        "MedicalBusiness",
+        "LocalBusiness"
+      ],
       "@id": "https://dentistjalpaiguri.github.io/#clinic",
       "name": "Dr. S. Roy's SMILE Dental Clinic",
       "image": "https://dentistjalpaiguri.github.io/assets/images/clinic-front.jpg",
       "url": "https://dentistjalpaiguri.github.io/",
       "telephone": "+918918935056",
       "email": "appointment4smile@gmail.com",
-      "medicalSpecialty": ["Cosmetic Dentistry", "Smile Design", "Implant Dentistry", "Endodontics"],
+      "medicalSpecialty": [
+        "Cosmetic Dentistry",
+        "Smile Design",
+        "Implant Dentistry",
+        "Endodontics"
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Pahari Para, near Grantha Bharati book stall, Shani Mandir Goli, adjacent to V-Mart, opposite Angira Apartment & Net Plaza",
@@ -41,9 +50,20 @@
         "postalCode": "735101",
         "addressCountry": "IN"
       },
-      "geo": { "@type": "GeoCoordinates", "latitude": "26.523911669913563", "longitude": "88.72181171003137" },
-      "openingHours": ["Mo-Sa 10:00-20:00", "Su 12:00-14:00"],
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "39" },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "26.523911669913563",
+        "longitude": "88.72181171003137"
+      },
+      "openingHours": [
+        "Mo-Sa 10:00-20:00",
+        "Su 12:00-14:00"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "39"
+      },
       "sameAs": [
         "https://www.facebook.com/DrSudipRoySmile",
         "https://www.instagram.com/drsudipsdentalclinic",
@@ -51,6 +71,29 @@
         "https://maps.app.goo.gl/wKr9LJbUsqLs4t9F9",
         "https://www.practo.com/jalpaiguri/doctor/dr-sudip-roy-dentist",
         "https://dr-sudip-roy-dentist-jalpaiguri.blogspot.com/"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Sunday"
+          ],
+          "opens": "12:00",
+          "closes": "14:00"
+        }
       ]
     },
     {
@@ -60,7 +103,9 @@
       "disambiguatingDescription": "Dr. Sudip Roy, BDS — Dentist and Senior Consultant Oral & Cosmetic Dental Surgeon at Dr. S. Roy's SMILE Dental Clinic, Jalpaiguri, West Bengal. Not to be confused with other medical practitioners of the same name.",
       "jobTitle": "Senior Consultant Cosmetic Dental Surgeon & Oral Implantologist",
       "description": "28+ years experience, 20,000+ patients. Smile correction and OSMF specialist in Jalpaiguri, West Bengal. WB Dental Council Reg. No. 1960 Part A.",
-      "worksFor": { "@id": "https://dentistjalpaiguri.github.io/#clinic" },
+      "worksFor": {
+        "@id": "https://dentistjalpaiguri.github.io/#clinic"
+      },
       "url": "https://dentistjalpaiguri.github.io/wiki-dr-sudip-roy.html",
       "sameAs": [
         "https://www.linkedin.com/in/dr-sudip-roy-dental/",
@@ -72,8 +117,18 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dentistjalpaiguri.github.io/" },
-        { "@type": "ListItem", "position": 2, "name": "About", "item": "https://dentistjalpaiguri.github.io/best-dentist-jalpaiguri.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dentistjalpaiguri.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://dentistjalpaiguri.github.io/best-dentist-jalpaiguri.html"
+        }
       ]
     }
   ]
