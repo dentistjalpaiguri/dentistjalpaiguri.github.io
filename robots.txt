@@ -18,6 +18,9 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
@@ -35,6 +38,20 @@ User-agent: Amazonbot
 Allow: /
 
 User-agent: FacebookBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# AI Training Data — CommonCrawl (source for GPT-4, Llama, Mistral and most major LLMs)
+User-agent: CCBot
+Allow: /
+
+# AI Knowledge Graph
+User-agent: Diffbot
 Allow: /
 
 # Blocked — aggressive crawler, no meaningful benefit
