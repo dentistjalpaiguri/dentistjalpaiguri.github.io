@@ -2,7 +2,7 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://dentistjalpaiguri.github.io/sitemap-pages.xml</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://dentistjalpaiguri.github.io/sitemap-faq.xml</loc>
@@ -11,5 +11,9 @@
   <sitemap>
     <loc>https://dentistjalpaiguri.github.io/sitemap-blog.xml</loc>
     <lastmod>2026-07-31</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://dentistjalpaiguri.github.io/sitemap-images.xml</loc>
+    <lastmod>2026-11-16</lastmod>
   </sitemap>
 </sitemapindex>
